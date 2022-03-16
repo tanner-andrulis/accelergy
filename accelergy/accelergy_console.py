@@ -31,11 +31,13 @@ from accelergy.compound_component import CompoundComponent
 from accelergy.ERT_generator import EnergyReferenceTableGenerator, ERT_dict_to_obj
 from accelergy.ART_generator import AreaReferenceTableGenerator
 from accelergy.energy_calculator import EnergyCalculator
-from accelergy.io import parse_commandline_args, generate_output_files
-from accelergy.utils import *    
-    
+from accelergy.input_output import parse_commandline_args, generate_output_files
+from accelergy.utils.utils import *    
+import accelergy.version as version
+import accelergy.parsing_utils
+
 def run():
-    accelergy_version = 0.3
+    accelergy_version = version.__version__
 
     # ----- Interpret Commandline Arguments
     args = parse_commandline_args()
@@ -43,6 +45,10 @@ def run():
     path_arglist = args.files
     precision = args.precision
     desired_output_files = args.output_files
+    scripts = [] # args.scripts Script support disabled. PyTimeloop preprocessing should be used instead.
+    extra_plugins = args.extra_plugins
+    version.SUPPRESS_VERSION_ERRORS = args.suppress_version_errors
+    logging.getLogger().setLevel(logging.INFO if not args.verbose else logging.DEBUG)
     # interpret desired output files
     oflags = {'ERT': 0, 'ERT_summary': 0, 'ART': 0, 'ART_summary': 0,
               'energy_estimation': 0, 'flattened_arch': 0}
@@ -51,7 +57,7 @@ def run():
 
     INFO("generating outputs according to the following specified output flags... \n "
          "Please use the -f flag to update the preference (default to all output files)")
-    print(oflags)
+    INFO(oflags)
 
     oflags['output_prefix'] = output_prefix
     # interpret the types of processing that need to be performed
@@ -70,10 +76,11 @@ def run():
 
     # ----- Load Raw Inputs to Parse into Dicts
     raw_input_info = {'path_arglist': path_arglist, 'parser_version': accelergy_version}
-    raw_dicts = RawInputs2Dicts(raw_input_info)
+    raw_dicts = RawInputs2Dicts(raw_input_info, args.update_config_version)
 
     # ----- Determine what operations should be performed
     available_inputs = raw_dicts.get_available_inputs()
+    accelergy.parsing_utils.set_script_paths(scripts)
 
     # ---- Detecting config only cases and gracefully exiting
     if len(available_inputs) == 0:
@@ -106,18 +113,22 @@ def run():
         # ----- Add the Fully Defined Components (all flattened out)
 
         for arch_component in system_state.arch_spec:
-            if arch_component.get_class_name() in system_state.pc_classes:
-                class_name = arch_component.get_class_name()
-                pc = PrimitiveComponent({'component': arch_component, 'pc_class': system_state.pc_classes[class_name]})
-                system_state.add_pc(pc)
-            elif arch_component.get_class_name() in system_state.cc_classes:
+            if arch_component.get_class_name() in system_state.cc_classes:
                 cc = CompoundComponent({'component': arch_component, 'pc_classes':system_state.pc_classes, 'cc_classes':system_state.cc_classes})
                 system_state.add_cc(cc)
             else:
-                ERROR_CLEAN_EXIT('Cannot find class name %s specified in architecture'%arch_component.get_class())
-
+                class_name = arch_component.get_class_name()
+                if class_name not in system_state.pc_classes:
+                    system_state.pc_classes[class_name] = ComponentClass({'name': class_name, 'attributes': {}, 'actions': []})
+                pc = PrimitiveComponent({'component': arch_component, 'pc_class': system_state.pc_classes[class_name]})
+                system_state.add_pc(pc)
         # ----- Add all available plug-ins
-        system_state.add_plug_ins(plug_in_path_to_obj(raw_dicts.get_estimation_plug_in_paths(), output_prefix))
+        system_state.add_plug_ins(
+            plug_in_path_to_obj(
+                raw_dicts.get_estimation_plug_in_paths(),
+                raw_dicts.get_python_plug_in_paths() + extra_plugins,
+                output_prefix),
+        )
 
     if compute_ERT and 'ERT' in available_inputs:
         # ERT/ ERT_summary/ energy estimates need to be generated with provided ERT
@@ -160,61 +171,69 @@ def run():
 
 
 def main():
-    try:
+    if False:
         run()
-    except Exception as e:
-        import sys
-        import traceback
-        from traceback import linecache
-        import re
-        tb = sys.exc_info()[2]
+    else:
+        try:
+            run()
+        except Exception as e:
+            import traceback
+            from traceback import linecache
+            import re
+            tb = sys.exc_info()[2]
 
-        print('\n' * 5 + '=' * 60)
-        print(f'Accelergy has encountered an error and crashed. Error below: ')
-        print('=' * 60)
-        print('|| ' + traceback.format_exc().strip().replace('\n', '\n|| '))
-        print('=' * 60)
-        print(f'Stack with local variables (most recent call last):')
-        stack = []
-        while tb:
-            stack.append((tb.tb_frame, tb.tb_lineno))
-            tb = tb.tb_next
-
-        frameno = 3
-        current_frame = frameno
-        contextrange = 3
-        for frame, lineno in stack[-frameno:]:
-            current_frame -= 1
-            line = linecache.getline(frame.f_code.co_filename, lineno, frame.f_globals)
-            context = []
-            for i in range(lineno - contextrange, lineno + contextrange + 1):
-                try:
-                    l = linecache.getline(frame.f_code.co_filename, i, frame.f_globals)
-                    context.append((i, l))
-                except:
-                    pass
-            stripamount = min(len(c[1]) - len(c[1].lstrip()) for c in context)
-            context = [('         ' if c[0] != lineno else 'ERROR >> ') + str(c[0]) + ': ' + c[1][stripamount:] for c in context]
-            
-            if current_frame != frameno:
-                print('=' * 60)
-            print(f'Frame {current_frame}')
+            print('\n' * 5 + '=' * 60)
+            print(f'Accelergy has encountered an error and crashed. Error below: ')
             print('=' * 60)
-            print(f'| {frame.f_code.co_filename}:{lineno}')
-            print(f'| {type(e).__name__}: {e}')
-            contextlines = '\n'.join(context)
-            for k, v in frame.f_locals.items():
-                if re.findall(r'\W' + k + r'\W', contextlines):
-                    startline = f'Local var {k} ='
+            print('|| ' + traceback.format_exc().strip().replace('\n', '\n|| '))
+            print('=' * 60)
+            print(f'Stack with local variables (most recent call last):')
+            stack = []
+            while tb:
+                stack.append((tb.tb_frame, tb.tb_lineno))
+                tb = tb.tb_next
+
+            frameno = 3
+            current_frame = frameno
+            contextrange = 3
+            for frame, lineno in stack[-frameno:]:
+                current_frame -= 1
+                line = linecache.getline(frame.f_code.co_filename, lineno, frame.f_globals)
+                context = []
+                for i in range(lineno - contextrange, lineno + contextrange + 1):
                     try:
-                        strv = str(v)
+                        l = linecache.getline(frame.f_code.co_filename, i, frame.f_globals)
+                        context.append((i, l))
                     except:
-                        strv = '<Unable to print this variable]>'
-                    print(f'| {startline:<40} {strv}')
-            for c in context:
-                print('| ' + c, end='')
-            
+                        pass
+                stripamount = min(len(c[1]) - len(c[1].lstrip()) for c in context)
+                context = [('         ' if c[0] != lineno else 'ERROR >> ') + str(c[0]) + 
+                           ': ' + c[1][stripamount:] for c in context]
+                
+                if current_frame != frameno:
+                    print('=' * 60)
+                print(f'Frame {current_frame}')
+                print('=' * 60)
+                print(f'| {frame.f_code.co_filename}:{lineno}')
+                print(f'| {type(e).__name__}: {e}')
+                contextlines = '\n'.join(context)
+                for k, v in frame.f_locals.items():
+                    if re.findall(r'\W' + k + r'\W', contextlines):
+                        startline = f'Local var {k} ='
+                        try:
+                            strv = str(v)
+                        except:
+                            strv = '<Unable to print this variable]>'
+                        print(f'| {startline:<40} {strv}')
+                for c in context:
+                    print('| ' + c, end='')
+                
 
-        print('=' * 60)
+            print('=' * 60)
+            print('|| ' + traceback.format_exc().strip().replace('\n', '\n|| '))
+            print('=' * 60)
+            print('Accelergy has encountered an error and crashed. Error above. ')
+            print('=' * 60 + '\n')
 
-        exit(-1)
+
+            exit(-1)
