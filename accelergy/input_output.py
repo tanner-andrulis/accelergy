@@ -20,7 +20,7 @@
 
 
 import argparse
-from collections import OrderedDict # ; OrderedDict = dict
+from collections import OrderedDict
 from accelergy.utils.utils import *
 import pyfiglet
 import sys

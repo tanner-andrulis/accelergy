@@ -19,7 +19,7 @@
 # SOFTWARE.
 
 
-from collections import OrderedDict # ; OrderedDict = dict
+from collections import OrderedDict
 from accelergy.utils.utils import *
 from accelergy.parsing_utils import count_num_identical_comps
 from accelergy.plug_in_interface.query_plug_ins import get_best_estimate

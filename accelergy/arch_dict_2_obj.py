@@ -1,3 +1,4 @@
+from collections import OrderedDict
 from accelergy.parsing_utils import *
 from accelergy.component_class import ComponentClass
 
@@ -58,7 +59,6 @@ class Architecture(object):
         return self.component_dict[compName]
 
     def generate_flattened_arch(self):
-        from collections import OrderedDict # ; OrderedDict = dict
         flattened_arch = {'architecture': OrderedDict({'version': self.version, 'local': []})}
         for cname in self.get_component_name_list():
             cobj = self.get_component(cname)

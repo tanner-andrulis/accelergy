@@ -1,3 +1,4 @@
+from collections import OrderedDict
 from copy import deepcopy
 from accelergy.utils.utils import  *
 from accelergy.parsing_utils import *
@@ -40,7 +41,6 @@ class PrimitiveComponent():
         return self._actions
 
     def get_dict_representation(self):
-        from collections import OrderedDict # ; OrderedDict = dict
         dict_rep = OrderedDict({'name': self.get_name(),
                 'class': self.get_class_name(),
                 'actions': []})

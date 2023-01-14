@@ -19,7 +19,7 @@
 # SOFTWARE.
 
 import math
-from collections import OrderedDict # ; OrderedDict = dict
+from collections import OrderedDict
 from accelergy.utils.utils import *
 from accelergy.parsing_utils import count_num_identical_comps
 from accelergy.parsing_utils import comp_name_within_range
@@ -148,7 +148,6 @@ class ERT:
         self.entries[comp_name].add_action_energy(entry_dict)
 
     def get_ERT(self):
-        from collections import OrderedDict # ; OrderedDict = dict
         ERT = {'ERT': OrderedDict({'version': self.parser_version, 'tables': []})}
         for comp_name, ERT_entry_obj in self.entries.items():
             ERT['ERT']['tables'].append(ERT_entry_obj.get_ERT_entry_dict_rep())
