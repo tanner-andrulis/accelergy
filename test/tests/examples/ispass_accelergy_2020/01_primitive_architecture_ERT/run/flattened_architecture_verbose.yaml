@@ -1,0 +1,88 @@
+architecture:
+  version: 0.3
+  local:
+  - name: simple_primitive.PE.MAC
+    class: intmac
+    actions:
+    - name: mac_random
+      arguments: null
+    - name: mac_reused
+      arguments: null
+    - name: mac_gated
+      arguments: null
+    - name: idle
+      arguments: null
+  - name: simple_primitive.PE.buffer
+    class: regfile
+    actions:
+    - name: read
+      arguments:
+        address_delta: 0
+        data_delta: 0
+    - name: read
+      arguments:
+        address_delta: 1
+        data_delta: 0
+    - name: read
+      arguments:
+        address_delta: 0
+        data_delta: 1
+    - name: read
+      arguments:
+        address_delta: 1
+        data_delta: 1
+    - name: write
+      arguments:
+        address_delta: 0
+        data_delta: 0
+    - name: write
+      arguments:
+        address_delta: 1
+        data_delta: 0
+    - name: write
+      arguments:
+        address_delta: 0
+        data_delta: 1
+    - name: write
+      arguments:
+        address_delta: 1
+        data_delta: 1
+    - name: idle
+      arguments: null
+  - name: simple_primitive.GLB
+    class: SRAM
+    actions:
+    - name: read
+      arguments:
+        address_delta: 0
+        data_delta: 0
+    - name: read
+      arguments:
+        address_delta: 1
+        data_delta: 0
+    - name: read
+      arguments:
+        address_delta: 0
+        data_delta: 1
+    - name: read
+      arguments:
+        address_delta: 1
+        data_delta: 1
+    - name: write
+      arguments:
+        address_delta: 0
+        data_delta: 0
+    - name: write
+      arguments:
+        address_delta: 1
+        data_delta: 0
+    - name: write
+      arguments:
+        address_delta: 0
+        data_delta: 1
+    - name: write
+      arguments:
+        address_delta: 1
+        data_delta: 1
+    - name: idle
+      arguments: null

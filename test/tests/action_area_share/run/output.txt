@@ -1,0 +1,588 @@
+2023-01-14 12:05:20 WARNING     The "-v/--verbose 1" option is deprecated. Please omit the "1" and only include the "-v/--verbose" option to enable verbose mode.
+2023-01-14 12:05:20 INFO        generating outputs according to the following specified output flags... 
+ Please use the -f flag to update the preference (default to all output files)
+2023-01-14 12:05:20 INFO        Located config file at /home/tanner/.config/accelergy/accelergy_config.yaml.
+2023-01-14 12:05:20 INFO        config file located:
+2023-01-14 12:05:20 INFO        /home/tanner/.config/accelergy/accelergy_config.yaml
+2023-01-14 12:05:20 INFO        Parsing file /mnt/d/research/yaml_playground/unit_tests/tests/action_area_share/inputs/arch.yaml for architecture info
+2023-01-14 12:05:20 INFO        Parsing file /mnt/d/research/yaml_playground/unit_tests/tests/action_area_share/inputs/components.yaml for compound_components info
+2023-01-14 12:05:20 INFO        primitive component file parsed: 
+2023-01-14 12:05:20 INFO        /home/tanner/.local/share/accelergy/primitive_component_libs/primitive_component.lib.yaml
+2023-01-14 12:05:20 WARNING     wire redefined in /home/tanner/.local/share/accelergy/primitive_component_libs/wire.lib.yaml
+2023-01-14 12:05:20 WARNING     wire redefined in /home/tanner/.local/share/accelergy/primitive_component_libs/wire.lib.yaml
+2023-01-14 12:05:20 INFO        primitive component file parsed: 
+2023-01-14 12:05:20 INFO        /home/tanner/.local/share/accelergy/primitive_component_libs/wire.lib.yaml
+2023-01-14 12:05:20 INFO        primitive component file parsed: 
+2023-01-14 12:05:20 INFO        /home/tanner/.local/share/accelergy/primitive_component_libs/neurosim_components.lib.yaml
+2023-01-14 12:05:20 INFO        primitive component file parsed: 
+2023-01-14 12:05:20 INFO        /home/tanner/.local/share/accelergy/primitive_component_libs/soc_primitives.lib.yaml
+2023-01-14 12:05:20 INFO        primitive component file parsed: 
+2023-01-14 12:05:20 INFO        /home/tanner/.local/share/accelergy/primitive_component_libs/pim_primitive_component.lib.yaml
+2023-01-14 12:05:20 WARNING     ADC redefined in /home/tanner/.local/share/accelergy/primitive_component_libs/analog_components.lib.yaml
+2023-01-14 12:05:20 INFO        primitive component file parsed: 
+2023-01-14 12:05:20 INFO        /home/tanner/.local/share/accelergy/primitive_component_libs/analog_components.lib.yaml
+2023-01-14 12:05:20 INFO        primitive component file parsed: 
+2023-01-14 12:05:20 INFO        /mnt/d/Research/pim_zoo/library/scaling.lib.yaml
+2023-01-14 12:05:20 INFO        Estimator plug-in identified by: /home/tanner/.local/share/accelergy/estimation_plug_ins/accelergy-wire-plugin/wire.estimator.yaml
+2023-01-14 12:05:20 INFO        Estimator plug-in identified by: /home/tanner/.local/share/accelergy/estimation_plug_ins/accelergy-aladdin-plug-in/aladdin.estimator.yaml
+2023-01-14 12:05:20 INFO        Estimator plug-in identified by: /home/tanner/.local/share/accelergy/estimation_plug_ins/accelergy-analog-plug-in/analog.estimator.yaml
+2023-01-14 12:05:21 INFO        Estimator plug-in identified by: /home/tanner/.local/share/accelergy/estimation_plug_ins/accelergy-table-based-plug-ins/table.estimator.yaml
+2023-01-14 12:05:21 INFO        Estimator plug-in identified by: /home/tanner/.local/share/accelergy/estimation_plug_ins/accelergy-neurosim-plugin/neurosim.estimator.yaml
+2023-01-14 12:05:21 INFO        Estimator plug-in identified by: /home/tanner/.local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti.estimator.yaml
+2023-01-14 12:05:21 INFO        Estimator plug-in identified by: /mnt/d/Research/pim_zoo/library/scaling.estimator.yaml
+2023-01-14 12:05:21 INFO        Added estimator AccelergyObject that estimates accelergy_example_object with actions do_action, read, write
+2023-01-14 12:05:21 INFO        Found estimator plug-in: <WireEstimator.WireEstimator object at 0x7fbcab6ce1f0>
+2023-01-14 12:05:21 INFO        Found estimator plug-in: <AladdinTable.AladdinTable object at 0x7fbcab6bef40>
+2023-01-14 12:05:21 INFO        Found estimator plug-in: <AnalogEstimator.AnalogEstimator object at 0x7fbcab6ce520>
+2023-01-14 12:05:21 INFO        Found estimator plug-in: <SetsOfTables.SetsOfTables object at 0x7fbcab6343d0>
+2023-01-14 12:05:21 INFO        Found estimator plug-in: <NeuroWrapper.NeuroWrapper object at 0x7fbc55f0db80>
+2023-01-14 12:05:21 INFO        Found estimator plug-in: <CactiWrapper.CactiWrapper object at 0x7fbc55f0dc10>
+2023-01-14 12:05:21 INFO        Found estimator plug-in: <ScalingEstimator.ScalingEstimator object at 0x7fbcab6104f0>
+2023-01-14 12:05:21 INFO        Found estimator plug-in: <accelergy.plug_in_interface.estimator_wrapper.EstimatorWrapper object at 0x7fbc55d92160>
+2023-01-14 12:05:21 INFO        Added estimator AccelergyObject that estimates accelergy_example_object with actions do_action, read, write
+2023-01-14 12:05:21 INFO        Added estimator DummyObjectAreaEnergyOne that estimates dummy_object_area_energy_one with actions idle, read, write
+2023-01-14 12:05:21 INFO        Found estimator plug-in: <WireEstimator.WireEstimator object at 0x7fbcab6ce1f0>
+2023-01-14 12:05:21 INFO        Found estimator plug-in: <AladdinTable.AladdinTable object at 0x7fbcab6bef40>
+2023-01-14 12:05:21 INFO        Found estimator plug-in: <AnalogEstimator.AnalogEstimator object at 0x7fbcab6ce520>
+2023-01-14 12:05:21 INFO        Found estimator plug-in: <SetsOfTables.SetsOfTables object at 0x7fbcab6343d0>
+2023-01-14 12:05:21 INFO        Found estimator plug-in: <NeuroWrapper.NeuroWrapper object at 0x7fbc55f0db80>
+2023-01-14 12:05:21 INFO        Found estimator plug-in: <CactiWrapper.CactiWrapper object at 0x7fbc55f0dc10>
+2023-01-14 12:05:21 INFO        Found estimator plug-in: <ScalingEstimator.ScalingEstimator object at 0x7fbcab6104f0>
+2023-01-14 12:05:21 INFO        Found estimator plug-in: <accelergy.plug_in_interface.estimator_wrapper.EstimatorWrapper object at 0x7fbc55d92160>
+2023-01-14 12:05:21 INFO        Found estimator plug-in: <accelergy.plug_in_interface.estimator_wrapper.EstimatorWrapper object at 0x7fbc55d928e0>
+2023-01-14 12:05:21 INFO        Found estimator plug-in: <accelergy.plug_in_interface.estimator_wrapper.EstimatorWrapper object at 0x7fbc55d92a30>
+2023-01-14 12:05:21 INFO        
+2023-01-14 12:05:21 INFO        **ENERGY ESTIMATION** for dummy_object_area_energy_one().read()
+2023-01-14 12:05:21 WARNING     Plug-in Wire Estimator is using a deprecated interface. Please update to new interface.
+2023-01-14 12:05:21 INFO        DummyObjectAreaEnergyOne estimated 1e-12 with accuracy 100%. 
+2023-01-14 12:05:21 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:21 DEBUG       | DummyObjectAreaEnergyOne with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:21 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:21 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:21 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for dummy_object_area_energy_one read
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 INFO        
+2023-01-14 12:05:21 INFO        **ENERGY ESTIMATION** for dummy_object_area_energy_one().write()
+2023-01-14 12:05:21 INFO        DummyObjectAreaEnergyOne estimated 1e-12 with accuracy 100%. 
+2023-01-14 12:05:21 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:21 DEBUG       | DummyObjectAreaEnergyOne with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:21 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:21 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:21 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for dummy_object_area_energy_one write
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 INFO        
+2023-01-14 12:05:21 INFO        **ENERGY ESTIMATION** for dummy_object_area_energy_one().read()
+2023-01-14 12:05:21 INFO        DummyObjectAreaEnergyOne estimated 1e-12 with accuracy 100%. 
+2023-01-14 12:05:21 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:21 DEBUG       | DummyObjectAreaEnergyOne with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:21 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:21 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:21 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for dummy_object_area_energy_one read
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 INFO        
+2023-01-14 12:05:21 INFO        **ENERGY ESTIMATION** for dummy_object_area_energy_one().write()
+2023-01-14 12:05:21 INFO        DummyObjectAreaEnergyOne estimated 1e-12 with accuracy 100%. 
+2023-01-14 12:05:21 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:21 DEBUG       | DummyObjectAreaEnergyOne with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:21 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:21 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:21 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for dummy_object_area_energy_one write
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 INFO        
+2023-01-14 12:05:21 INFO        **ENERGY ESTIMATION** for dummy_object_area_energy_one().read()
+2023-01-14 12:05:21 INFO        DummyObjectAreaEnergyOne estimated 1e-12 with accuracy 100%. 
+2023-01-14 12:05:21 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:21 DEBUG       | DummyObjectAreaEnergyOne with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:21 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:21 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:21 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for dummy_object_area_energy_one read
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 INFO        
+2023-01-14 12:05:21 INFO        **ENERGY ESTIMATION** for dummy_object_area_energy_one().write()
+2023-01-14 12:05:21 INFO        DummyObjectAreaEnergyOne estimated 1e-12 with accuracy 100%. 
+2023-01-14 12:05:21 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:21 DEBUG       | DummyObjectAreaEnergyOne with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:21 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:21 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:21 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for dummy_object_area_energy_one write
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 INFO        
+2023-01-14 12:05:21 INFO        **ENERGY ESTIMATION** for dummy_object_area_energy_one().read()
+2023-01-14 12:05:21 INFO        DummyObjectAreaEnergyOne estimated 1e-12 with accuracy 100%. 
+2023-01-14 12:05:21 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:21 DEBUG       | DummyObjectAreaEnergyOne with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:21 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:21 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:21 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for dummy_object_area_energy_one read
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 INFO        
+2023-01-14 12:05:21 INFO        **ENERGY ESTIMATION** for dummy_object_area_energy_one().write()
+2023-01-14 12:05:21 INFO        DummyObjectAreaEnergyOne estimated 1e-12 with accuracy 100%. 
+2023-01-14 12:05:21 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:21 DEBUG       | DummyObjectAreaEnergyOne with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:21 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:21 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:21 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for dummy_object_area_energy_one write
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 INFO        
+2023-01-14 12:05:21 INFO        **ENERGY ESTIMATION** for dummy_object_area_energy_one().read()
+2023-01-14 12:05:21 INFO        DummyObjectAreaEnergyOne estimated 1e-12 with accuracy 100%. 
+2023-01-14 12:05:21 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:21 DEBUG       | DummyObjectAreaEnergyOne with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:21 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:21 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:21 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for dummy_object_area_energy_one read
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 INFO        
+2023-01-14 12:05:21 INFO        **ENERGY ESTIMATION** for dummy_object_area_energy_one().write()
+2023-01-14 12:05:21 INFO        DummyObjectAreaEnergyOne estimated 1e-12 with accuracy 100%. 
+2023-01-14 12:05:21 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:21 DEBUG       | DummyObjectAreaEnergyOne with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:21 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:21 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:21 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for dummy_object_area_energy_one write
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 INFO        
+2023-01-14 12:05:21 INFO        **ENERGY ESTIMATION** for dummy_object_area_energy_one().read()
+2023-01-14 12:05:21 INFO        DummyObjectAreaEnergyOne estimated 1e-12 with accuracy 100%. 
+2023-01-14 12:05:21 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:21 DEBUG       | DummyObjectAreaEnergyOne with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:21 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:21 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:21 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for dummy_object_area_energy_one read
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 INFO        
+2023-01-14 12:05:21 INFO        **ENERGY ESTIMATION** for dummy_object_area_energy_one().write()
+2023-01-14 12:05:21 INFO        DummyObjectAreaEnergyOne estimated 1e-12 with accuracy 100%. 
+2023-01-14 12:05:21 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:21 DEBUG       | DummyObjectAreaEnergyOne with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:21 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:21 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:21 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for dummy_object_area_energy_one write
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 INFO        
+2023-01-14 12:05:21 INFO        **ENERGY ESTIMATION** for dummy_object_area_energy_one().read()
+2023-01-14 12:05:21 INFO        DummyObjectAreaEnergyOne estimated 1e-12 with accuracy 100%. 
+2023-01-14 12:05:21 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:21 DEBUG       | DummyObjectAreaEnergyOne with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:21 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:21 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:21 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for dummy_object_area_energy_one read
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 INFO        
+2023-01-14 12:05:21 INFO        **ENERGY ESTIMATION** for dummy_object_area_energy_one().write()
+2023-01-14 12:05:21 INFO        DummyObjectAreaEnergyOne estimated 1e-12 with accuracy 100%. 
+2023-01-14 12:05:21 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:21 DEBUG       | DummyObjectAreaEnergyOne with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:21 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:21 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:21 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for dummy_object_area_energy_one write
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 INFO        
+2023-01-14 12:05:21 INFO        **ENERGY ESTIMATION** for dummy_object_area_energy_one().read()
+2023-01-14 12:05:21 INFO        DummyObjectAreaEnergyOne estimated 1e-12 with accuracy 100%. 
+2023-01-14 12:05:21 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:21 DEBUG       | DummyObjectAreaEnergyOne with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:21 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:21 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:21 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for dummy_object_area_energy_one read
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 INFO        
+2023-01-14 12:05:21 INFO        **ENERGY ESTIMATION** for dummy_object_area_energy_one().write()
+2023-01-14 12:05:21 INFO        DummyObjectAreaEnergyOne estimated 1e-12 with accuracy 100%. 
+2023-01-14 12:05:21 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:21 DEBUG       | DummyObjectAreaEnergyOne with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:21 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:21 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:21 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for dummy_object_area_energy_one write
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 INFO        
+2023-01-14 12:05:21 INFO        **ENERGY ESTIMATION** for dummy_object_area_energy_one().read()
+2023-01-14 12:05:21 INFO        DummyObjectAreaEnergyOne estimated 1e-12 with accuracy 100%. 
+2023-01-14 12:05:21 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:21 DEBUG       | DummyObjectAreaEnergyOne with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:21 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:21 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:21 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for dummy_object_area_energy_one read
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 INFO        
+2023-01-14 12:05:21 INFO        **ENERGY ESTIMATION** for dummy_object_area_energy_one().write()
+2023-01-14 12:05:21 INFO        DummyObjectAreaEnergyOne estimated 1e-12 with accuracy 100%. 
+2023-01-14 12:05:21 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:21 DEBUG       | DummyObjectAreaEnergyOne with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:21 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:21 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:21 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for dummy_object_area_energy_one write
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 INFO        
+2023-01-14 12:05:21 INFO        **ENERGY ESTIMATION** for dummy_object_area_energy_one(area_share=2).read()
+2023-01-14 12:05:21 INFO        DummyObjectAreaEnergyOne estimated 1e-12 with accuracy 100%. Messages:
+2023-01-14 12:05:21 INFO        | Unused arguments (area_share) provided for dummy_object_area_energy_one.__init__. Arguments used: ()
+2023-01-14 12:05:21 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:21 DEBUG       | DummyObjectAreaEnergyOne with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:21 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:21 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:21 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for dummy_object_area_energy_one read
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 INFO        
+2023-01-14 12:05:21 INFO        **ENERGY ESTIMATION** for dummy_object_area_energy_one().read()
+2023-01-14 12:05:21 INFO        DummyObjectAreaEnergyOne estimated 1e-12 with accuracy 100%. 
+2023-01-14 12:05:21 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:21 DEBUG       | DummyObjectAreaEnergyOne with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:21 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:21 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:21 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for dummy_object_area_energy_one read
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 INFO        
+2023-01-14 12:05:21 INFO        **ENERGY ESTIMATION** for dummy_object_area_energy_one(area_share=2).write()
+2023-01-14 12:05:21 INFO        DummyObjectAreaEnergyOne estimated 1e-12 with accuracy 100%. Messages:
+2023-01-14 12:05:21 INFO        | Unused arguments (area_share) provided for dummy_object_area_energy_one.__init__. Arguments used: ()
+2023-01-14 12:05:21 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:21 DEBUG       | DummyObjectAreaEnergyOne with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:21 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:21 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:21 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for dummy_object_area_energy_one write
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 INFO        
+2023-01-14 12:05:21 INFO        **ENERGY ESTIMATION** for dummy_object_area_energy_one().write()
+2023-01-14 12:05:21 INFO        DummyObjectAreaEnergyOne estimated 1e-12 with accuracy 100%. 
+2023-01-14 12:05:21 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:21 DEBUG       | DummyObjectAreaEnergyOne with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:21 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:21 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:21 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for dummy_object_area_energy_one write
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 WARNING     No action counts are specified as yaml input
+2023-01-14 12:05:21 INFO        
+2023-01-14 12:05:21 INFO        **AREA ESTIMATION** for dummy_object_area_energy_one()
+2023-01-14 12:05:21 INFO        DummyObjectAreaEnergyOne estimated 1e-12 with accuracy 100%. 
+2023-01-14 12:05:21 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:21 DEBUG       | DummyObjectAreaEnergyOne with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:21 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:21 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:21 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Cound not find area for dummy_object_area_energy_one
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 INFO        
+2023-01-14 12:05:21 INFO        **AREA ESTIMATION** for dummy_object_area_energy_one(area_share=5)
+2023-01-14 12:05:21 INFO        DummyObjectAreaEnergyOne estimated 1e-12 with accuracy 100%. Messages:
+2023-01-14 12:05:21 INFO        | Unused arguments (area_share) provided for dummy_object_area_energy_one.__init__. Arguments used: ()
+2023-01-14 12:05:21 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:21 DEBUG       | DummyObjectAreaEnergyOne with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:21 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:21 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:21 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Cound not find area for dummy_object_area_energy_one
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 INFO        
+2023-01-14 12:05:21 INFO        **AREA ESTIMATION** for dummy_object_area_energy_one()
+2023-01-14 12:05:21 INFO        DummyObjectAreaEnergyOne estimated 1e-12 with accuracy 100%. 
+2023-01-14 12:05:21 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:21 DEBUG       | DummyObjectAreaEnergyOne with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:21 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:21 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:21 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Cound not find area for dummy_object_area_energy_one
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 INFO        
+2023-01-14 12:05:21 INFO        **AREA ESTIMATION** for dummy_object_area_energy_one()
+2023-01-14 12:05:21 INFO        DummyObjectAreaEnergyOne estimated 1e-12 with accuracy 100%. 
+2023-01-14 12:05:21 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:21 DEBUG       | DummyObjectAreaEnergyOne with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:21 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:21 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:21 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Cound not find area for dummy_object_area_energy_one
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 INFO        
+2023-01-14 12:05:21 INFO        **AREA ESTIMATION** for dummy_object_area_energy_one()
+2023-01-14 12:05:21 INFO        DummyObjectAreaEnergyOne estimated 1e-12 with accuracy 100%. 
+2023-01-14 12:05:21 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:21 DEBUG       | DummyObjectAreaEnergyOne with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:21 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:21 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:21 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Cound not find area for dummy_object_area_energy_one
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 INFO        
+2023-01-14 12:05:21 INFO        **AREA ESTIMATION** for dummy_object_area_energy_one()
+2023-01-14 12:05:21 INFO        DummyObjectAreaEnergyOne estimated 1e-12 with accuracy 100%. 
+2023-01-14 12:05:21 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:21 DEBUG       | DummyObjectAreaEnergyOne with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:21 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:21 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:21 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Cound not find area for dummy_object_area_energy_one
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 INFO        
+2023-01-14 12:05:21 INFO        **AREA ESTIMATION** for dummy_object_area_energy_one()
+2023-01-14 12:05:21 INFO        DummyObjectAreaEnergyOne estimated 1e-12 with accuracy 100%. 
+2023-01-14 12:05:21 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:21 DEBUG       | DummyObjectAreaEnergyOne with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:21 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:21 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:21 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Cound not find area for dummy_object_area_energy_one
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 INFO        
+2023-01-14 12:05:21 INFO        **AREA ESTIMATION** for dummy_object_area_energy_one()
+2023-01-14 12:05:21 INFO        DummyObjectAreaEnergyOne estimated 1e-12 with accuracy 100%. 
+2023-01-14 12:05:21 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:21 DEBUG       | DummyObjectAreaEnergyOne with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:21 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:21 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:21 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Cound not find area for dummy_object_area_energy_one
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 INFO        
+2023-01-14 12:05:21 INFO        **AREA ESTIMATION** for dummy_object_area_energy_one()
+2023-01-14 12:05:21 INFO        DummyObjectAreaEnergyOne estimated 1e-12 with accuracy 100%. 
+2023-01-14 12:05:21 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:21 DEBUG       | DummyObjectAreaEnergyOne with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:21 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:21 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:21 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Cound not find area for dummy_object_area_energy_one
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 INFO        
+2023-01-14 12:05:21 INFO        **AREA ESTIMATION** for dummy_object_area_energy_one()
+2023-01-14 12:05:21 INFO        DummyObjectAreaEnergyOne estimated 1e-12 with accuracy 100%. 
+2023-01-14 12:05:21 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:21 DEBUG       | DummyObjectAreaEnergyOne with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:21 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:21 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:21 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Cound not find area for dummy_object_area_energy_one
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 INFO        
+2023-01-14 12:05:21 INFO        **AREA ESTIMATION** for dummy_object_area_energy_one()
+2023-01-14 12:05:21 INFO        DummyObjectAreaEnergyOne estimated 1e-12 with accuracy 100%. 
+2023-01-14 12:05:21 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:21 DEBUG       | DummyObjectAreaEnergyOne with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:21 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:21 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:21 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Cound not find area for dummy_object_area_energy_one
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 INFO        
+2023-01-14 12:05:21 INFO        **AREA ESTIMATION** for dummy_object_area_energy_one()
+2023-01-14 12:05:21 INFO        DummyObjectAreaEnergyOne estimated 1e-12 with accuracy 100%. 
+2023-01-14 12:05:21 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:21 DEBUG       | DummyObjectAreaEnergyOne with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:21 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:21 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:21 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Cound not find area for dummy_object_area_energy_one
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 INFO        
+2023-01-14 12:05:21 INFO        **AREA ESTIMATION** for dummy_object_area_energy_one(area_share=2)
+2023-01-14 12:05:21 INFO        DummyObjectAreaEnergyOne estimated 1e-12 with accuracy 100%. Messages:
+2023-01-14 12:05:21 INFO        | Unused arguments (area_share) provided for dummy_object_area_energy_one.__init__. Arguments used: ()
+2023-01-14 12:05:21 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:21 DEBUG       | DummyObjectAreaEnergyOne with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:21 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:21 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:21 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Cound not find area for dummy_object_area_energy_one
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 INFO        
+2023-01-14 12:05:21 INFO        **AREA ESTIMATION** for dummy_object_area_energy_one()
+2023-01-14 12:05:21 INFO        DummyObjectAreaEnergyOne estimated 1e-12 with accuracy 100%. 
+2023-01-14 12:05:21 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:21 DEBUG       | DummyObjectAreaEnergyOne with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:21 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:21 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:21 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Cound not find area for dummy_object_area_energy_one
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:21 INFO        verbose flattened architecture is saved to:
+2023-01-14 12:05:21 INFO        ./flattened_architecture_verbose.yaml
+2023-01-14 12:05:21 INFO        energy reference table is saved to:
+2023-01-14 12:05:21 INFO        ./ERT.yaml
+2023-01-14 12:05:21 INFO        verbose energy reference table summary is saved to:
+2023-01-14 12:05:21 INFO        ./ERT_summary_verbose.yaml
+2023-01-14 12:05:21 WARNING     no runtime energy estimations are generated... not generating energy_estimation.yaml
+2023-01-14 12:05:21 INFO        area reference table is saved to:
+2023-01-14 12:05:21 INFO        ./ART.yaml
+2023-01-14 12:05:21 INFO        verbose area reference table summary is saved to:
+2023-01-14 12:05:21 INFO        ./ART_summary_verbose.yaml
+    _                _                      
+   / \   ___ ___ ___| | ___ _ __ __ _ _   _ 
+  / _ \ / __/ __/ _ \ |/ _ \ '__/ _` | | | |
+ / ___ \ (_| (_|  __/ |  __/ | | (_| | |_| |
+/_/   \_\___\___\___|_|\___|_|  \__, |\__, |
+                                |___/ |___/ 
+
+{'ERT': 1, 'ERT_summary': 1, 'ART': 1, 'ART_summary': 1, 'energy_estimation': 1, 'flattened_arch': 1}
+Compute ART = 1, Compute ERT = 1, Compute Energy Estimate = 1
+Loaded 201 components from library.
+Getting all estimators in module <module 'python_plug_in' from '/mnt/d/research/yaml_playground/plug_ins/test_plug_in.py'>
+Getting all estimators in module <module 'python_plug_in' from '/mnt/d/research/yaml_playground/unit_tests/tests/action_area_share/plugins/plugins.py'>
+['/home/tanner/.local/share/accelergy/estimation_plug_ins', '/mnt/d/Research/NVM/ADC/Plugin', '/mnt/d/Research/pim_zoo/library']
+

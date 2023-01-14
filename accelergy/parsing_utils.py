@@ -18,9 +18,16 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+import copy
+from importlib.machinery import SourceFileLoader
 import math
-from accelergy.utils import *
+import re
+import traceback
+from typing import Any, Union
+from accelergy.utils.utils import *
 from numbers import Number
+import accelergy.version as version
+import ruamel.yaml as yaml
 
 MATH_FUNCS = {
     'ceil': math.ceil, 'comb': math.comb, 'copysign': math.copysign, 'fabs': math.fabs,
@@ -37,8 +44,10 @@ MATH_FUNCS = {
     'tanh': math.tanh, 'erf': math.erf, 'erfc': math.erfc, 'gamma': math.gamma,
     'lgamma': math.lgamma, 'pi': math.pi, 'e': math.e, 'tau': math.tau,
     'inf': math.inf, 'nan': math.nan, 'abs': abs, 'round': round, 'pow': pow, 'sum': sum, 
-    'range': range, 'len': len, 'min': min, 'max': max
+    'range': range, 'len': len, 'min': min, 'max': max,
+    'float': float, 'int': int, 'str': str, 'bool': bool, 'list': list, 'tuple': tuple,
 }
+SCRIPT_FUNCS = {}
 EXPR_CACHE = {}
 WARNINGS_LOGGED = []
 
@@ -82,16 +91,6 @@ def str_to_int(str_to_be_parsed, binding_dictionary):
                                                           else int(str_to_be_parsed)
     return parsed_int
 
-def arithmetic_failed_evaluate_warn(expr, setting, name, binding_dictionary, error=False):
-    if (expr, setting) in WARNINGS_LOGGED:
-        return
-
-    warnstring = f'Failed to evaluate "{expr}". Setting {name}.{setting}="{expr}". Available bindings: {binding_dictionary}'
-    warnstring = 'WARN: ' + warnstring if not error else 'ERROR: ' + warnstring
-
-    print(warnstring)
-    WARNINGS_LOGGED.append((expr, setting))
-
 def parse_expression_for_arithmetic(expression, binding_dictionary, force_convert_numeric_on_fail=False):
     """
     Expression contains the operands and the op type,
@@ -119,6 +118,73 @@ def parse_expression_for_arithmetic(expression, binding_dictionary, force_conver
 
     if expression not in EXPR_CACHE or EXPR_CACHE[expression] != v:
         INFO(infostr)
+    EXPR_CACHE[expression] = v
+    return v
+
+
+def cast_to_numeric(x: Any) -> Union[int, float]:
+    if float(x) == int(x):
+        return int(x)
+    return float(x)
+
+def is_quoted_string(expression):
+    return isinstance(expression, ruamel.yaml.scalarstring.DoubleQuotedScalarString) or \
+              isinstance(expression, ruamel.yaml.scalarstring.SingleQuotedScalarString)
+
+QUOTED_STRINGS = set()
+
+def parse_expression_for_arithmetic_new(expression, binding_dictionary, location: str, strings_allowed: bool = True):
+    if strings_allowed and is_quoted_string(expression) or id(expression) in QUOTED_STRINGS:
+        QUOTED_STRINGS.add(id(expression))
+        return expression
+
+    try:
+        return cast_to_numeric(expression)
+    except:
+        pass
+
+    if not isinstance(expression, str):
+        return expression
+
+    FUNCTION_BINDINGS = {}
+    FUNCTION_BINDINGS['__builtins__'] = None # Safety
+    FUNCTION_BINDINGS.update(SCRIPT_FUNCS)
+    FUNCTION_BINDINGS.update(MATH_FUNCS)
+
+    try:
+        v = eval(expression, FUNCTION_BINDINGS, binding_dictionary)
+        infostr = f'Calculated "{expression}" = {v}'
+        success = True
+    except Exception as e:
+        errstr =  f'Failed to evaluate: {expression}\n'
+        errstr += f'Location: {location}\n'
+        errstr += f'Problem encountered: {e.__class__.__name__}: {e}\n'
+        errstr += f'Available bindings: '
+        available_bindings = {}
+        available_bindings.update(binding_dictionary)
+        available_bindings.update(SCRIPT_FUNCS)
+        errstr += f''.join(f'\n    {k} = {v}' for k, v in available_bindings.items()) + f'\n'
+        errstr += f'Please ensure that the expression used is a valid Python expression.\n'
+        if strings_allowed:
+            errstr += 'Strings are allowed here. If you meant to enter a string, please wrap the\n'
+            errstr += 'expression in single or double quotes:\n'
+            errstr += f'    Found expression: {expression}\n'
+            errstr += f'    Expression as valid string: "{expression}"\n'
+        success = False
+        
+    if not success:
+        WARN('')
+        if strings_allowed and version.INPUT_VERSION <= 0.3:
+            errstr += f'Expression will be treated as a string. This will be deprecated in the\n' \
+                      f'future. Please wrap quotes around the expression to specify a string.'
+            for l in errstr.splitlines():
+                WARN(l)
+            return expression
+        ERROR_CLEAN_EXIT(f'{errstr}\n')
+
+    if expression not in EXPR_CACHE or EXPR_CACHE[expression] != v:
+        INFO(infostr)
+
     EXPR_CACHE[expression] = v
     return v
 
@@ -151,10 +217,10 @@ def comp_name_within_range(comp_name, comp_name_w_reference_range):
         ref_min = ref_range_tupe[0]
         ref_max = ref_range_tupe[1]
         subname_val = subname_vals_list[idx]
-        if type(subname_val) is int:
+        if isinstance(subname_val, int):
             if subname_val < ref_min or subname_val > ref_max:
                 return False
-        if type(subname_val) is tuple:
+        if isinstance(subname_val, tuple):
             start = subname_val[0]
             end = subname_val[1]
             if start < ref_min or end > ref_max:
@@ -183,3 +249,16 @@ def get_ranges_or_indices_in_name(name):
         for val in get_ranges_or_indices_in_name(subname):
             exisiting_ranges.append(val)
     return exisiting_ranges
+
+def set_script_paths(paths):
+    funcs = {}
+    for path in paths:
+        if not path.endswith('.py'):
+            continue
+        python_module = SourceFileLoader('python_plug_in', path).load_module()
+        defined_funcs = [
+            func for func in dir(python_module) if callable(getattr(python_module, func))]
+        for func in defined_funcs:
+            INFO(f'Adding function {func} from {path} to the script library.')
+            funcs[func] = getattr(python_module, func)
+    SCRIPT_FUNCS.update(funcs)

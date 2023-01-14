@@ -1,4 +1,4 @@
-from accelergy.utils import *
+from accelergy.utils.utils import *
 class SystemState():
     def __init__(self):
         self.cc_classes = {}
@@ -50,7 +50,7 @@ class SystemState():
         self.pcs[pc_name] = pc
 
     def add_plug_ins(self, plug_ins):
-        ASSERT_MSG(type(plug_ins) is list, 'plug in objects need to be passed in as a list')
+        ASSERT_MSG(isinstance(plug_ins, list), 'plug in objects need to be passed in as a list')
         self.plug_ins = plug_ins
 
     def set_ERT(self, ERT):

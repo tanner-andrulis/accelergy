@@ -1,0 +1,329 @@
+ERT_summary:
+  version: 0.3
+  table_summary:
+  - name: arch.three_level_hierarchy
+    actions:
+    - name: read
+      energy: 64.0
+    - name: write
+      energy: 0.125
+    primitive_estimation(s):
+    - action_name: read
+      arguments: null
+      energy: 64.0
+      subaction_estimations:
+      - subcomponent_name: level_two.level_two.primitive
+        subaction_name: read
+        arguments: null
+        energy: 1.0
+        action_share: 64.0
+        interpreted_energy: 64.0
+        percentage: 100.0%
+        estimator: DummyObjectAreaEnergyOne
+    - action_name: write
+      arguments: null
+      energy: 0.125
+      subaction_estimations:
+      - subcomponent_name: level_two.level_two.primitive
+        subaction_name: write
+        arguments: null
+        energy: 1.0
+        action_share: 0.125
+        interpreted_energy: 0.125
+        percentage: 100.0%
+        estimator: DummyObjectAreaEnergyOne
+  - name: arch.two_level_hierarchy
+    actions:
+    - name: read
+      energy: 32.0
+    - name: write
+      energy: 0.25
+    primitive_estimation(s):
+    - action_name: read
+      arguments: null
+      energy: 32.0
+      subaction_estimations:
+      - subcomponent_name: level_two.primitive
+        subaction_name: read
+        arguments: null
+        energy: 1.0
+        action_share: 32.0
+        interpreted_energy: 32.0
+        percentage: 100.0%
+        estimator: DummyObjectAreaEnergyOne
+    - action_name: write
+      arguments: null
+      energy: 0.25
+      subaction_estimations:
+      - subcomponent_name: level_two.primitive
+        subaction_name: write
+        arguments: null
+        energy: 1.0
+        action_share: 0.25
+        interpreted_energy: 0.25
+        percentage: 100.0%
+        estimator: DummyObjectAreaEnergyOne
+  - name: arch.one_level_hierarchy
+    actions:
+    - name: read
+      energy: 8.0
+    - name: write
+      energy: 0.5
+    primitive_estimation(s):
+    - action_name: read
+      arguments: null
+      energy: 8.0
+      subaction_estimations:
+      - subcomponent_name: primitive
+        subaction_name: read
+        arguments: null
+        energy: 1.0
+        action_share: 8.0
+        interpreted_energy: 8.0
+        percentage: 100.0%
+        estimator: DummyObjectAreaEnergyOne
+    - action_name: write
+      arguments: null
+      energy: 0.5
+      subaction_estimations:
+      - subcomponent_name: primitive
+        subaction_name: write
+        arguments: null
+        energy: 1.0
+        action_share: 0.5
+        interpreted_energy: 0.5
+        percentage: 100.0%
+        estimator: DummyObjectAreaEnergyOne
+  - name: arch.three_level_hierarchy_with_area_share
+    actions:
+    - name: read
+      energy: 64.0
+    - name: write
+      energy: 0.125
+    primitive_estimation(s):
+    - action_name: read
+      arguments: null
+      energy: 64.0
+      subaction_estimations:
+      - subcomponent_name: level_two.level_two.primitive
+        subaction_name: read
+        arguments: null
+        energy: 1.0
+        action_share: 64.0
+        interpreted_energy: 64.0
+        percentage: 100.0%
+        estimator: DummyObjectAreaEnergyOne
+    - action_name: write
+      arguments: null
+      energy: 0.125
+      subaction_estimations:
+      - subcomponent_name: level_two.level_two.primitive
+        subaction_name: write
+        arguments: null
+        energy: 1.0
+        action_share: 0.125
+        interpreted_energy: 0.125
+        percentage: 100.0%
+        estimator: DummyObjectAreaEnergyOne
+  - name: arch.two_level_hierarchy_with_area_share
+    actions:
+    - name: read
+      energy: 32.0
+    - name: write
+      energy: 0.25
+    primitive_estimation(s):
+    - action_name: read
+      arguments: null
+      energy: 32.0
+      subaction_estimations:
+      - subcomponent_name: level_two.primitive
+        subaction_name: read
+        arguments: null
+        energy: 1.0
+        action_share: 32.0
+        interpreted_energy: 32.0
+        percentage: 100.0%
+        estimator: DummyObjectAreaEnergyOne
+    - action_name: write
+      arguments: null
+      energy: 0.25
+      subaction_estimations:
+      - subcomponent_name: level_two.primitive
+        subaction_name: write
+        arguments: null
+        energy: 1.0
+        action_share: 0.25
+        interpreted_energy: 0.25
+        percentage: 100.0%
+        estimator: DummyObjectAreaEnergyOne
+  - name: arch.one_level_hierarchy_with_area_share
+    actions:
+    - name: read
+      energy: 8.0
+    - name: write
+      energy: 0.5
+    primitive_estimation(s):
+    - action_name: read
+      arguments: null
+      energy: 8.0
+      subaction_estimations:
+      - subcomponent_name: primitive
+        subaction_name: read
+        arguments: null
+        energy: 1.0
+        action_share: 8.0
+        interpreted_energy: 8.0
+        percentage: 100.0%
+        estimator: DummyObjectAreaEnergyOne
+    - action_name: write
+      arguments: null
+      energy: 0.5
+      subaction_estimations:
+      - subcomponent_name: primitive
+        subaction_name: write
+        arguments: null
+        energy: 1.0
+        action_share: 0.5
+        interpreted_energy: 0.5
+        percentage: 100.0%
+        estimator: DummyObjectAreaEnergyOne
+  - name: arch.three_level_hierarchy_with_area_share_defined_not_in_attrs
+    actions:
+    - name: read
+      energy: 64.0
+    - name: write
+      energy: 0.125
+    primitive_estimation(s):
+    - action_name: read
+      arguments: null
+      energy: 64.0
+      subaction_estimations:
+      - subcomponent_name: level_two.level_two.primitive
+        subaction_name: read
+        arguments: null
+        energy: 1.0
+        action_share: 64.0
+        interpreted_energy: 64.0
+        percentage: 100.0%
+        estimator: DummyObjectAreaEnergyOne
+    - action_name: write
+      arguments: null
+      energy: 0.125
+      subaction_estimations:
+      - subcomponent_name: level_two.level_two.primitive
+        subaction_name: write
+        arguments: null
+        energy: 1.0
+        action_share: 0.125
+        interpreted_energy: 0.125
+        percentage: 100.0%
+        estimator: DummyObjectAreaEnergyOne
+  - name: arch.two_level_hierarchy_with_area_share_defined_not_in_attrs
+    actions:
+    - name: read
+      energy: 32.0
+    - name: write
+      energy: 0.25
+    primitive_estimation(s):
+    - action_name: read
+      arguments: null
+      energy: 32.0
+      subaction_estimations:
+      - subcomponent_name: level_two.primitive
+        subaction_name: read
+        arguments: null
+        energy: 1.0
+        action_share: 32.0
+        interpreted_energy: 32.0
+        percentage: 100.0%
+        estimator: DummyObjectAreaEnergyOne
+    - action_name: write
+      arguments: null
+      energy: 0.25
+      subaction_estimations:
+      - subcomponent_name: level_two.primitive
+        subaction_name: write
+        arguments: null
+        energy: 1.0
+        action_share: 0.25
+        interpreted_energy: 0.25
+        percentage: 100.0%
+        estimator: DummyObjectAreaEnergyOne
+  - name: arch.one_level_hierarchy_with_area_share_defined_not_in_attrs
+    actions:
+    - name: read
+      energy: 8.0
+    - name: write
+      energy: 0.5
+    primitive_estimation(s):
+    - action_name: read
+      arguments: null
+      energy: 8.0
+      subaction_estimations:
+      - subcomponent_name: primitive
+        subaction_name: read
+        arguments: null
+        energy: 1.0
+        action_share: 8.0
+        interpreted_energy: 8.0
+        percentage: 100.0%
+        estimator: DummyObjectAreaEnergyOne
+    - action_name: write
+      arguments: null
+      energy: 0.5
+      subaction_estimations:
+      - subcomponent_name: primitive
+        subaction_name: write
+        arguments: null
+        energy: 1.0
+        action_share: 0.5
+        interpreted_energy: 0.5
+        percentage: 100.0%
+        estimator: DummyObjectAreaEnergyOne
+  - name: arch.two_subcomponents_different_shares
+    actions:
+    - name: read
+      energy: 12.0
+    - name: write
+      energy: 0.75
+    primitive_estimation(s):
+    - action_name: read
+      arguments: null
+      energy: 12.0
+      subaction_estimations:
+      - subcomponent_name: primitive1
+        subaction_name: read
+        arguments: null
+        energy: 1.0
+        action_share: 8.0
+        interpreted_energy: 8.0
+        percentage: 66.67%
+        estimator: DummyObjectAreaEnergyOne
+      - subcomponent_name: primitive2
+        subaction_name: read
+        arguments: null
+        energy: 1.0
+        action_share: 4.0
+        interpreted_energy: 4.0
+        percentage: 33.33%
+        estimator: DummyObjectAreaEnergyOne
+    - action_name: write
+      arguments: null
+      energy: 0.75
+      subaction_estimations:
+      - subcomponent_name: primitive1
+        subaction_name: write
+        arguments: null
+        energy: 1.0
+        action_share: 0.5
+        interpreted_energy: 0.5
+        percentage: 66.67%
+        estimator: DummyObjectAreaEnergyOne
+      - subcomponent_name: primitive2
+        subaction_name: write
+        arguments: null
+        energy: 1.0
+        action_share: 0.25
+        interpreted_energy: 0.25
+        percentage: 33.33%
+        estimator: DummyObjectAreaEnergyOne

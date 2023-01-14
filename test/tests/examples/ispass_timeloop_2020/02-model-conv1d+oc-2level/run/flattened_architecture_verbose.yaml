@@ -1,0 +1,88 @@
+architecture:
+  version: 0.3
+  local:
+  - name: System.PE.Buffer
+    class: regfile
+    actions:
+    - name: read
+      arguments:
+        address_delta: 0
+        data_delta: 0
+    - name: read
+      arguments:
+        address_delta: 1
+        data_delta: 0
+    - name: read
+      arguments:
+        address_delta: 0
+        data_delta: 1
+    - name: read
+      arguments:
+        address_delta: 1
+        data_delta: 1
+    - name: write
+      arguments:
+        address_delta: 0
+        data_delta: 0
+    - name: write
+      arguments:
+        address_delta: 1
+        data_delta: 0
+    - name: write
+      arguments:
+        address_delta: 0
+        data_delta: 1
+    - name: write
+      arguments:
+        address_delta: 1
+        data_delta: 1
+    - name: idle
+      arguments: null
+  - name: System.PE.MACC
+    class: intmac
+    actions:
+    - name: mac_random
+      arguments: null
+    - name: mac_reused
+      arguments: null
+    - name: mac_gated
+      arguments: null
+    - name: idle
+      arguments: null
+  - name: System.MainMemory
+    class: SRAM
+    actions:
+    - name: read
+      arguments:
+        address_delta: 0
+        data_delta: 0
+    - name: read
+      arguments:
+        address_delta: 1
+        data_delta: 0
+    - name: read
+      arguments:
+        address_delta: 0
+        data_delta: 1
+    - name: read
+      arguments:
+        address_delta: 1
+        data_delta: 1
+    - name: write
+      arguments:
+        address_delta: 0
+        data_delta: 0
+    - name: write
+      arguments:
+        address_delta: 1
+        data_delta: 0
+    - name: write
+      arguments:
+        address_delta: 0
+        data_delta: 1
+    - name: write
+      arguments:
+        address_delta: 1
+        data_delta: 1
+    - name: idle
+      arguments: null

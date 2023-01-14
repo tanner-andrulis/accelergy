@@ -1,0 +1,1915 @@
+2023-01-14 12:05:31 WARNING     The "-v/--verbose 1" option is deprecated. Please omit the "1" and only include the "-v/--verbose" option to enable verbose mode.
+2023-01-14 12:05:31 INFO        generating outputs according to the following specified output flags... 
+ Please use the -f flag to update the preference (default to all output files)
+2023-01-14 12:05:31 INFO        Located config file at /home/tanner/.config/accelergy/accelergy_config.yaml.
+2023-01-14 12:05:31 INFO        config file located:
+2023-01-14 12:05:31 INFO        /home/tanner/.config/accelergy/accelergy_config.yaml
+2023-01-14 12:05:31 INFO        Parsing file /mnt/d/research/yaml_playground/unit_tests/tests/examples/ispass_accelergy_2020/03_compound_architecture/input/action_counts.yaml for action_counts info
+2023-01-14 12:05:31 WARNING     File /mnt/d/research/yaml_playground/unit_tests/tests/examples/ispass_accelergy_2020/03_compound_architecture/input/action_counts.yaml is outdated. File version is 0.3,  while the latest version is 0.4. 
+ Please update the file to the latest version.
+2023-01-14 12:05:31 INFO        Parsing file /mnt/d/research/yaml_playground/unit_tests/tests/examples/ispass_accelergy_2020/03_compound_architecture/input/architecture.yaml for architecture info
+2023-01-14 12:05:31 WARNING     File /mnt/d/research/yaml_playground/unit_tests/tests/examples/ispass_accelergy_2020/03_compound_architecture/input/architecture.yaml is outdated. File version is 0.3,  while the latest version is 0.4. 
+ Please update the file to the latest version.
+2023-01-14 12:05:31 WARNING     
+2023-01-14 12:05:31 WARNING     Failed to evaluate: 45nm
+2023-01-14 12:05:31 WARNING     Location: arch attribute technology
+2023-01-14 12:05:31 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:31 WARNING     Available bindings: 
+2023-01-14 12:05:31 WARNING         technology = 45nm
+2023-01-14 12:05:31 WARNING         voltage = 1V
+2023-01-14 12:05:31 WARNING         latency = 5ns
+2023-01-14 12:05:31 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:31 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:31 WARNING     expression in single or double quotes:
+2023-01-14 12:05:31 WARNING         Found expression: 45nm
+2023-01-14 12:05:31 WARNING         Expression as valid string: "45nm"
+2023-01-14 12:05:31 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:31 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:31 WARNING     
+2023-01-14 12:05:31 WARNING     Failed to evaluate: 1V
+2023-01-14 12:05:31 WARNING     Location: arch attribute voltage
+2023-01-14 12:05:31 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:31 WARNING     Available bindings: 
+2023-01-14 12:05:31 WARNING         technology = 45nm
+2023-01-14 12:05:31 WARNING         voltage = 1V
+2023-01-14 12:05:31 WARNING         latency = 5ns
+2023-01-14 12:05:31 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:31 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:31 WARNING     expression in single or double quotes:
+2023-01-14 12:05:31 WARNING         Found expression: 1V
+2023-01-14 12:05:31 WARNING         Expression as valid string: "1V"
+2023-01-14 12:05:31 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:31 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:31 WARNING     
+2023-01-14 12:05:31 WARNING     Failed to evaluate: 5ns
+2023-01-14 12:05:31 WARNING     Location: arch attribute latency
+2023-01-14 12:05:31 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:31 WARNING     Available bindings: 
+2023-01-14 12:05:31 WARNING         technology = 45nm
+2023-01-14 12:05:31 WARNING         voltage = 1V
+2023-01-14 12:05:31 WARNING         latency = 5ns
+2023-01-14 12:05:31 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:31 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:31 WARNING     expression in single or double quotes:
+2023-01-14 12:05:31 WARNING         Found expression: 5ns
+2023-01-14 12:05:31 WARNING         Expression as valid string: "5ns"
+2023-01-14 12:05:31 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:31 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:31 WARNING     
+2023-01-14 12:05:31 WARNING     Failed to evaluate: 45nm
+2023-01-14 12:05:31 WARNING     Location: arch attribute technology
+2023-01-14 12:05:31 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:31 WARNING     Available bindings: 
+2023-01-14 12:05:31 WARNING         technology = 45nm
+2023-01-14 12:05:31 WARNING         voltage = 1V
+2023-01-14 12:05:31 WARNING         latency = 5ns
+2023-01-14 12:05:31 WARNING         datawidth = 16
+2023-01-14 12:05:31 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:31 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:31 WARNING     expression in single or double quotes:
+2023-01-14 12:05:31 WARNING         Found expression: 45nm
+2023-01-14 12:05:31 WARNING         Expression as valid string: "45nm"
+2023-01-14 12:05:31 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:31 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:31 WARNING     
+2023-01-14 12:05:31 WARNING     Failed to evaluate: 1V
+2023-01-14 12:05:31 WARNING     Location: arch attribute voltage
+2023-01-14 12:05:31 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:31 WARNING     Available bindings: 
+2023-01-14 12:05:31 WARNING         technology = 45nm
+2023-01-14 12:05:31 WARNING         voltage = 1V
+2023-01-14 12:05:31 WARNING         latency = 5ns
+2023-01-14 12:05:31 WARNING         datawidth = 16
+2023-01-14 12:05:31 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:31 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:31 WARNING     expression in single or double quotes:
+2023-01-14 12:05:31 WARNING         Found expression: 1V
+2023-01-14 12:05:31 WARNING         Expression as valid string: "1V"
+2023-01-14 12:05:31 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:31 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:31 WARNING     
+2023-01-14 12:05:31 WARNING     Failed to evaluate: 5ns
+2023-01-14 12:05:31 WARNING     Location: arch attribute latency
+2023-01-14 12:05:31 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:31 WARNING     Available bindings: 
+2023-01-14 12:05:31 WARNING         technology = 45nm
+2023-01-14 12:05:31 WARNING         voltage = 1V
+2023-01-14 12:05:31 WARNING         latency = 5ns
+2023-01-14 12:05:31 WARNING         datawidth = 16
+2023-01-14 12:05:31 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:31 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:31 WARNING     expression in single or double quotes:
+2023-01-14 12:05:31 WARNING         Found expression: 5ns
+2023-01-14 12:05:31 WARNING         Expression as valid string: "5ns"
+2023-01-14 12:05:31 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:31 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:31 WARNING     
+2023-01-14 12:05:31 WARNING     Failed to evaluate: 45nm
+2023-01-14 12:05:31 WARNING     Location: arch attribute technology
+2023-01-14 12:05:31 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:31 WARNING     Available bindings: 
+2023-01-14 12:05:31 WARNING         num_pipeline_stages = 1
+2023-01-14 12:05:31 WARNING         technology = 45nm
+2023-01-14 12:05:31 WARNING         voltage = 1V
+2023-01-14 12:05:31 WARNING         latency = 5ns
+2023-01-14 12:05:31 WARNING         datawidth = 16
+2023-01-14 12:05:31 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:31 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:31 WARNING     expression in single or double quotes:
+2023-01-14 12:05:31 WARNING         Found expression: 45nm
+2023-01-14 12:05:31 WARNING         Expression as valid string: "45nm"
+2023-01-14 12:05:31 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:31 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:31 WARNING     
+2023-01-14 12:05:31 WARNING     Failed to evaluate: 1V
+2023-01-14 12:05:31 WARNING     Location: arch attribute voltage
+2023-01-14 12:05:31 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:31 WARNING     Available bindings: 
+2023-01-14 12:05:31 WARNING         num_pipeline_stages = 1
+2023-01-14 12:05:31 WARNING         technology = 45nm
+2023-01-14 12:05:31 WARNING         voltage = 1V
+2023-01-14 12:05:31 WARNING         latency = 5ns
+2023-01-14 12:05:31 WARNING         datawidth = 16
+2023-01-14 12:05:31 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:31 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:31 WARNING     expression in single or double quotes:
+2023-01-14 12:05:31 WARNING         Found expression: 1V
+2023-01-14 12:05:31 WARNING         Expression as valid string: "1V"
+2023-01-14 12:05:31 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:31 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:31 WARNING     
+2023-01-14 12:05:31 WARNING     Failed to evaluate: 5ns
+2023-01-14 12:05:31 WARNING     Location: arch attribute latency
+2023-01-14 12:05:31 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:31 WARNING     Available bindings: 
+2023-01-14 12:05:31 WARNING         num_pipeline_stages = 1
+2023-01-14 12:05:31 WARNING         technology = 45nm
+2023-01-14 12:05:31 WARNING         voltage = 1V
+2023-01-14 12:05:31 WARNING         latency = 5ns
+2023-01-14 12:05:31 WARNING         datawidth = 16
+2023-01-14 12:05:31 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:31 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:31 WARNING     expression in single or double quotes:
+2023-01-14 12:05:31 WARNING         Found expression: 5ns
+2023-01-14 12:05:31 WARNING         Expression as valid string: "5ns"
+2023-01-14 12:05:31 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:31 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:31 WARNING     
+2023-01-14 12:05:31 WARNING     Failed to evaluate: 45nm
+2023-01-14 12:05:31 WARNING     Location: arch attribute technology
+2023-01-14 12:05:31 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:31 WARNING     Available bindings: 
+2023-01-14 12:05:31 WARNING         memory_width = 16
+2023-01-14 12:05:31 WARNING         memory_depth = 24
+2023-01-14 12:05:31 WARNING         technology = 45nm
+2023-01-14 12:05:31 WARNING         voltage = 1V
+2023-01-14 12:05:31 WARNING         latency = 5ns
+2023-01-14 12:05:31 WARNING         datawidth = 16
+2023-01-14 12:05:31 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:31 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:31 WARNING     expression in single or double quotes:
+2023-01-14 12:05:31 WARNING         Found expression: 45nm
+2023-01-14 12:05:31 WARNING         Expression as valid string: "45nm"
+2023-01-14 12:05:31 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:31 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:31 WARNING     
+2023-01-14 12:05:31 WARNING     Failed to evaluate: 1V
+2023-01-14 12:05:31 WARNING     Location: arch attribute voltage
+2023-01-14 12:05:31 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:31 WARNING     Available bindings: 
+2023-01-14 12:05:31 WARNING         memory_width = 16
+2023-01-14 12:05:31 WARNING         memory_depth = 24
+2023-01-14 12:05:31 WARNING         technology = 45nm
+2023-01-14 12:05:31 WARNING         voltage = 1V
+2023-01-14 12:05:31 WARNING         latency = 5ns
+2023-01-14 12:05:31 WARNING         datawidth = 16
+2023-01-14 12:05:31 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:31 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:31 WARNING     expression in single or double quotes:
+2023-01-14 12:05:31 WARNING         Found expression: 1V
+2023-01-14 12:05:31 WARNING         Expression as valid string: "1V"
+2023-01-14 12:05:31 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:31 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:31 WARNING     
+2023-01-14 12:05:31 WARNING     Failed to evaluate: 5ns
+2023-01-14 12:05:31 WARNING     Location: arch attribute latency
+2023-01-14 12:05:31 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:31 WARNING     Available bindings: 
+2023-01-14 12:05:31 WARNING         memory_width = 16
+2023-01-14 12:05:31 WARNING         memory_depth = 24
+2023-01-14 12:05:31 WARNING         technology = 45nm
+2023-01-14 12:05:31 WARNING         voltage = 1V
+2023-01-14 12:05:31 WARNING         latency = 5ns
+2023-01-14 12:05:31 WARNING         datawidth = 16
+2023-01-14 12:05:31 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:31 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:31 WARNING     expression in single or double quotes:
+2023-01-14 12:05:31 WARNING         Found expression: 5ns
+2023-01-14 12:05:31 WARNING         Expression as valid string: "5ns"
+2023-01-14 12:05:31 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:31 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:31 WARNING     
+2023-01-14 12:05:31 WARNING     Failed to evaluate: 45nm
+2023-01-14 12:05:31 WARNING     Location: arch attribute technology
+2023-01-14 12:05:31 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:31 WARNING     Available bindings: 
+2023-01-14 12:05:31 WARNING         memory_depth = 1024
+2023-01-14 12:05:31 WARNING         memory_width = 32
+2023-01-14 12:05:31 WARNING         n_banks = 4
+2023-01-14 12:05:31 WARNING         technology = 45nm
+2023-01-14 12:05:31 WARNING         voltage = 1V
+2023-01-14 12:05:31 WARNING         latency = 5ns
+2023-01-14 12:05:31 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:31 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:31 WARNING     expression in single or double quotes:
+2023-01-14 12:05:31 WARNING         Found expression: 45nm
+2023-01-14 12:05:31 WARNING         Expression as valid string: "45nm"
+2023-01-14 12:05:31 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:31 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:31 WARNING     
+2023-01-14 12:05:31 WARNING     Failed to evaluate: 1V
+2023-01-14 12:05:31 WARNING     Location: arch attribute voltage
+2023-01-14 12:05:31 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:31 WARNING     Available bindings: 
+2023-01-14 12:05:31 WARNING         memory_depth = 1024
+2023-01-14 12:05:31 WARNING         memory_width = 32
+2023-01-14 12:05:31 WARNING         n_banks = 4
+2023-01-14 12:05:31 WARNING         technology = 45nm
+2023-01-14 12:05:31 WARNING         voltage = 1V
+2023-01-14 12:05:31 WARNING         latency = 5ns
+2023-01-14 12:05:31 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:31 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:31 WARNING     expression in single or double quotes:
+2023-01-14 12:05:31 WARNING         Found expression: 1V
+2023-01-14 12:05:31 WARNING         Expression as valid string: "1V"
+2023-01-14 12:05:31 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:31 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:31 WARNING     
+2023-01-14 12:05:31 WARNING     Failed to evaluate: 5ns
+2023-01-14 12:05:31 WARNING     Location: arch attribute latency
+2023-01-14 12:05:31 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:31 WARNING     Available bindings: 
+2023-01-14 12:05:31 WARNING         memory_depth = 1024
+2023-01-14 12:05:31 WARNING         memory_width = 32
+2023-01-14 12:05:31 WARNING         n_banks = 4
+2023-01-14 12:05:31 WARNING         technology = 45nm
+2023-01-14 12:05:31 WARNING         voltage = 1V
+2023-01-14 12:05:31 WARNING         latency = 5ns
+2023-01-14 12:05:31 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:31 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:31 WARNING     expression in single or double quotes:
+2023-01-14 12:05:31 WARNING         Found expression: 5ns
+2023-01-14 12:05:31 WARNING         Expression as valid string: "5ns"
+2023-01-14 12:05:31 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:31 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:31 INFO        Parsing file /mnt/d/research/yaml_playground/unit_tests/tests/examples/ispass_accelergy_2020/03_compound_architecture/input/components/mac_fifo.yaml for compound_components info
+2023-01-14 12:05:31 WARNING     File /mnt/d/research/yaml_playground/unit_tests/tests/examples/ispass_accelergy_2020/03_compound_architecture/input/components/mac_fifo.yaml is outdated. File version is 0.3,  while the latest version is 0.4. 
+ Please update the file to the latest version.
+2023-01-14 12:05:31 INFO        Parsing file /mnt/d/research/yaml_playground/unit_tests/tests/examples/ispass_accelergy_2020/03_compound_architecture/input/components/smartbuffer_RF.yaml for compound_components info
+2023-01-14 12:05:31 WARNING     File /mnt/d/research/yaml_playground/unit_tests/tests/examples/ispass_accelergy_2020/03_compound_architecture/input/components/smartbuffer_RF.yaml is outdated. File version is 0.3,  while the latest version is 0.4. 
+ Please update the file to the latest version.
+2023-01-14 12:05:31 INFO        Parsing file /mnt/d/research/yaml_playground/unit_tests/tests/examples/ispass_accelergy_2020/03_compound_architecture/input/components/smartbuffer_SRAM.yaml for compound_components info
+2023-01-14 12:05:31 WARNING     File /mnt/d/research/yaml_playground/unit_tests/tests/examples/ispass_accelergy_2020/03_compound_architecture/input/components/smartbuffer_SRAM.yaml is outdated. File version is 0.3,  while the latest version is 0.4. 
+ Please update the file to the latest version.
+2023-01-14 12:05:31 INFO        primitive component file parsed: 
+2023-01-14 12:05:31 INFO        /home/tanner/.local/share/accelergy/primitive_component_libs/primitive_component.lib.yaml
+2023-01-14 12:05:31 WARNING     wire redefined in /home/tanner/.local/share/accelergy/primitive_component_libs/wire.lib.yaml
+2023-01-14 12:05:31 WARNING     wire redefined in /home/tanner/.local/share/accelergy/primitive_component_libs/wire.lib.yaml
+2023-01-14 12:05:31 INFO        primitive component file parsed: 
+2023-01-14 12:05:31 INFO        /home/tanner/.local/share/accelergy/primitive_component_libs/wire.lib.yaml
+2023-01-14 12:05:31 INFO        primitive component file parsed: 
+2023-01-14 12:05:31 INFO        /home/tanner/.local/share/accelergy/primitive_component_libs/neurosim_components.lib.yaml
+2023-01-14 12:05:31 INFO        primitive component file parsed: 
+2023-01-14 12:05:31 INFO        /home/tanner/.local/share/accelergy/primitive_component_libs/soc_primitives.lib.yaml
+2023-01-14 12:05:31 INFO        primitive component file parsed: 
+2023-01-14 12:05:31 INFO        /home/tanner/.local/share/accelergy/primitive_component_libs/pim_primitive_component.lib.yaml
+2023-01-14 12:05:32 WARNING     ADC redefined in /home/tanner/.local/share/accelergy/primitive_component_libs/analog_components.lib.yaml
+2023-01-14 12:05:32 INFO        primitive component file parsed: 
+2023-01-14 12:05:32 INFO        /home/tanner/.local/share/accelergy/primitive_component_libs/analog_components.lib.yaml
+2023-01-14 12:05:32 INFO        primitive component file parsed: 
+2023-01-14 12:05:32 INFO        /mnt/d/Research/pim_zoo/library/scaling.lib.yaml
+2023-01-14 12:05:32 WARNING     
+2023-01-14 12:05:32 WARNING     Failed to evaluate: 45nm
+2023-01-14 12:05:32 WARNING     Location: mac_fifo
+2023-01-14 12:05:32 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:32 WARNING     Available bindings: 
+2023-01-14 12:05:32 WARNING         num_pipeline_stages = 1
+2023-01-14 12:05:32 WARNING         technology = 45nm
+2023-01-14 12:05:32 WARNING         voltage = 1V
+2023-01-14 12:05:32 WARNING         latency = 5ns
+2023-01-14 12:05:32 WARNING         datawidth = 16
+2023-01-14 12:05:32 WARNING         fifo_depth = 2
+2023-01-14 12:05:32 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:32 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:32 WARNING     expression in single or double quotes:
+2023-01-14 12:05:32 WARNING         Found expression: 45nm
+2023-01-14 12:05:32 WARNING         Expression as valid string: "45nm"
+2023-01-14 12:05:32 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:32 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:32 WARNING     
+2023-01-14 12:05:32 WARNING     Failed to evaluate: 1V
+2023-01-14 12:05:32 WARNING     Location: mac_fifo
+2023-01-14 12:05:32 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:32 WARNING     Available bindings: 
+2023-01-14 12:05:32 WARNING         num_pipeline_stages = 1
+2023-01-14 12:05:32 WARNING         technology = 45nm
+2023-01-14 12:05:32 WARNING         voltage = 1V
+2023-01-14 12:05:32 WARNING         latency = 5ns
+2023-01-14 12:05:32 WARNING         datawidth = 16
+2023-01-14 12:05:32 WARNING         fifo_depth = 2
+2023-01-14 12:05:32 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:32 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:32 WARNING     expression in single or double quotes:
+2023-01-14 12:05:32 WARNING         Found expression: 1V
+2023-01-14 12:05:32 WARNING         Expression as valid string: "1V"
+2023-01-14 12:05:32 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:32 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:32 WARNING     
+2023-01-14 12:05:32 WARNING     Failed to evaluate: 5ns
+2023-01-14 12:05:32 WARNING     Location: mac_fifo
+2023-01-14 12:05:32 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:32 WARNING     Available bindings: 
+2023-01-14 12:05:32 WARNING         num_pipeline_stages = 1
+2023-01-14 12:05:32 WARNING         technology = 45nm
+2023-01-14 12:05:32 WARNING         voltage = 1V
+2023-01-14 12:05:32 WARNING         latency = 5ns
+2023-01-14 12:05:32 WARNING         datawidth = 16
+2023-01-14 12:05:32 WARNING         fifo_depth = 2
+2023-01-14 12:05:32 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:32 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:32 WARNING     expression in single or double quotes:
+2023-01-14 12:05:32 WARNING         Found expression: 5ns
+2023-01-14 12:05:32 WARNING         Expression as valid string: "5ns"
+2023-01-14 12:05:32 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:32 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:32 WARNING     
+2023-01-14 12:05:32 WARNING     Failed to evaluate: 45nm
+2023-01-14 12:05:32 WARNING     Location: smartbuffer_RF
+2023-01-14 12:05:32 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:32 WARNING     Available bindings: 
+2023-01-14 12:05:32 WARNING         memory_width = 16
+2023-01-14 12:05:32 WARNING         memory_depth = 24
+2023-01-14 12:05:32 WARNING         technology = 45nm
+2023-01-14 12:05:32 WARNING         voltage = 1V
+2023-01-14 12:05:32 WARNING         latency = 5ns
+2023-01-14 12:05:32 WARNING         datawidth = 16
+2023-01-14 12:05:32 WARNING         n_rdwr_ports = 2
+2023-01-14 12:05:32 WARNING         n_banks = 1
+2023-01-14 12:05:32 WARNING         n_buffets = 1
+2023-01-14 12:05:32 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:32 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:32 WARNING     expression in single or double quotes:
+2023-01-14 12:05:32 WARNING         Found expression: 45nm
+2023-01-14 12:05:32 WARNING         Expression as valid string: "45nm"
+2023-01-14 12:05:32 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:32 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:32 WARNING     
+2023-01-14 12:05:32 WARNING     Failed to evaluate: 1V
+2023-01-14 12:05:32 WARNING     Location: smartbuffer_RF
+2023-01-14 12:05:32 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:32 WARNING     Available bindings: 
+2023-01-14 12:05:32 WARNING         memory_width = 16
+2023-01-14 12:05:32 WARNING         memory_depth = 24
+2023-01-14 12:05:32 WARNING         technology = 45nm
+2023-01-14 12:05:32 WARNING         voltage = 1V
+2023-01-14 12:05:32 WARNING         latency = 5ns
+2023-01-14 12:05:32 WARNING         datawidth = 16
+2023-01-14 12:05:32 WARNING         n_rdwr_ports = 2
+2023-01-14 12:05:32 WARNING         n_banks = 1
+2023-01-14 12:05:32 WARNING         n_buffets = 1
+2023-01-14 12:05:32 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:32 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:32 WARNING     expression in single or double quotes:
+2023-01-14 12:05:32 WARNING         Found expression: 1V
+2023-01-14 12:05:32 WARNING         Expression as valid string: "1V"
+2023-01-14 12:05:32 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:32 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:32 WARNING     
+2023-01-14 12:05:32 WARNING     Failed to evaluate: 5ns
+2023-01-14 12:05:32 WARNING     Location: smartbuffer_RF
+2023-01-14 12:05:32 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:32 WARNING     Available bindings: 
+2023-01-14 12:05:32 WARNING         memory_width = 16
+2023-01-14 12:05:32 WARNING         memory_depth = 24
+2023-01-14 12:05:32 WARNING         technology = 45nm
+2023-01-14 12:05:32 WARNING         voltage = 1V
+2023-01-14 12:05:32 WARNING         latency = 5ns
+2023-01-14 12:05:32 WARNING         datawidth = 16
+2023-01-14 12:05:32 WARNING         n_rdwr_ports = 2
+2023-01-14 12:05:32 WARNING         n_banks = 1
+2023-01-14 12:05:32 WARNING         n_buffets = 1
+2023-01-14 12:05:32 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:32 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:32 WARNING     expression in single or double quotes:
+2023-01-14 12:05:32 WARNING         Found expression: 5ns
+2023-01-14 12:05:32 WARNING         Expression as valid string: "5ns"
+2023-01-14 12:05:32 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:32 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:32 WARNING     
+2023-01-14 12:05:32 WARNING     Failed to evaluate: 45nm
+2023-01-14 12:05:32 WARNING     Location: smartbuffer_SRAM
+2023-01-14 12:05:32 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:32 WARNING     Available bindings: 
+2023-01-14 12:05:32 WARNING         memory_depth = 1024
+2023-01-14 12:05:32 WARNING         memory_width = 32
+2023-01-14 12:05:32 WARNING         n_banks = 4
+2023-01-14 12:05:32 WARNING         technology = 45nm
+2023-01-14 12:05:32 WARNING         voltage = 1V
+2023-01-14 12:05:32 WARNING         latency = 5ns
+2023-01-14 12:05:32 WARNING         n_rdwr_ports = 2
+2023-01-14 12:05:32 WARNING         n_buffets = 1
+2023-01-14 12:05:32 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:32 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:32 WARNING     expression in single or double quotes:
+2023-01-14 12:05:32 WARNING         Found expression: 45nm
+2023-01-14 12:05:32 WARNING         Expression as valid string: "45nm"
+2023-01-14 12:05:32 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:32 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:32 WARNING     
+2023-01-14 12:05:32 WARNING     Failed to evaluate: 1V
+2023-01-14 12:05:32 WARNING     Location: smartbuffer_SRAM
+2023-01-14 12:05:32 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:32 WARNING     Available bindings: 
+2023-01-14 12:05:32 WARNING         memory_depth = 1024
+2023-01-14 12:05:32 WARNING         memory_width = 32
+2023-01-14 12:05:32 WARNING         n_banks = 4
+2023-01-14 12:05:32 WARNING         technology = 45nm
+2023-01-14 12:05:32 WARNING         voltage = 1V
+2023-01-14 12:05:32 WARNING         latency = 5ns
+2023-01-14 12:05:32 WARNING         n_rdwr_ports = 2
+2023-01-14 12:05:32 WARNING         n_buffets = 1
+2023-01-14 12:05:32 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:32 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:32 WARNING     expression in single or double quotes:
+2023-01-14 12:05:32 WARNING         Found expression: 1V
+2023-01-14 12:05:32 WARNING         Expression as valid string: "1V"
+2023-01-14 12:05:32 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:32 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:32 WARNING     
+2023-01-14 12:05:32 WARNING     Failed to evaluate: 5ns
+2023-01-14 12:05:32 WARNING     Location: smartbuffer_SRAM
+2023-01-14 12:05:32 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:32 WARNING     Available bindings: 
+2023-01-14 12:05:32 WARNING         memory_depth = 1024
+2023-01-14 12:05:32 WARNING         memory_width = 32
+2023-01-14 12:05:32 WARNING         n_banks = 4
+2023-01-14 12:05:32 WARNING         technology = 45nm
+2023-01-14 12:05:32 WARNING         voltage = 1V
+2023-01-14 12:05:32 WARNING         latency = 5ns
+2023-01-14 12:05:32 WARNING         n_rdwr_ports = 2
+2023-01-14 12:05:32 WARNING         n_buffets = 1
+2023-01-14 12:05:32 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:32 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:32 WARNING     expression in single or double quotes:
+2023-01-14 12:05:32 WARNING         Found expression: 5ns
+2023-01-14 12:05:32 WARNING         Expression as valid string: "5ns"
+2023-01-14 12:05:32 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:32 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:32 INFO        Calculated "technology" = 45nm
+2023-01-14 12:05:32 INFO        Calculated "datawidth" = 16
+2023-01-14 12:05:32 INFO        Calculated "num_pipeline_stages" = 1
+2023-01-14 12:05:32 WARNING     
+2023-01-14 12:05:32 WARNING     Failed to evaluate: 45nm
+2023-01-14 12:05:32 WARNING     Location: mac.technology
+2023-01-14 12:05:32 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:32 WARNING     Available bindings: 
+2023-01-14 12:05:32 WARNING         technology = 45nm
+2023-01-14 12:05:32 WARNING         datawidth = 16
+2023-01-14 12:05:32 WARNING         num_pipeline_stages = 1
+2023-01-14 12:05:32 WARNING         latency = 5ns
+2023-01-14 12:05:32 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:32 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:32 WARNING     expression in single or double quotes:
+2023-01-14 12:05:32 WARNING         Found expression: 45nm
+2023-01-14 12:05:32 WARNING         Expression as valid string: "45nm"
+2023-01-14 12:05:32 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:32 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:32 INFO        Calculated "fifo_depth" = 2
+2023-01-14 12:05:32 INFO        Calculated "datawidth * 2" = 32
+2023-01-14 12:05:32 WARNING     
+2023-01-14 12:05:32 WARNING     Failed to evaluate: 45nm
+2023-01-14 12:05:32 WARNING     Location: output_fifo.technology
+2023-01-14 12:05:32 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:32 WARNING     Available bindings: 
+2023-01-14 12:05:32 WARNING         technology = 45nm
+2023-01-14 12:05:32 WARNING         depth = 2
+2023-01-14 12:05:32 WARNING         datawidth = 32
+2023-01-14 12:05:32 WARNING         latency = 5ns
+2023-01-14 12:05:32 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:32 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:32 WARNING     expression in single or double quotes:
+2023-01-14 12:05:32 WARNING         Found expression: 45nm
+2023-01-14 12:05:32 WARNING         Expression as valid string: "45nm"
+2023-01-14 12:05:32 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:32 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:32 INFO        Calculated "memory_width" = 16
+2023-01-14 12:05:32 INFO        Calculated "memory_depth" = 24
+2023-01-14 12:05:32 INFO        Calculated "n_rdwr_ports" = 2
+2023-01-14 12:05:32 INFO        Calculated "n_banks" = 1
+2023-01-14 12:05:32 WARNING     
+2023-01-14 12:05:32 WARNING     Failed to evaluate: 45nm
+2023-01-14 12:05:32 WARNING     Location: storage.technology
+2023-01-14 12:05:32 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:32 WARNING     Available bindings: 
+2023-01-14 12:05:32 WARNING         technology = 45nm
+2023-01-14 12:05:32 WARNING         width = 16
+2023-01-14 12:05:32 WARNING         depth = 24
+2023-01-14 12:05:32 WARNING         n_rdwr_ports = 2
+2023-01-14 12:05:32 WARNING         n_banks = 1
+2023-01-14 12:05:32 WARNING         n_ports = 2
+2023-01-14 12:05:32 WARNING         latency = 5ns
+2023-01-14 12:05:32 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:32 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:32 WARNING     expression in single or double quotes:
+2023-01-14 12:05:32 WARNING         Found expression: 45nm
+2023-01-14 12:05:32 WARNING         Expression as valid string: "45nm"
+2023-01-14 12:05:32 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:32 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:32 INFO        Calculated "log(memory_depth)" = 3.1780538303479458
+2023-01-14 12:05:32 WARNING     
+2023-01-14 12:05:32 WARNING     Failed to evaluate: 45nm
+2023-01-14 12:05:32 WARNING     Location: address_generators[0..1].technology
+2023-01-14 12:05:32 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:32 WARNING     Available bindings: 
+2023-01-14 12:05:32 WARNING         technology = 45nm
+2023-01-14 12:05:32 WARNING         width = 3.1780538303479458
+2023-01-14 12:05:32 WARNING         datawidth = 16
+2023-01-14 12:05:32 WARNING         num_pipeline_stages = 1
+2023-01-14 12:05:32 WARNING         latency = 5ns
+2023-01-14 12:05:32 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:32 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:32 WARNING     expression in single or double quotes:
+2023-01-14 12:05:32 WARNING         Found expression: 45nm
+2023-01-14 12:05:32 WARNING         Expression as valid string: "45nm"
+2023-01-14 12:05:32 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:32 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:32 INFO        Calculated "address_delta" = 0
+2023-01-14 12:05:32 INFO        Calculated "data_delta" = 0
+2023-01-14 12:05:32 INFO        Calculated "address_delta" = 1
+2023-01-14 12:05:32 INFO        Calculated "address_delta" = 0
+2023-01-14 12:05:32 INFO        Calculated "data_delta" = 1
+2023-01-14 12:05:32 INFO        Calculated "address_delta" = 1
+2023-01-14 12:05:32 INFO        Calculated "address_delta" = 0
+2023-01-14 12:05:32 INFO        Calculated "data_delta" = 0
+2023-01-14 12:05:32 INFO        Calculated "address_delta" = 1
+2023-01-14 12:05:32 INFO        Calculated "address_delta" = 0
+2023-01-14 12:05:32 INFO        Calculated "data_delta" = 1
+2023-01-14 12:05:32 INFO        Calculated "address_delta" = 1
+2023-01-14 12:05:32 INFO        Calculated "memory_width" = 32
+2023-01-14 12:05:32 INFO        Calculated "memory_depth" = 1024
+2023-01-14 12:05:32 INFO        Calculated "n_banks" = 4
+2023-01-14 12:05:32 WARNING     
+2023-01-14 12:05:32 WARNING     Failed to evaluate: 45nm
+2023-01-14 12:05:32 WARNING     Location: storage.technology
+2023-01-14 12:05:32 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:32 WARNING     Available bindings: 
+2023-01-14 12:05:32 WARNING         technology = 45nm
+2023-01-14 12:05:32 WARNING         width = 32
+2023-01-14 12:05:32 WARNING         depth = 1024
+2023-01-14 12:05:32 WARNING         n_rdwr_ports = 2
+2023-01-14 12:05:32 WARNING         n_banks = 4
+2023-01-14 12:05:32 WARNING         n_rd_ports = 0
+2023-01-14 12:05:32 WARNING         n_wr_ports = 0
+2023-01-14 12:05:32 WARNING         latency = 5ns
+2023-01-14 12:05:32 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:32 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:32 WARNING     expression in single or double quotes:
+2023-01-14 12:05:32 WARNING         Found expression: 45nm
+2023-01-14 12:05:32 WARNING         Expression as valid string: "45nm"
+2023-01-14 12:05:32 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:32 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:32 INFO        Calculated "log(memory_depth)" = 6.931471805599453
+2023-01-14 12:05:32 WARNING     
+2023-01-14 12:05:32 WARNING     Failed to evaluate: 45nm
+2023-01-14 12:05:32 WARNING     Location: address_generators[0..1].technology
+2023-01-14 12:05:32 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:32 WARNING     Available bindings: 
+2023-01-14 12:05:32 WARNING         technology = 45nm
+2023-01-14 12:05:32 WARNING         width = 6.931471805599453
+2023-01-14 12:05:32 WARNING         datawidth = 16
+2023-01-14 12:05:32 WARNING         num_pipeline_stages = 1
+2023-01-14 12:05:32 WARNING         latency = 5ns
+2023-01-14 12:05:32 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:32 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:32 WARNING     expression in single or double quotes:
+2023-01-14 12:05:32 WARNING         Found expression: 45nm
+2023-01-14 12:05:32 WARNING         Expression as valid string: "45nm"
+2023-01-14 12:05:32 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:32 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:32 INFO        Calculated "address_delta" = 0
+2023-01-14 12:05:32 INFO        Calculated "data_delta" = 0
+2023-01-14 12:05:32 INFO        Calculated "address_delta" = 1
+2023-01-14 12:05:32 INFO        Calculated "address_delta" = 2
+2023-01-14 12:05:32 INFO        Calculated "address_delta" = 3
+2023-01-14 12:05:32 INFO        Calculated "address_delta" = 4
+2023-01-14 12:05:32 INFO        Calculated "address_delta" = 0
+2023-01-14 12:05:32 INFO        Calculated "data_delta" = 1
+2023-01-14 12:05:32 INFO        Calculated "address_delta" = 1
+2023-01-14 12:05:32 INFO        Calculated "address_delta" = 2
+2023-01-14 12:05:32 INFO        Calculated "address_delta" = 3
+2023-01-14 12:05:32 INFO        Calculated "address_delta" = 4
+2023-01-14 12:05:32 INFO        Calculated "address_delta" = 0
+2023-01-14 12:05:32 INFO        Calculated "data_delta" = 0
+2023-01-14 12:05:32 INFO        Calculated "address_delta" = 1
+2023-01-14 12:05:32 INFO        Calculated "address_delta" = 2
+2023-01-14 12:05:32 INFO        Calculated "address_delta" = 3
+2023-01-14 12:05:32 INFO        Calculated "address_delta" = 4
+2023-01-14 12:05:32 INFO        Calculated "address_delta" = 0
+2023-01-14 12:05:32 INFO        Calculated "data_delta" = 1
+2023-01-14 12:05:32 INFO        Calculated "address_delta" = 1
+2023-01-14 12:05:32 INFO        Calculated "address_delta" = 2
+2023-01-14 12:05:32 INFO        Calculated "address_delta" = 3
+2023-01-14 12:05:32 INFO        Calculated "address_delta" = 4
+2023-01-14 12:05:32 INFO        Estimator plug-in identified by: /home/tanner/.local/share/accelergy/estimation_plug_ins/accelergy-wire-plugin/wire.estimator.yaml
+2023-01-14 12:05:32 INFO        Estimator plug-in identified by: /home/tanner/.local/share/accelergy/estimation_plug_ins/accelergy-aladdin-plug-in/aladdin.estimator.yaml
+2023-01-14 12:05:32 INFO        Estimator plug-in identified by: /home/tanner/.local/share/accelergy/estimation_plug_ins/accelergy-analog-plug-in/analog.estimator.yaml
+2023-01-14 12:05:32 INFO        Estimator plug-in identified by: /home/tanner/.local/share/accelergy/estimation_plug_ins/accelergy-table-based-plug-ins/table.estimator.yaml
+2023-01-14 12:05:32 INFO        Estimator plug-in identified by: /home/tanner/.local/share/accelergy/estimation_plug_ins/accelergy-neurosim-plugin/neurosim.estimator.yaml
+2023-01-14 12:05:32 INFO        Estimator plug-in identified by: /home/tanner/.local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti.estimator.yaml
+2023-01-14 12:05:32 INFO        Estimator plug-in identified by: /mnt/d/Research/pim_zoo/library/scaling.estimator.yaml
+2023-01-14 12:05:32 INFO        Added estimator AccelergyObject that estimates accelergy_example_object with actions do_action, read, write
+2023-01-14 12:05:32 INFO        Found estimator plug-in: <WireEstimator.WireEstimator object at 0x7f2fec452760>
+2023-01-14 12:05:32 INFO        Found estimator plug-in: <AladdinTable.AladdinTable object at 0x7f2fec40edc0>
+2023-01-14 12:05:32 INFO        Found estimator plug-in: <AnalogEstimator.AnalogEstimator object at 0x7f2fec424940>
+2023-01-14 12:05:32 INFO        Found estimator plug-in: <SetsOfTables.SetsOfTables object at 0x7f2fec42eee0>
+2023-01-14 12:05:32 INFO        Found estimator plug-in: <NeuroWrapper.NeuroWrapper object at 0x7f2fec3a35e0>
+2023-01-14 12:05:32 INFO        Found estimator plug-in: <CactiWrapper.CactiWrapper object at 0x7f2f96b70910>
+2023-01-14 12:05:32 INFO        Found estimator plug-in: <ScalingEstimator.ScalingEstimator object at 0x7f2f96b70940>
+2023-01-14 12:05:32 INFO        Found estimator plug-in: <accelergy.plug_in_interface.estimator_wrapper.EstimatorWrapper object at 0x7f2f96b1fc70>
+2023-01-14 12:05:32 INFO        
+2023-01-14 12:05:32 INFO        **ENERGY ESTIMATION** for intmac(technology=45nm, datawidth=16, num_pipeline_stages=1, latency=5ns).mac_random()
+2023-01-14 12:05:32 WARNING     Plug-in Wire Estimator is using a deprecated interface. Please update to new interface.
+2023-01-14 12:05:32 INFO        Aladdin_table estimated 2.2003500000000003p with accuracy 70%. 
+2023-01-14 12:05:32 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:32 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:32 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Identifies a set of tables named: test_tables
+2023-01-14 12:05:32 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intmac mac_random
+2023-01-14 12:05:32 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 INFO        
+2023-01-14 12:05:32 INFO        **ENERGY ESTIMATION** for FIFO(technology=45nm, depth=2, datawidth=32, latency=5ns).push()
+2023-01-14 12:05:32 INFO        Aladdin_table estimated 0.28890671874999996p with accuracy 70%. 
+2023-01-14 12:05:32 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:32 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:32 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for FIFO push
+2023-01-14 12:05:32 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 INFO        
+2023-01-14 12:05:32 INFO        **ENERGY ESTIMATION** for FIFO(technology=45nm, depth=2, datawidth=32, latency=5ns).pop()
+2023-01-14 12:05:32 INFO        Aladdin_table estimated 0.28890671874999996p with accuracy 70%. 
+2023-01-14 12:05:32 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:32 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:32 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for FIFO pop
+2023-01-14 12:05:32 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 INFO        
+2023-01-14 12:05:32 INFO        **ENERGY ESTIMATION** for intmac(technology=45nm, datawidth=16, num_pipeline_stages=1, latency=5ns).mac_reused()
+2023-01-14 12:05:32 INFO        Aladdin_table estimated 1.8767250000000002p with accuracy 70%. 
+2023-01-14 12:05:32 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:32 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:32 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intmac mac_reused
+2023-01-14 12:05:32 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 INFO        
+2023-01-14 12:05:32 INFO        **ENERGY ESTIMATION** for FIFO(technology=45nm, depth=2, datawidth=32, latency=5ns).push()
+2023-01-14 12:05:32 INFO        Aladdin_table estimated 0.28890671874999996p with accuracy 70%. 
+2023-01-14 12:05:32 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:32 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:32 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for FIFO push
+2023-01-14 12:05:32 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 INFO        
+2023-01-14 12:05:32 INFO        **ENERGY ESTIMATION** for FIFO(technology=45nm, depth=2, datawidth=32, latency=5ns).pop()
+2023-01-14 12:05:32 INFO        Aladdin_table estimated 0.28890671874999996p with accuracy 70%. 
+2023-01-14 12:05:32 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:32 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:32 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for FIFO pop
+2023-01-14 12:05:32 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 INFO        
+2023-01-14 12:05:32 INFO        **ENERGY ESTIMATION** for intmac(technology=45nm, datawidth=16, num_pipeline_stages=1, latency=5ns).mac_gated()
+2023-01-14 12:05:32 INFO        Aladdin_table estimated 0.10285p with accuracy 70%. 
+2023-01-14 12:05:32 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:32 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:32 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intmac mac_gated
+2023-01-14 12:05:32 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 INFO        
+2023-01-14 12:05:32 INFO        **ENERGY ESTIMATION** for FIFO(technology=45nm, depth=2, datawidth=32, latency=5ns).idle()
+2023-01-14 12:05:32 INFO        Aladdin_table estimated 0.011843784375p with accuracy 70%. 
+2023-01-14 12:05:32 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:32 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:32 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for FIFO idle
+2023-01-14 12:05:32 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 INFO        
+2023-01-14 12:05:32 INFO        **ENERGY ESTIMATION** for intmac(technology=45nm, datawidth=16, num_pipeline_stages=1, latency=5ns).idle()
+2023-01-14 12:05:32 INFO        Aladdin_table estimated 0.06595p with accuracy 70%. 
+2023-01-14 12:05:32 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:32 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:32 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intmac idle
+2023-01-14 12:05:32 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 INFO        
+2023-01-14 12:05:32 INFO        **ENERGY ESTIMATION** for FIFO(technology=45nm, depth=2, datawidth=32, latency=5ns).idle()
+2023-01-14 12:05:32 INFO        Aladdin_table estimated 0.011843784375p with accuracy 70%. 
+2023-01-14 12:05:32 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:32 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:32 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for FIFO idle
+2023-01-14 12:05:32 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 INFO        
+2023-01-14 12:05:32 INFO        **ENERGY ESTIMATION** for regfile(technology=45nm, width=16, depth=24, n_rdwr_ports=2, n_banks=1, n_ports=2, latency=5ns).write(address_delta=0, data_delta=0)
+2023-01-14 12:05:32 INFO        Aladdin_table estimated 0.006374125p with accuracy 70%. 
+2023-01-14 12:05:32 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:32 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:32 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for regfile write
+2023-01-14 12:05:32 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 INFO        
+2023-01-14 12:05:32 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=3.1780538303479458, datawidth=16, num_pipeline_stages=1, latency=5ns).add()
+2023-01-14 12:05:32 INFO        Aladdin_table estimated 0.04285p with accuracy 70%. 
+2023-01-14 12:05:32 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:32 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:32 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder add
+2023-01-14 12:05:32 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 INFO        
+2023-01-14 12:05:32 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=3.1780538303479458, datawidth=16, num_pipeline_stages=1, latency=5ns).idle()
+2023-01-14 12:05:32 INFO        Aladdin_table estimated 0.00595p with accuracy 70%. 
+2023-01-14 12:05:32 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:32 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:32 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder idle
+2023-01-14 12:05:32 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 INFO        
+2023-01-14 12:05:32 INFO        **ENERGY ESTIMATION** for regfile(technology=45nm, width=16, depth=24, n_rdwr_ports=2, n_banks=1, n_ports=2, latency=5ns).write(address_delta=1, data_delta=0)
+2023-01-14 12:05:32 INFO        Aladdin_table estimated 0.11472625p with accuracy 70%. 
+2023-01-14 12:05:32 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:32 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:32 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for regfile write
+2023-01-14 12:05:32 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 INFO        
+2023-01-14 12:05:32 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=3.1780538303479458, datawidth=16, num_pipeline_stages=1, latency=5ns).add()
+2023-01-14 12:05:32 INFO        Aladdin_table estimated 0.04285p with accuracy 70%. 
+2023-01-14 12:05:32 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:32 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:32 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder add
+2023-01-14 12:05:32 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 INFO        
+2023-01-14 12:05:32 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=3.1780538303479458, datawidth=16, num_pipeline_stages=1, latency=5ns).idle()
+2023-01-14 12:05:32 INFO        Aladdin_table estimated 0.00595p with accuracy 70%. 
+2023-01-14 12:05:32 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:32 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:32 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:32 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder idle
+2023-01-14 12:05:32 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for regfile(technology=45nm, width=16, depth=24, n_rdwr_ports=2, n_banks=1, n_ports=2, latency=5ns).write(address_delta=0, data_delta=1)
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.144454125p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for regfile write
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=3.1780538303479458, datawidth=16, num_pipeline_stages=1, latency=5ns).add()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.04285p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder add
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=3.1780538303479458, datawidth=16, num_pipeline_stages=1, latency=5ns).idle()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.00595p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder idle
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for regfile(technology=45nm, width=16, depth=24, n_rdwr_ports=2, n_banks=1, n_ports=2, latency=5ns).write(address_delta=1, data_delta=1)
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.25280625p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for regfile write
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=3.1780538303479458, datawidth=16, num_pipeline_stages=1, latency=5ns).add()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.04285p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder add
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=3.1780538303479458, datawidth=16, num_pipeline_stages=1, latency=5ns).idle()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.00595p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder idle
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for regfile(technology=45nm, width=16, depth=24, n_rdwr_ports=2, n_banks=1, n_ports=2, latency=5ns).read(address_delta=0, data_delta=0)
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.006374125p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for regfile read
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=3.1780538303479458, datawidth=16, num_pipeline_stages=1, latency=5ns).add()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.04285p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder add
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=3.1780538303479458, datawidth=16, num_pipeline_stages=1, latency=5ns).idle()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.00595p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder idle
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for regfile(technology=45nm, width=16, depth=24, n_rdwr_ports=2, n_banks=1, n_ports=2, latency=5ns).read(address_delta=1, data_delta=0)
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.11472625p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for regfile read
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=3.1780538303479458, datawidth=16, num_pipeline_stages=1, latency=5ns).add()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.04285p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder add
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=3.1780538303479458, datawidth=16, num_pipeline_stages=1, latency=5ns).idle()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.00595p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder idle
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for regfile(technology=45nm, width=16, depth=24, n_rdwr_ports=2, n_banks=1, n_ports=2, latency=5ns).read(address_delta=0, data_delta=1)
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.144454125p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for regfile read
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=3.1780538303479458, datawidth=16, num_pipeline_stages=1, latency=5ns).add()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.04285p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder add
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=3.1780538303479458, datawidth=16, num_pipeline_stages=1, latency=5ns).idle()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.00595p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder idle
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for regfile(technology=45nm, width=16, depth=24, n_rdwr_ports=2, n_banks=1, n_ports=2, latency=5ns).read(address_delta=1, data_delta=1)
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.25280625p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for regfile read
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=3.1780538303479458, datawidth=16, num_pipeline_stages=1, latency=5ns).add()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.04285p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder add
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=3.1780538303479458, datawidth=16, num_pipeline_stages=1, latency=5ns).idle()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.00595p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder idle
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for regfile(technology=45nm, width=16, depth=24, n_rdwr_ports=2, n_banks=1, n_ports=2, latency=5ns).idle()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.006374125p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for regfile idle
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=3.1780538303479458, datawidth=16, num_pipeline_stages=1, latency=5ns).idle()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.00595p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder idle
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for SRAM(technology=45nm, width=32, depth=1024, n_rdwr_ports=2, n_banks=4, n_rd_ports=0, n_wr_ports=0, latency=5ns).write(address_delta=0, data_delta=0)
+2023-01-14 12:05:33 INFO        Cacti estimated 0.00012515527305600001p with accuracy 70%. Messages:
+2023-01-14 12:05:33 INFO        | Querying CACTI for request: {'class_name': 'SRAM', 'attributes': ordereddict([('technology', '45nm'), ('width', 32), ('depth', 1024), ('n_rdwr_ports', 2), ('n_banks', 4), ('n_rd_ports', 0), ('n_wr_ports', 0), ('latency', '5ns')]), 'action_name': 'write', 'arguments': {'address_delta': 0, 'data_delta': 0}}
+2023-01-14 12:05:33 INFO        | copy /home/tanner/.local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/default_SRAM.cfg to /home/tanner/.local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti/01_14_12_05_33_SRAM.cfg
+2023-01-14 12:05:33 INFO        | removing temp file: /home/tanner/.local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti/01_14_12_05_33_SRAM.cfg
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for SRAM write
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).count()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.04285p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder count
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).idle()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.00595p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder idle
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for SRAM(technology=45nm, width=32, depth=1024, n_rdwr_ports=2, n_banks=4, n_rd_ports=0, n_wr_ports=0, latency=5ns).write(address_delta=1, data_delta=0)
+2023-01-14 12:05:33 INFO        Cacti estimated 0.5067542686275768p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for SRAM write
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).count()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.04285p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder count
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).idle()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.00595p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder idle
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for SRAM(technology=45nm, width=32, depth=1024, n_rdwr_ports=2, n_banks=4, n_rd_ports=0, n_wr_ports=0, latency=5ns).write(address_delta=2, data_delta=0)
+2023-01-14 12:05:33 INFO        Cacti estimated 1.0133833819820974p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for SRAM write
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).count()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.04285p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder count
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).idle()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.00595p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder idle
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for SRAM(technology=45nm, width=32, depth=1024, n_rdwr_ports=2, n_banks=4, n_rd_ports=0, n_wr_ports=0, latency=5ns).write(address_delta=3, data_delta=0)
+2023-01-14 12:05:33 INFO        Cacti estimated 1.5200124953366183p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for SRAM write
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).count()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.04285p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder count
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).idle()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.00595p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder idle
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for SRAM(technology=45nm, width=32, depth=1024, n_rdwr_ports=2, n_banks=4, n_rd_ports=0, n_wr_ports=0, latency=5ns).write(address_delta=4, data_delta=0)
+2023-01-14 12:05:33 INFO        Cacti estimated 2.026641608691139p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for SRAM write
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).count()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.04285p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder count
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).idle()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.00595p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder idle
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for SRAM(technology=45nm, width=32, depth=1024, n_rdwr_ports=2, n_banks=4, n_rd_ports=0, n_wr_ports=0, latency=5ns).write(address_delta=0, data_delta=1)
+2023-01-14 12:05:33 INFO        Cacti estimated 4.728663546581917p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for SRAM write
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).count()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.04285p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder count
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).idle()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.00595p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder idle
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for SRAM(technology=45nm, width=32, depth=1024, n_rdwr_ports=2, n_banks=4, n_rd_ports=0, n_wr_ports=0, latency=5ns).write(address_delta=1, data_delta=1)
+2023-01-14 12:05:33 INFO        Cacti estimated 5.235292659936437p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for SRAM write
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).count()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.04285p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder count
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).idle()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.00595p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder idle
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for SRAM(technology=45nm, width=32, depth=1024, n_rdwr_ports=2, n_banks=4, n_rd_ports=0, n_wr_ports=0, latency=5ns).write(address_delta=2, data_delta=1)
+2023-01-14 12:05:33 INFO        Cacti estimated 5.741921773290958p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for SRAM write
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).count()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.04285p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder count
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).idle()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.00595p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder idle
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for SRAM(technology=45nm, width=32, depth=1024, n_rdwr_ports=2, n_banks=4, n_rd_ports=0, n_wr_ports=0, latency=5ns).write(address_delta=3, data_delta=1)
+2023-01-14 12:05:33 INFO        Cacti estimated 6.2485508866454795p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for SRAM write
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).count()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.04285p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder count
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).idle()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.00595p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder idle
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for SRAM(technology=45nm, width=32, depth=1024, n_rdwr_ports=2, n_banks=4, n_rd_ports=0, n_wr_ports=0, latency=5ns).write(address_delta=4, data_delta=1)
+2023-01-14 12:05:33 INFO        Cacti estimated 6.75518p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for SRAM write
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).count()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.04285p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder count
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).idle()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.00595p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder idle
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for SRAM(technology=45nm, width=32, depth=1024, n_rdwr_ports=2, n_banks=4, n_rd_ports=0, n_wr_ports=0, latency=5ns).read(address_delta=0, data_delta=0)
+2023-01-14 12:05:33 INFO        Cacti estimated 0.00012515527305600001p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for SRAM read
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).add()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.04285p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder add
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).idle()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.00595p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder idle
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for SRAM(technology=45nm, width=32, depth=1024, n_rdwr_ports=2, n_banks=4, n_rd_ports=0, n_wr_ports=0, latency=5ns).read(address_delta=1, data_delta=0)
+2023-01-14 12:05:33 INFO        Cacti estimated 0.4343365186275768p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for SRAM read
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).add()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.04285p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder add
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).idle()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.00595p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder idle
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for SRAM(technology=45nm, width=32, depth=1024, n_rdwr_ports=2, n_banks=4, n_rd_ports=0, n_wr_ports=0, latency=5ns).read(address_delta=2, data_delta=0)
+2023-01-14 12:05:33 INFO        Cacti estimated 0.8685478819820975p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for SRAM read
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).add()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.04285p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder add
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).idle()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.00595p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder idle
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for SRAM(technology=45nm, width=32, depth=1024, n_rdwr_ports=2, n_banks=4, n_rd_ports=0, n_wr_ports=0, latency=5ns).read(address_delta=3, data_delta=0)
+2023-01-14 12:05:33 INFO        Cacti estimated 1.3027592453366181p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for SRAM read
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).add()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.04285p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder add
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).idle()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.00595p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder idle
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for SRAM(technology=45nm, width=32, depth=1024, n_rdwr_ports=2, n_banks=4, n_rd_ports=0, n_wr_ports=0, latency=5ns).read(address_delta=4, data_delta=0)
+2023-01-14 12:05:33 INFO        Cacti estimated 1.736970608691139p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for SRAM read
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).add()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.04285p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder add
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).idle()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.00595p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder idle
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for SRAM(technology=45nm, width=32, depth=1024, n_rdwr_ports=2, n_banks=4, n_rd_ports=0, n_wr_ports=0, latency=5ns).read(address_delta=0, data_delta=1)
+2023-01-14 12:05:33 INFO        Cacti estimated 4.052764546581916p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for SRAM read
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).add()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.04285p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder add
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).idle()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.00595p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder idle
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for SRAM(technology=45nm, width=32, depth=1024, n_rdwr_ports=2, n_banks=4, n_rd_ports=0, n_wr_ports=0, latency=5ns).read(address_delta=1, data_delta=1)
+2023-01-14 12:05:33 INFO        Cacti estimated 4.4869759099364375p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for SRAM read
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).add()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.04285p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder add
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).idle()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.00595p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder idle
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for SRAM(technology=45nm, width=32, depth=1024, n_rdwr_ports=2, n_banks=4, n_rd_ports=0, n_wr_ports=0, latency=5ns).read(address_delta=2, data_delta=1)
+2023-01-14 12:05:33 INFO        Cacti estimated 4.921187273290958p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for SRAM read
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).add()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.04285p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder add
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).idle()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.00595p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder idle
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for SRAM(technology=45nm, width=32, depth=1024, n_rdwr_ports=2, n_banks=4, n_rd_ports=0, n_wr_ports=0, latency=5ns).read(address_delta=3, data_delta=1)
+2023-01-14 12:05:33 INFO        Cacti estimated 5.355398636645479p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for SRAM read
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).add()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.04285p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder add
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).idle()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.00595p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder idle
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for SRAM(technology=45nm, width=32, depth=1024, n_rdwr_ports=2, n_banks=4, n_rd_ports=0, n_wr_ports=0, latency=5ns).read(address_delta=4, data_delta=1)
+2023-01-14 12:05:33 INFO        Cacti estimated 5.78961p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for SRAM read
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).add()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.04285p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder add
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).idle()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.00595p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder idle
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for SRAM(technology=45nm, width=32, depth=1024, n_rdwr_ports=2, n_banks=4, n_rd_ports=0, n_wr_ports=0, latency=5ns).idle()
+2023-01-14 12:05:33 INFO        Cacti estimated 0.00012515527305600001p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for SRAM idle
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **ENERGY ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns).idle()
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 0.00595p with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for intadder idle
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **AREA ESTIMATION** for intmac(technology=45nm, datawidth=16, num_pipeline_stages=1, latency=5ns)
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 1239.5u^2 with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Cound not find area for intmac
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **AREA ESTIMATION** for FIFO(technology=45nm, depth=2, datawidth=32, latency=5ns)
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 193.5475u^2 with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Cound not find area for FIFO
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **AREA ESTIMATION** for regfile(technology=45nm, width=16, depth=24, n_rdwr_ports=2, n_banks=1, n_ports=2, latency=5ns)
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 358.18u^2 with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Cound not find area for regfile
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **AREA ESTIMATION** for intadder(technology=45nm, width=3.1780538303479458, datawidth=16, num_pipeline_stages=1, latency=5ns)
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 89.5u^2 with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Cound not find area for intadder
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **AREA ESTIMATION** for SRAM(technology=45nm, width=32, depth=1024, n_rdwr_ports=2, n_banks=4, n_rd_ports=0, n_wr_ports=0, latency=5ns)
+2023-01-14 12:05:33 INFO        Cacti estimated 39450.0u^2 with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Cound not find area for SRAM
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        
+2023-01-14 12:05:33 INFO        **AREA ESTIMATION** for intadder(technology=45nm, width=6.931471805599453, datawidth=16, num_pipeline_stages=1, latency=5ns)
+2023-01-14 12:05:33 INFO        Aladdin_table estimated 89.5u^2 with accuracy 70%. 
+2023-01-14 12:05:33 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:33 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:33 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Cound not find area for intadder
+2023-01-14 12:05:33 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:33 INFO        verbose flattened architecture is saved to:
+2023-01-14 12:05:33 INFO        ./flattened_architecture_verbose.yaml
+2023-01-14 12:05:33 INFO        energy reference table is saved to:
+2023-01-14 12:05:33 INFO        ./ERT.yaml
+2023-01-14 12:05:33 INFO        verbose energy reference table summary is saved to:
+2023-01-14 12:05:33 INFO        ./ERT_summary_verbose.yaml
+2023-01-14 12:05:33 INFO        energy estimations are saved to:
+2023-01-14 12:05:33 INFO        ./energy_estimation.yaml
+2023-01-14 12:05:33 INFO        area reference table is saved to:
+2023-01-14 12:05:33 INFO        ./ART.yaml
+2023-01-14 12:05:33 INFO        verbose area reference table summary is saved to:
+2023-01-14 12:05:33 INFO        ./ART_summary_verbose.yaml
+    _                _                      
+   / \   ___ ___ ___| | ___ _ __ __ _ _   _ 
+  / _ \ / __/ __/ _ \ |/ _ \ '__/ _` | | | |
+ / ___ \ (_| (_|  __/ |  __/ | | (_| | |_| |
+/_/   \_\___\___\___|_|\___|_|  \__, |\__, |
+                                |___/ |___/ 
+
+{'ERT': 1, 'ERT_summary': 1, 'ART': 1, 'ART_summary': 1, 'energy_estimation': 1, 'flattened_arch': 1}
+Compute ART = 1, Compute ERT = 1, Compute Energy Estimate = 1
+Loaded 201 components from library.
+Getting all estimators in module <module 'python_plug_in' from '/mnt/d/research/yaml_playground/plug_ins/test_plug_in.py'>
+['/home/tanner/.local/share/accelergy/estimation_plug_ins', '/mnt/d/Research/NVM/ADC/Plugin', '/mnt/d/Research/pim_zoo/library']
+

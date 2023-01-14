@@ -1,0 +1,33 @@
+2023-01-14 11:30:41 WARNING     The "-v/--verbose 1" option is deprecated. Please omit the "1" and only include the "-v/--verbose" option to enable verbose mode.
+2023-01-14 11:30:41 INFO        generating outputs according to the following specified output flags... 
+ Please use the -f flag to update the preference (default to all output files)
+2023-01-14 11:30:41 INFO        Located config file at /home/tanner/.config/accelergy/accelergy_config.yaml.
+2023-01-14 11:30:41 INFO        config file located:
+2023-01-14 11:30:41 INFO        /home/tanner/.config/accelergy/accelergy_config.yaml
+2023-01-14 11:30:41 INFO        primitive component file parsed: 
+2023-01-14 11:30:41 INFO        /home/tanner/.local/share/accelergy/primitive_component_libs/primitive_component.lib.yaml
+2023-01-14 11:30:41 WARNING     wire redefined in /home/tanner/.local/share/accelergy/primitive_component_libs/wire.lib.yaml
+2023-01-14 11:30:41 WARNING     wire redefined in /home/tanner/.local/share/accelergy/primitive_component_libs/wire.lib.yaml
+2023-01-14 11:30:41 INFO        primitive component file parsed: 
+2023-01-14 11:30:41 INFO        /home/tanner/.local/share/accelergy/primitive_component_libs/wire.lib.yaml
+2023-01-14 11:30:41 INFO        primitive component file parsed: 
+2023-01-14 11:30:41 INFO        /home/tanner/.local/share/accelergy/primitive_component_libs/neurosim_components.lib.yaml
+2023-01-14 11:30:41 INFO        primitive component file parsed: 
+2023-01-14 11:30:41 INFO        /home/tanner/.local/share/accelergy/primitive_component_libs/soc_primitives.lib.yaml
+2023-01-14 11:30:41 INFO        primitive component file parsed: 
+2023-01-14 11:30:41 INFO        /home/tanner/.local/share/accelergy/primitive_component_libs/pim_primitive_component.lib.yaml
+2023-01-14 11:30:41 WARNING     ADC redefined in /home/tanner/.local/share/accelergy/primitive_component_libs/analog_components.lib.yaml
+2023-01-14 11:30:41 INFO        primitive component file parsed: 
+2023-01-14 11:30:41 INFO        /home/tanner/.local/share/accelergy/primitive_component_libs/analog_components.lib.yaml
+2023-01-14 11:30:41 INFO        primitive component file parsed: 
+2023-01-14 11:30:41 INFO        /mnt/d/Research/pim_zoo/library/scaling.lib.yaml
+2023-01-14 11:30:41 INFO        no input is provided, exiting...
+    _                _                      
+   / \   ___ ___ ___| | ___ _ __ __ _ _   _ 
+  / _ \ / __/ __/ _ \ |/ _ \ '__/ _` | | | |
+ / ___ \ (_| (_|  __/ |  __/ | | (_| | |_| |
+/_/   \_\___\___\___|_|\___|_|  \__, |\__, |
+                                |___/ |___/ 
+
+{'ERT': 1, 'ERT_summary': 1, 'ART': 1, 'ART_summary': 1, 'energy_estimation': 1, 'flattened_arch': 1}
+Compute ART = 1, Compute ERT = 1, Compute Energy Estimate = 1

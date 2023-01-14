@@ -31,11 +31,13 @@ from accelergy.compound_component import CompoundComponent
 from accelergy.ERT_generator import EnergyReferenceTableGenerator, ERT_dict_to_obj
 from accelergy.ART_generator import AreaReferenceTableGenerator
 from accelergy.energy_calculator import EnergyCalculator
-from accelergy.io import parse_commandline_args, generate_output_files
-from accelergy.utils import *    
-    
+from accelergy.input_output import parse_commandline_args, generate_output_files
+from accelergy.utils.utils import *    
+import accelergy.version as version
+import accelergy.parsing_utils
+
 def run():
-    accelergy_version = 0.3
+    accelergy_version = version.__version__
 
     # ----- Interpret Commandline Arguments
     args = parse_commandline_args()
@@ -43,6 +45,9 @@ def run():
     path_arglist = args.files
     precision = args.precision
     desired_output_files = args.output_files
+    scripts = args.scripts
+    extra_plugins = args.extra_plugins
+    logging.getLogger().setLevel(logging.INFO if not args.verbose else logging.DEBUG)
     # interpret desired output files
     oflags = {'ERT': 0, 'ERT_summary': 0, 'ART': 0, 'ART_summary': 0,
               'energy_estimation': 0, 'flattened_arch': 0}
@@ -60,6 +65,8 @@ def run():
     compute_energy_estimate = 1 if oflags['energy_estimation'] else 0
     compute_ART = 1 if oflags['ART'] or oflags['ART_summary'] else 0
 
+    print(f'Compute ART = {compute_ART}, Compute ERT = {compute_ERT}, Compute Energy Estimate = {compute_energy_estimate}')
+
     # ----- Global Storage of System Info
     system_state = SystemState()
     system_state.set_accelergy_version(accelergy_version)
@@ -74,6 +81,7 @@ def run():
 
     # ----- Determine what operations should be performed
     available_inputs = raw_dicts.get_available_inputs()
+    accelergy.parsing_utils.set_script_paths(scripts)
 
     # ---- Detecting config only cases and gracefully exiting
     if len(available_inputs) == 0:
@@ -106,18 +114,24 @@ def run():
         # ----- Add the Fully Defined Components (all flattened out)
 
         for arch_component in system_state.arch_spec:
-            if arch_component.get_class_name() in system_state.pc_classes:
-                class_name = arch_component.get_class_name()
-                pc = PrimitiveComponent({'component': arch_component, 'pc_class': system_state.pc_classes[class_name]})
-                system_state.add_pc(pc)
-            elif arch_component.get_class_name() in system_state.cc_classes:
+            if arch_component.get_class_name() in system_state.cc_classes:
                 cc = CompoundComponent({'component': arch_component, 'pc_classes':system_state.pc_classes, 'cc_classes':system_state.cc_classes})
                 system_state.add_cc(cc)
             else:
-                ERROR_CLEAN_EXIT('Cannot find class name %s specified in architecture'%arch_component.get_class())
-
+                class_name = arch_component.get_class_name()
+                if class_name not in system_state.pc_classes:
+                    system_state.pc_classes[class_name] = ComponentClass({'name': class_name, 'attributes': {}, 'actions': []})
+                pc = PrimitiveComponent({'component': arch_component, 'pc_class': system_state.pc_classes[class_name]})
+                system_state.add_pc(pc)
         # ----- Add all available plug-ins
-        system_state.add_plug_ins(plug_in_path_to_obj(raw_dicts.get_estimation_plug_in_paths(), output_prefix))
+        system_state.add_plug_ins(
+            plug_in_path_to_obj(
+                raw_dicts.get_estimation_plug_in_paths(),
+                raw_dicts.get_python_plug_in_paths() + extra_plugins,
+                output_prefix),
+        )
+        print(raw_dicts.get_estimation_plug_in_paths())
+        print(output_prefix)
 
     if compute_ERT and 'ERT' in available_inputs:
         # ERT/ ERT_summary/ energy estimates need to be generated with provided ERT
@@ -163,6 +177,7 @@ def main():
     try:
         run()
     except Exception as e:
+        raise e
         import sys
         import traceback
         from traceback import linecache

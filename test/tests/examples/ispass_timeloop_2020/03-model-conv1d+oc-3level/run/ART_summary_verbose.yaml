@@ -1,0 +1,35 @@
+ART_summary:
+  version: 0.3
+  table_summary:
+  - name: System.Chip.PE.RegisterFile
+    area: 887.84
+    primitive_estimations:
+    - name: System.Chip.PE.RegisterFile
+      estimator: Aladdin_table
+      area: 887.84
+      area_share: 1.0
+      total_component_area: 887.84
+  - name: System.Chip.PE.MACC
+    area: 332.25
+    primitive_estimations:
+    - name: System.Chip.PE.MACC
+      estimator: Aladdin_table
+      area: 332.25
+      area_share: 1.0
+      total_component_area: 332.25
+  - name: System.Chip.GlobalBuffer
+    area: 679274.0
+    primitive_estimations:
+    - name: System.Chip.GlobalBuffer
+      estimator: Cacti
+      area: 679274.0
+      area_share: 1.0
+      total_component_area: 679274.0
+  - name: System.MainMemory
+    area: 0.0
+    primitive_estimations:
+    - name: System.MainMemory
+      estimator: Cacti
+      area: 0.0
+      area_share: 1.0
+      total_component_area: 0.0

@@ -1,0 +1,260 @@
+architecture:
+  version: 0.3
+  local:
+  - name: arch.three_level_hierarchy
+    class: three_level_hierarchy
+    attributes: {}
+    primitive_components:
+    - name: level_two.level_two.primitive
+      class: dummy_object_area_energy_one
+      attributes: {}
+      area_share: 24
+    actions:
+    - name: read
+      arguments: null
+      primitive_actions:
+      - name: level_two.level_two.primitive
+        action: read
+        arguments: null
+        action_share: 64.0
+    - name: write
+      arguments: null
+      primitive_actions:
+      - name: level_two.level_two.primitive
+        action: write
+        arguments: null
+        action_share: 0.125
+  - name: arch.two_level_hierarchy
+    class: two_level_hierarchy
+    attributes: {}
+    primitive_components:
+    - name: level_two.primitive
+      class: dummy_object_area_energy_one
+      attributes: {}
+      area_share: 6
+    actions:
+    - name: read
+      arguments: null
+      primitive_actions:
+      - name: level_two.primitive
+        action: read
+        arguments: null
+        action_share: 32.0
+    - name: write
+      arguments: null
+      primitive_actions:
+      - name: level_two.primitive
+        action: write
+        arguments: null
+        action_share: 0.25
+  - name: arch.one_level_hierarchy
+    class: one_level_hierarchy
+    attributes: {}
+    primitive_components:
+    - name: primitive
+      class: dummy_object_area_energy_one
+      attributes: {}
+      area_share: 2
+    actions:
+    - name: read
+      arguments: null
+      primitive_actions:
+      - name: primitive
+        action: read
+        arguments: null
+        action_share: 8.0
+    - name: write
+      arguments: null
+      primitive_actions:
+      - name: primitive
+        action: write
+        arguments: null
+        action_share: 0.5
+  - name: arch.three_level_hierarchy_with_area_share
+    class: three_level_hierarchy
+    attributes:
+      area_share: 2
+
+    primitive_components:
+    - name: level_two.level_two.primitive
+      class: dummy_object_area_energy_one
+      attributes: {}
+      area_share: 48
+    actions:
+    - name: read
+      arguments: null
+      primitive_actions:
+      - name: level_two.level_two.primitive
+        action: read
+        arguments: null
+        action_share: 64.0
+    - name: write
+      arguments: null
+      primitive_actions:
+      - name: level_two.level_two.primitive
+        action: write
+        arguments: null
+        action_share: 0.125
+  - name: arch.two_level_hierarchy_with_area_share
+    class: two_level_hierarchy
+    attributes:
+      area_share: 3
+
+    primitive_components:
+    - name: level_two.primitive
+      class: dummy_object_area_energy_one
+      attributes: {}
+      area_share: 18
+    actions:
+    - name: read
+      arguments: null
+      primitive_actions:
+      - name: level_two.primitive
+        action: read
+        arguments: null
+        action_share: 32.0
+    - name: write
+      arguments: null
+      primitive_actions:
+      - name: level_two.primitive
+        action: write
+        arguments: null
+        action_share: 0.25
+  - name: arch.one_level_hierarchy_with_area_share
+    class: one_level_hierarchy
+    attributes:
+      area_share: 4
+
+    primitive_components:
+    - name: primitive
+      class: dummy_object_area_energy_one
+      attributes: {}
+      area_share: 8
+    actions:
+    - name: read
+      arguments: null
+      primitive_actions:
+      - name: primitive
+        action: read
+        arguments: null
+        action_share: 8.0
+    - name: write
+      arguments: null
+      primitive_actions:
+      - name: primitive
+        action: write
+        arguments: null
+        action_share: 0.5
+  - name: arch.three_level_hierarchy_with_area_share_defined_not_in_attrs
+    class: three_level_hierarchy
+    attributes: {}
+    primitive_components:
+    - name: level_two.level_two.primitive
+      class: dummy_object_area_energy_one
+      attributes: {}
+      area_share: 144
+    actions:
+    - name: read
+      arguments: null
+      primitive_actions:
+      - name: level_two.level_two.primitive
+        action: read
+        arguments: null
+        action_share: 64.0
+    - name: write
+      arguments: null
+      primitive_actions:
+      - name: level_two.level_two.primitive
+        action: write
+        arguments: null
+        action_share: 0.125
+  - name: arch.two_level_hierarchy_with_area_share_defined_not_in_attrs
+    class: two_level_hierarchy
+    attributes: {}
+    primitive_components:
+    - name: level_two.primitive
+      class: dummy_object_area_energy_one
+      attributes: {}
+      area_share: 42
+    actions:
+    - name: read
+      arguments: null
+      primitive_actions:
+      - name: level_two.primitive
+        action: read
+        arguments: null
+        action_share: 32.0
+    - name: write
+      arguments: null
+      primitive_actions:
+      - name: level_two.primitive
+        action: write
+        arguments: null
+        action_share: 0.25
+  - name: arch.one_level_hierarchy_with_area_share_defined_not_in_attrs
+    class: one_level_hierarchy
+    attributes: {}
+    primitive_components:
+    - name: primitive
+      class: dummy_object_area_energy_one
+      attributes: {}
+      area_share: 16
+    actions:
+    - name: read
+      arguments: null
+      primitive_actions:
+      - name: primitive
+        action: read
+        arguments: null
+        action_share: 8.0
+    - name: write
+      arguments: null
+      primitive_actions:
+      - name: primitive
+        action: write
+        arguments: null
+        action_share: 0.5
+  - name: arch.two_subcomponents_different_shares
+    class: two_subcomponents_different_shares
+    attributes: {}
+    primitive_components:
+    - name: primitive1
+      class: dummy_object_area_energy_one
+      attributes: {area_share: 2}
+      area_share: 2
+    - name: primitive2
+      class: dummy_object_area_energy_one
+      attributes: {}
+      area_share: 3
+    actions:
+    - name: read
+      arguments: null
+      primitive_actions:
+      - name: primitive1
+        action: read
+        arguments: null
+        action_share: 8.0
+      - name: primitive2
+        action: read
+        arguments: null
+        action_share: 4.0
+    - name: write
+      arguments: null
+      primitive_actions:
+      - name: primitive1
+        action: write
+        arguments: null
+        action_share: 0.5
+      - name: primitive2
+        action: write
+        arguments: null
+        action_share: 0.25
+  - name: arch.primitive_direct_from_arch
+    class: dummy_object_area_energy_one
+    actions: []
+  - name: arch.primitive_direct_from_arch_with_area_share
+    class: dummy_object_area_energy_one
+    actions: []
+  - name: arch.primitive_direct_from_arch_with_area_share_defined_not_in_attrs
+    class: dummy_object_area_energy_one
+    actions: []

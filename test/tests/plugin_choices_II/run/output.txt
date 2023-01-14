@@ -1,0 +1,468 @@
+2023-01-14 12:05:25 WARNING     The "-v/--verbose 1" option is deprecated. Please omit the "1" and only include the "-v/--verbose" option to enable verbose mode.
+2023-01-14 12:05:25 INFO        generating outputs according to the following specified output flags... 
+ Please use the -f flag to update the preference (default to all output files)
+2023-01-14 12:05:25 INFO        Located config file at /home/tanner/.config/accelergy/accelergy_config.yaml.
+2023-01-14 12:05:25 INFO        config file located:
+2023-01-14 12:05:25 INFO        /home/tanner/.config/accelergy/accelergy_config.yaml
+2023-01-14 12:05:25 INFO        Parsing file /mnt/d/research/yaml_playground/unit_tests/tests/plugin_choices_II/inputs/arch.yaml for architecture info
+2023-01-14 12:05:25 INFO        Parsing file /mnt/d/research/yaml_playground/unit_tests/tests/plugin_choices_II/inputs/components.yaml for compound_components info
+2023-01-14 12:05:25 INFO        primitive component file parsed: 
+2023-01-14 12:05:25 INFO        /home/tanner/.local/share/accelergy/primitive_component_libs/primitive_component.lib.yaml
+2023-01-14 12:05:25 WARNING     wire redefined in /home/tanner/.local/share/accelergy/primitive_component_libs/wire.lib.yaml
+2023-01-14 12:05:25 WARNING     wire redefined in /home/tanner/.local/share/accelergy/primitive_component_libs/wire.lib.yaml
+2023-01-14 12:05:25 INFO        primitive component file parsed: 
+2023-01-14 12:05:25 INFO        /home/tanner/.local/share/accelergy/primitive_component_libs/wire.lib.yaml
+2023-01-14 12:05:25 INFO        primitive component file parsed: 
+2023-01-14 12:05:25 INFO        /home/tanner/.local/share/accelergy/primitive_component_libs/neurosim_components.lib.yaml
+2023-01-14 12:05:25 INFO        primitive component file parsed: 
+2023-01-14 12:05:25 INFO        /home/tanner/.local/share/accelergy/primitive_component_libs/soc_primitives.lib.yaml
+2023-01-14 12:05:25 INFO        primitive component file parsed: 
+2023-01-14 12:05:25 INFO        /home/tanner/.local/share/accelergy/primitive_component_libs/pim_primitive_component.lib.yaml
+2023-01-14 12:05:25 WARNING     ADC redefined in /home/tanner/.local/share/accelergy/primitive_component_libs/analog_components.lib.yaml
+2023-01-14 12:05:25 INFO        primitive component file parsed: 
+2023-01-14 12:05:25 INFO        /home/tanner/.local/share/accelergy/primitive_component_libs/analog_components.lib.yaml
+2023-01-14 12:05:25 INFO        primitive component file parsed: 
+2023-01-14 12:05:25 INFO        /mnt/d/Research/pim_zoo/library/scaling.lib.yaml
+2023-01-14 12:05:25 INFO        Estimator plug-in identified by: /home/tanner/.local/share/accelergy/estimation_plug_ins/accelergy-wire-plugin/wire.estimator.yaml
+2023-01-14 12:05:25 INFO        Estimator plug-in identified by: /home/tanner/.local/share/accelergy/estimation_plug_ins/accelergy-aladdin-plug-in/aladdin.estimator.yaml
+2023-01-14 12:05:25 INFO        Estimator plug-in identified by: /home/tanner/.local/share/accelergy/estimation_plug_ins/accelergy-analog-plug-in/analog.estimator.yaml
+2023-01-14 12:05:26 INFO        Estimator plug-in identified by: /home/tanner/.local/share/accelergy/estimation_plug_ins/accelergy-table-based-plug-ins/table.estimator.yaml
+2023-01-14 12:05:26 INFO        Estimator plug-in identified by: /home/tanner/.local/share/accelergy/estimation_plug_ins/accelergy-neurosim-plugin/neurosim.estimator.yaml
+2023-01-14 12:05:26 INFO        Estimator plug-in identified by: /home/tanner/.local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti.estimator.yaml
+2023-01-14 12:05:26 INFO        Estimator plug-in identified by: /mnt/d/Research/pim_zoo/library/scaling.estimator.yaml
+2023-01-14 12:05:26 INFO        Added estimator AccelergyObject that estimates accelergy_example_object with actions do_action, read, write
+2023-01-14 12:05:26 INFO        Found estimator plug-in: <WireEstimator.WireEstimator object at 0x7f385297ee20>
+2023-01-14 12:05:26 INFO        Found estimator plug-in: <AladdinTable.AladdinTable object at 0x7f385298cf10>
+2023-01-14 12:05:26 INFO        Found estimator plug-in: <AnalogEstimator.AnalogEstimator object at 0x7f3852998190>
+2023-01-14 12:05:26 INFO        Found estimator plug-in: <SetsOfTables.SetsOfTables object at 0x7f3852998f70>
+2023-01-14 12:05:26 INFO        Found estimator plug-in: <NeuroWrapper.NeuroWrapper object at 0x7f3852956790>
+2023-01-14 12:05:26 INFO        Found estimator plug-in: <CactiWrapper.CactiWrapper object at 0x7f37fd260a90>
+2023-01-14 12:05:26 INFO        Found estimator plug-in: <ScalingEstimator.ScalingEstimator object at 0x7f37fd260a60>
+2023-01-14 12:05:26 INFO        Found estimator plug-in: <accelergy.plug_in_interface.estimator_wrapper.EstimatorWrapper object at 0x7f37fd0d6100>
+2023-01-14 12:05:26 INFO        Added estimator AccelergyObject that estimates accelergy_example_object with actions do_action, read, write
+2023-01-14 12:05:26 INFO        Added estimator HighAccuracyPlugIn that estimates component with actions action_a, action_b, action_c
+2023-01-14 12:05:26 INFO        Added estimator LowAccuracyPlugIn that estimates component with actions action_a, action_b
+2023-01-14 12:05:26 INFO        Added estimator MidAccuracyPlugIn that estimates component with actions action_a, action_b
+2023-01-14 12:05:26 INFO        Found estimator plug-in: <WireEstimator.WireEstimator object at 0x7f385297ee20>
+2023-01-14 12:05:26 INFO        Found estimator plug-in: <AladdinTable.AladdinTable object at 0x7f385298cf10>
+2023-01-14 12:05:26 INFO        Found estimator plug-in: <AnalogEstimator.AnalogEstimator object at 0x7f3852998190>
+2023-01-14 12:05:26 INFO        Found estimator plug-in: <SetsOfTables.SetsOfTables object at 0x7f3852998f70>
+2023-01-14 12:05:26 INFO        Found estimator plug-in: <NeuroWrapper.NeuroWrapper object at 0x7f3852956790>
+2023-01-14 12:05:26 INFO        Found estimator plug-in: <CactiWrapper.CactiWrapper object at 0x7f37fd260a90>
+2023-01-14 12:05:26 INFO        Found estimator plug-in: <ScalingEstimator.ScalingEstimator object at 0x7f37fd260a60>
+2023-01-14 12:05:26 INFO        Found estimator plug-in: <accelergy.plug_in_interface.estimator_wrapper.EstimatorWrapper object at 0x7f37fd0d6100>
+2023-01-14 12:05:26 INFO        Found estimator plug-in: <accelergy.plug_in_interface.estimator_wrapper.EstimatorWrapper object at 0x7f37fd0d6730>
+2023-01-14 12:05:26 INFO        Found estimator plug-in: <accelergy.plug_in_interface.estimator_wrapper.EstimatorWrapper object at 0x7f37fd0d6ac0>
+2023-01-14 12:05:26 INFO        Found estimator plug-in: <accelergy.plug_in_interface.estimator_wrapper.EstimatorWrapper object at 0x7f37fd0d6850>
+2023-01-14 12:05:26 INFO        Found estimator plug-in: <accelergy.plug_in_interface.estimator_wrapper.EstimatorWrapper object at 0x7f37fd06f820>
+2023-01-14 12:05:26 INFO        
+2023-01-14 12:05:26 INFO        **ENERGY ESTIMATION** for component(unused_parameter=1, plug_in=LowAccuracyPlugIn, min_accuracy=40).action_a()
+2023-01-14 12:05:26 WARNING     Plug-in Wire Estimator is using a deprecated interface. Please update to new interface.
+2023-01-14 12:05:26 INFO        LowAccuracyPlugIn estimated 1e-12 with accuracy 90%. Messages:
+2023-01-14 12:05:26 INFO        | Unused arguments (unused_parameter, plug_in, min_accuracy) provided for component.__init__. Arguments used: ()
+2023-01-14 12:05:26 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:26 DEBUG       | LowAccuracyPlugIn with accuracy 90% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:26 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:26 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for component action_a
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | HighAccuracyPlugIn with accuracy 0% estimating accuracy: Argument for component.__init__ is missing: required_parameter. Arguments provided: unused_parameter, plug_in, min_accuracy
+2023-01-14 12:05:26 DEBUG       | MidAccuracyPlugIn with accuracy 0% estimating accuracy: Plug-in MidAccuracyPlugIn was not selected for query.
+2023-01-14 12:05:26 INFO        
+2023-01-14 12:05:26 INFO        **ENERGY ESTIMATION** for component(unused_parameter=1, plug_in=LowAccuracyPlugIn, min_accuracy=40).action_b()
+2023-01-14 12:05:26 INFO        LowAccuracyPlugIn estimated 1e-12 with accuracy 90%. Messages:
+2023-01-14 12:05:26 INFO        | Unused arguments (unused_parameter, plug_in, min_accuracy) provided for component.__init__. Arguments used: ()
+2023-01-14 12:05:26 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:26 DEBUG       | LowAccuracyPlugIn with accuracy 90% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:26 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:26 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for component action_b
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | HighAccuracyPlugIn with accuracy 0% estimating accuracy: Argument for component.__init__ is missing: required_parameter. Arguments provided: unused_parameter, plug_in, min_accuracy
+2023-01-14 12:05:26 DEBUG       | MidAccuracyPlugIn with accuracy 0% estimating accuracy: Plug-in MidAccuracyPlugIn was not selected for query.
+2023-01-14 12:05:26 INFO        
+2023-01-14 12:05:26 INFO        **ENERGY ESTIMATION** for component(unused_parameter=1).action_a(required_parameter=1)
+2023-01-14 12:05:26 INFO        MidAccuracyPlugIn estimated 2e-12 with accuracy 95%. Messages:
+2023-01-14 12:05:26 INFO        | Unused arguments (unused_parameter) provided for component.__init__. Arguments used: ()
+2023-01-14 12:05:26 INFO        | Unused arguments (required_parameter) provided for component.action_a. Arguments used: ()
+2023-01-14 12:05:26 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:26 DEBUG       | MidAccuracyPlugIn with accuracy 95% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | LowAccuracyPlugIn with accuracy 90% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:26 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:26 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for component action_a
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | HighAccuracyPlugIn with accuracy 0% estimating accuracy: Argument for component.__init__ is missing: required_parameter. Arguments provided: unused_parameter
+2023-01-14 12:05:26 INFO        
+2023-01-14 12:05:26 INFO        **ENERGY ESTIMATION** for component(unused_parameter=1).action_b(required_parameter=1)
+2023-01-14 12:05:26 INFO        LowAccuracyPlugIn estimated 1e-12 with accuracy 90%. Messages:
+2023-01-14 12:05:26 INFO        | Unused arguments (unused_parameter) provided for component.__init__. Arguments used: ()
+2023-01-14 12:05:26 INFO        | Unused arguments (required_parameter) provided for component.action_b. Arguments used: ()
+2023-01-14 12:05:26 DEBUG       Estimator logs:
+2023-01-14 12:05:26 DEBUG       | MidAccuracyPlugIn with accuracy 95% estimating value: 
+2023-01-14 12:05:26 DEBUG       |  | Unused arguments (unused_parameter) provided for component.__init__. Arguments used: ()
+2023-01-14 12:05:26 DEBUG       |  | Unused arguments (required_parameter) provided for component.action_b. Arguments used: ()
+2023-01-14 12:05:26 DEBUG       |  | Exception: Broken action
+2023-01-14 12:05:26 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:26 DEBUG       | MidAccuracyPlugIn with accuracy 95% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | LowAccuracyPlugIn with accuracy 90% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:26 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:26 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for component action_b
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | HighAccuracyPlugIn with accuracy 0% estimating accuracy: Argument for component.__init__ is missing: required_parameter. Arguments provided: unused_parameter
+2023-01-14 12:05:26 DEBUG       | MidAccuracyPlugIn with accuracy 95% estimating value: Exception: Broken action
+2023-01-14 12:05:26 INFO        Plug-ins provided accuracy, but failed to estimate:
+2023-01-14 12:05:26 INFO        | MidAccuracyPlugIn with accuracy 95% estimating value: Exception: Broken action
+2023-01-14 12:05:26 INFO        
+2023-01-14 12:05:26 INFO        **ENERGY ESTIMATION** for component(required_parameter=3).action_a()
+2023-01-14 12:05:26 INFO        HighAccuracyPlugIn estimated 3e-12 with accuracy 100%. 
+2023-01-14 12:05:26 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:26 DEBUG       | HighAccuracyPlugIn with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | MidAccuracyPlugIn with accuracy 95% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | LowAccuracyPlugIn with accuracy 90% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:26 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:26 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for component action_a
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 INFO        
+2023-01-14 12:05:26 INFO        **ENERGY ESTIMATION** for component(required_parameter=3).action_b()
+2023-01-14 12:05:26 INFO        LowAccuracyPlugIn estimated 1e-12 with accuracy 90%. Messages:
+2023-01-14 12:05:26 INFO        | Unused arguments (required_parameter) provided for component.__init__. Arguments used: ()
+2023-01-14 12:05:26 DEBUG       Estimator logs:
+2023-01-14 12:05:26 DEBUG       | MidAccuracyPlugIn with accuracy 95% estimating value: 
+2023-01-14 12:05:26 DEBUG       |  | Unused arguments (required_parameter) provided for component.__init__. Arguments used: ()
+2023-01-14 12:05:26 DEBUG       |  | Exception: Broken action
+2023-01-14 12:05:26 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:26 DEBUG       | MidAccuracyPlugIn with accuracy 95% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | LowAccuracyPlugIn with accuracy 90% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:26 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:26 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for component action_b
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | HighAccuracyPlugIn with accuracy 0% estimating accuracy: AttributeError: Action with name action_b found in component, but provided arguments do not match. Arguments provided:
+2023-01-14 12:05:26 DEBUG       |  	. 
+2023-01-14 12:05:26 DEBUG       |  	Arguments required: required_parameter
+2023-01-14 12:05:26 DEBUG       | MidAccuracyPlugIn with accuracy 95% estimating value: Exception: Broken action
+2023-01-14 12:05:26 INFO        Plug-ins provided accuracy, but failed to estimate:
+2023-01-14 12:05:26 INFO        | MidAccuracyPlugIn with accuracy 95% estimating value: Exception: Broken action
+2023-01-14 12:05:26 INFO        
+2023-01-14 12:05:26 INFO        **ENERGY ESTIMATION** for component(required_parameter=3, optional_parameter=9).action_a(required_parameter=5)
+2023-01-14 12:05:26 INFO        HighAccuracyPlugIn estimated 3e-12 with accuracy 100%. Messages:
+2023-01-14 12:05:26 INFO        | Unused arguments (required_parameter) provided for component.action_a. Arguments used: ()
+2023-01-14 12:05:26 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:26 DEBUG       | HighAccuracyPlugIn with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | MidAccuracyPlugIn with accuracy 95% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | LowAccuracyPlugIn with accuracy 90% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:26 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:26 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for component action_a
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 INFO        
+2023-01-14 12:05:26 INFO        **ENERGY ESTIMATION** for component(required_parameter=3, optional_parameter=9).action_b(required_parameter=5)
+2023-01-14 12:05:26 INFO        HighAccuracyPlugIn estimated 1.5e-11 with accuracy 100%. 
+2023-01-14 12:05:26 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:26 DEBUG       | HighAccuracyPlugIn with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | MidAccuracyPlugIn with accuracy 95% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | LowAccuracyPlugIn with accuracy 90% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:26 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:26 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for component action_b
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 INFO        
+2023-01-14 12:05:26 INFO        **ENERGY ESTIMATION** for component(required_parameter=3, optional_parameter=9).action_c(required_1=1, required_2=3)
+2023-01-14 12:05:26 INFO        HighAccuracyPlugIn estimated 3.31e-10 with accuracy 100%. 
+2023-01-14 12:05:26 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:26 DEBUG       | HighAccuracyPlugIn with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:26 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:26 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for component action_c
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | LowAccuracyPlugIn with accuracy 0% estimating accuracy: AttributeError: No action with name action_c found in component. Actions supported: action_a, action_b
+2023-01-14 12:05:26 DEBUG       | MidAccuracyPlugIn with accuracy 0% estimating accuracy: AttributeError: No action with name action_c found in component. Actions supported: action_a, action_b
+2023-01-14 12:05:26 INFO        
+2023-01-14 12:05:26 INFO        **ENERGY ESTIMATION** for component(required_parameter=3, optional_parameter=9).action_c(optional=9, required_1=1, required_2=3)
+2023-01-14 12:05:26 INFO        HighAccuracyPlugIn estimated 9.31e-10 with accuracy 100%. 
+2023-01-14 12:05:26 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:26 DEBUG       | HighAccuracyPlugIn with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:26 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:26 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for component action_c
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | LowAccuracyPlugIn with accuracy 0% estimating accuracy: AttributeError: No action with name action_c found in component. Actions supported: action_a, action_b
+2023-01-14 12:05:26 DEBUG       | MidAccuracyPlugIn with accuracy 0% estimating accuracy: AttributeError: No action with name action_c found in component. Actions supported: action_a, action_b
+2023-01-14 12:05:26 INFO        
+2023-01-14 12:05:26 INFO        **ENERGY ESTIMATION** for component(required_parameter=1000).action_a(required_parameter=1)
+2023-01-14 12:05:26 INFO        HighAccuracyPlugIn estimated 1e-09 with accuracy 100%. Messages:
+2023-01-14 12:05:26 INFO        | Unused arguments (required_parameter) provided for component.action_a. Arguments used: ()
+2023-01-14 12:05:26 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:26 DEBUG       | HighAccuracyPlugIn with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | MidAccuracyPlugIn with accuracy 95% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | LowAccuracyPlugIn with accuracy 90% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:26 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:26 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for component action_a
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 INFO        
+2023-01-14 12:05:26 INFO        **ENERGY ESTIMATION** for component(required_parameter=1000).action_b(required_parameter=3)
+2023-01-14 12:05:26 INFO        HighAccuracyPlugIn estimated 3e-09 with accuracy 100%. 
+2023-01-14 12:05:26 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:26 DEBUG       | HighAccuracyPlugIn with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | MidAccuracyPlugIn with accuracy 95% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | LowAccuracyPlugIn with accuracy 90% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:26 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:26 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for component action_b
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 INFO        
+2023-01-14 12:05:26 INFO        **ENERGY ESTIMATION** for component(required_parameter=-1).action_a(required_parameter=1)
+2023-01-14 12:05:26 INFO        MidAccuracyPlugIn estimated 2e-12 with accuracy 95%. Messages:
+2023-01-14 12:05:26 INFO        | Unused arguments (required_parameter) provided for component.__init__. Arguments used: ()
+2023-01-14 12:05:26 INFO        | Unused arguments (required_parameter) provided for component.action_a. Arguments used: ()
+2023-01-14 12:05:26 DEBUG       Estimator logs:
+2023-01-14 12:05:26 DEBUG       | HighAccuracyPlugIn with accuracy 100% estimating value: 
+2023-01-14 12:05:26 DEBUG       |  | AssertionError: Required parameter is too low!
+2023-01-14 12:05:26 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:26 DEBUG       | HighAccuracyPlugIn with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | MidAccuracyPlugIn with accuracy 95% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | LowAccuracyPlugIn with accuracy 90% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:26 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:26 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for component action_a
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | HighAccuracyPlugIn with accuracy 100% estimating value: AssertionError: Required parameter is too low!
+2023-01-14 12:05:26 INFO        Plug-ins provided accuracy, but failed to estimate:
+2023-01-14 12:05:26 INFO        | HighAccuracyPlugIn with accuracy 100% estimating value: AssertionError: Required parameter is too low!
+2023-01-14 12:05:26 INFO        
+2023-01-14 12:05:26 INFO        **ENERGY ESTIMATION** for component(required_parameter=-1).action_b(required_parameter=1)
+2023-01-14 12:05:26 INFO        LowAccuracyPlugIn estimated 1e-12 with accuracy 90%. Messages:
+2023-01-14 12:05:26 INFO        | Unused arguments (required_parameter) provided for component.__init__. Arguments used: ()
+2023-01-14 12:05:26 INFO        | Unused arguments (required_parameter) provided for component.action_b. Arguments used: ()
+2023-01-14 12:05:26 DEBUG       Estimator logs:
+2023-01-14 12:05:26 DEBUG       | HighAccuracyPlugIn with accuracy 100% estimating value: 
+2023-01-14 12:05:26 DEBUG       |  | AssertionError: Required parameter is too low!
+2023-01-14 12:05:26 DEBUG       | MidAccuracyPlugIn with accuracy 95% estimating value: 
+2023-01-14 12:05:26 DEBUG       |  | Unused arguments (required_parameter) provided for component.__init__. Arguments used: ()
+2023-01-14 12:05:26 DEBUG       |  | Unused arguments (required_parameter) provided for component.action_b. Arguments used: ()
+2023-01-14 12:05:26 DEBUG       |  | Exception: Broken action
+2023-01-14 12:05:26 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:26 DEBUG       | HighAccuracyPlugIn with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | MidAccuracyPlugIn with accuracy 95% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | LowAccuracyPlugIn with accuracy 90% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:26 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:26 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Could not find energy for component action_b
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | HighAccuracyPlugIn with accuracy 100% estimating value: AssertionError: Required parameter is too low!
+2023-01-14 12:05:26 DEBUG       | MidAccuracyPlugIn with accuracy 95% estimating value: Exception: Broken action
+2023-01-14 12:05:26 INFO        Plug-ins provided accuracy, but failed to estimate:
+2023-01-14 12:05:26 INFO        | HighAccuracyPlugIn with accuracy 100% estimating value: AssertionError: Required parameter is too low!
+2023-01-14 12:05:26 INFO        | MidAccuracyPlugIn with accuracy 95% estimating value: Exception: Broken action
+2023-01-14 12:05:26 WARNING     No action counts are specified as yaml input
+2023-01-14 12:05:26 INFO        
+2023-01-14 12:05:26 INFO        **AREA ESTIMATION** for component(unused_parameter=1, plug_in=LowAccuracyPlugIn, min_accuracy=40)
+2023-01-14 12:05:26 INFO        LowAccuracyPlugIn estimated 1e-12 with accuracy 90%. Messages:
+2023-01-14 12:05:26 INFO        | Unused arguments (unused_parameter, plug_in, min_accuracy) provided for component.__init__. Arguments used: ()
+2023-01-14 12:05:26 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:26 DEBUG       | LowAccuracyPlugIn with accuracy 90% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:26 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:26 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Cound not find area for component
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | HighAccuracyPlugIn with accuracy 0% estimating accuracy: Argument for component.__init__ is missing: required_parameter. Arguments provided: unused_parameter, plug_in, min_accuracy
+2023-01-14 12:05:26 DEBUG       | MidAccuracyPlugIn with accuracy 0% estimating accuracy: Plug-in MidAccuracyPlugIn was not selected for query.
+2023-01-14 12:05:26 INFO        
+2023-01-14 12:05:26 INFO        **AREA ESTIMATION** for component(unused_parameter=1)
+2023-01-14 12:05:26 INFO        MidAccuracyPlugIn estimated 2e-12 with accuracy 95%. Messages:
+2023-01-14 12:05:26 INFO        | Unused arguments (unused_parameter) provided for component.__init__. Arguments used: ()
+2023-01-14 12:05:26 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:26 DEBUG       | MidAccuracyPlugIn with accuracy 95% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | LowAccuracyPlugIn with accuracy 90% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:26 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:26 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Cound not find area for component
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | HighAccuracyPlugIn with accuracy 0% estimating accuracy: Argument for component.__init__ is missing: required_parameter. Arguments provided: unused_parameter
+2023-01-14 12:05:26 INFO        
+2023-01-14 12:05:26 INFO        **AREA ESTIMATION** for component(required_parameter=3)
+2023-01-14 12:05:26 INFO        HighAccuracyPlugIn estimated 2.2999999999999998e-11 with accuracy 100%. 
+2023-01-14 12:05:26 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:26 DEBUG       | HighAccuracyPlugIn with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | MidAccuracyPlugIn with accuracy 95% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | LowAccuracyPlugIn with accuracy 90% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:26 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:26 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Cound not find area for component
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 INFO        
+2023-01-14 12:05:26 INFO        **AREA ESTIMATION** for component(required_parameter=3, optional_parameter=9)
+2023-01-14 12:05:26 INFO        HighAccuracyPlugIn estimated 9.3e-11 with accuracy 100%. 
+2023-01-14 12:05:26 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:26 DEBUG       | HighAccuracyPlugIn with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | MidAccuracyPlugIn with accuracy 95% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | LowAccuracyPlugIn with accuracy 90% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:26 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:26 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Cound not find area for component
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 INFO        
+2023-01-14 12:05:26 INFO        **AREA ESTIMATION** for component(required_parameter=1000)
+2023-01-14 12:05:26 INFO        MidAccuracyPlugIn estimated 2e-12 with accuracy 95%. Messages:
+2023-01-14 12:05:26 INFO        | Unused arguments (required_parameter) provided for component.__init__. Arguments used: ()
+2023-01-14 12:05:26 DEBUG       Estimator logs:
+2023-01-14 12:05:26 DEBUG       | HighAccuracyPlugIn with accuracy 100% estimating value: 
+2023-01-14 12:05:26 DEBUG       |  | AssertionError: Required parameter is too high!
+2023-01-14 12:05:26 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:26 DEBUG       | HighAccuracyPlugIn with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | MidAccuracyPlugIn with accuracy 95% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | LowAccuracyPlugIn with accuracy 90% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:26 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:26 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Cound not find area for component
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | HighAccuracyPlugIn with accuracy 100% estimating value: AssertionError: Required parameter is too high!
+2023-01-14 12:05:26 INFO        Plug-ins provided accuracy, but failed to estimate:
+2023-01-14 12:05:26 INFO        | HighAccuracyPlugIn with accuracy 100% estimating value: AssertionError: Required parameter is too high!
+2023-01-14 12:05:26 INFO        
+2023-01-14 12:05:26 INFO        **AREA ESTIMATION** for component(required_parameter=-1)
+2023-01-14 12:05:26 INFO        MidAccuracyPlugIn estimated 2e-12 with accuracy 95%. Messages:
+2023-01-14 12:05:26 INFO        | Unused arguments (required_parameter) provided for component.__init__. Arguments used: ()
+2023-01-14 12:05:26 DEBUG       Estimator logs:
+2023-01-14 12:05:26 DEBUG       | HighAccuracyPlugIn with accuracy 100% estimating value: 
+2023-01-14 12:05:26 DEBUG       |  | AssertionError: Required parameter is too low!
+2023-01-14 12:05:26 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:26 DEBUG       | HighAccuracyPlugIn with accuracy 100% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | MidAccuracyPlugIn with accuracy 95% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | LowAccuracyPlugIn with accuracy 90% estimating accuracy: No messages found.
+2023-01-14 12:05:26 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: AssertionError: No technology specified in the request.
+2023-01-14 12:05:26 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Exception: "table-based-plug-ins" requires "technology" attribute to locate the correct set of tables
+2023-01-14 12:05:26 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Cound not find area for component
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:26 DEBUG       | HighAccuracyPlugIn with accuracy 100% estimating value: AssertionError: Required parameter is too low!
+2023-01-14 12:05:26 INFO        Plug-ins provided accuracy, but failed to estimate:
+2023-01-14 12:05:26 INFO        | HighAccuracyPlugIn with accuracy 100% estimating value: AssertionError: Required parameter is too low!
+2023-01-14 12:05:26 INFO        verbose flattened architecture is saved to:
+2023-01-14 12:05:26 INFO        ./flattened_architecture_verbose.yaml
+2023-01-14 12:05:26 INFO        energy reference table is saved to:
+2023-01-14 12:05:26 INFO        ./ERT.yaml
+2023-01-14 12:05:26 INFO        verbose energy reference table summary is saved to:
+2023-01-14 12:05:26 INFO        ./ERT_summary_verbose.yaml
+2023-01-14 12:05:26 WARNING     no runtime energy estimations are generated... not generating energy_estimation.yaml
+2023-01-14 12:05:26 INFO        area reference table is saved to:
+2023-01-14 12:05:26 INFO        ./ART.yaml
+2023-01-14 12:05:26 INFO        verbose area reference table summary is saved to:
+2023-01-14 12:05:26 INFO        ./ART_summary_verbose.yaml
+    _                _                      
+   / \   ___ ___ ___| | ___ _ __ __ _ _   _ 
+  / _ \ / __/ __/ _ \ |/ _ \ '__/ _` | | | |
+ / ___ \ (_| (_|  __/ |  __/ | | (_| | |_| |
+/_/   \_\___\___\___|_|\___|_|  \__, |\__, |
+                                |___/ |___/ 
+
+{'ERT': 1, 'ERT_summary': 1, 'ART': 1, 'ART_summary': 1, 'energy_estimation': 1, 'flattened_arch': 1}
+Compute ART = 1, Compute ERT = 1, Compute Energy Estimate = 1
+Loaded 201 components from library.
+Getting all estimators in module <module 'python_plug_in' from '/mnt/d/research/yaml_playground/plug_ins/test_plug_in.py'>
+Getting all estimators in module <module 'python_plug_in' from '/mnt/d/research/yaml_playground/unit_tests/tests/plugin_choices_II/plugins/plugins.py'>
+['/home/tanner/.local/share/accelergy/estimation_plug_ins', '/mnt/d/Research/NVM/ADC/Plugin', '/mnt/d/Research/pim_zoo/library']
+

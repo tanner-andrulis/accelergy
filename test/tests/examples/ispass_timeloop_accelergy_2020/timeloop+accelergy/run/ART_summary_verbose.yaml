@@ -1,0 +1,79 @@
+ART_summary:
+  version: 0.3
+  table_summary:
+  - name: system.eyeriss.PE[0..167].mac
+    area: 4120.0
+    primitive_estimations:
+    - name: system.eyeriss.PE[0..167].mac
+      estimator: Aladdin_table
+      area: 4120.0
+      area_share: 1.0
+      total_component_area: 4120.0
+  - name: system.eyeriss.DummyBuffer[0..13]
+    area: 331.36
+    primitive_estimations:
+    - name: system.eyeriss.DummyBuffer[0..13]
+      estimator: Aladdin_table
+      area: 331.36
+      area_share: 1.0
+      total_component_area: 331.36
+  - name: system.DRAM
+    area: 0.0
+    primitive_estimations:
+    - name: system.DRAM
+      estimator: Cacti
+      area: 0.0
+      area_share: 1.0
+      total_component_area: 0.0
+  - name: system.eyeriss.PE[0..167].ifmap_spad
+    area: 475.36
+    primitive_estimations:
+    - name: storage
+      estimator: Aladdin_table
+      area: 296.36
+      area_share: 1
+      total_component_area: 296.36
+    - name: address_generators[0..1]
+      estimator: Aladdin_table
+      area: 89.5
+      area_share: 1
+      total_component_area: 179.0
+  - name: system.eyeriss.PE[0..167].weights_spad
+    area: 3730.36
+    primitive_estimations:
+    - name: storage
+      estimator: Aladdin_table
+      area: 3551.36
+      area_share: 1
+      total_component_area: 3551.36
+    - name: address_generators[0..1]
+      estimator: Aladdin_table
+      area: 89.5
+      area_share: 1
+      total_component_area: 179.0
+  - name: system.eyeriss.PE[0..167].psum_spad
+    area: 510.36
+    primitive_estimations:
+    - name: storage
+      estimator: Aladdin_table
+      area: 331.36
+      area_share: 1
+      total_component_area: 331.36
+    - name: address_generators[0..1]
+      estimator: Aladdin_table
+      area: 89.5
+      area_share: 1
+      total_component_area: 179.0
+  - name: system.eyeriss.shared_glb
+    area: 1162549.0
+    primitive_estimations:
+    - name: storage
+      estimator: Cacti
+      area: 1162370.0
+      area_share: 1
+      total_component_area: 1162370.0
+    - name: address_generators[0..1]
+      estimator: Aladdin_table
+      area: 89.5
+      area_share: 1
+      total_component_area: 179.0

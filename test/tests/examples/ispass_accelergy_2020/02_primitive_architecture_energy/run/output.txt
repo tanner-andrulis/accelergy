@@ -1,0 +1,457 @@
+2023-01-14 12:05:30 WARNING     The "-v/--verbose 1" option is deprecated. Please omit the "1" and only include the "-v/--verbose" option to enable verbose mode.
+2023-01-14 12:05:30 INFO        generating outputs according to the following specified output flags... 
+ Please use the -f flag to update the preference (default to all output files)
+2023-01-14 12:05:30 INFO        Located config file at /home/tanner/.config/accelergy/accelergy_config.yaml.
+2023-01-14 12:05:30 INFO        config file located:
+2023-01-14 12:05:30 INFO        /home/tanner/.config/accelergy/accelergy_config.yaml
+2023-01-14 12:05:30 INFO        Parsing file /mnt/d/research/yaml_playground/unit_tests/tests/examples/ispass_accelergy_2020/02_primitive_architecture_energy/input/action_counts.yaml for action_counts info
+2023-01-14 12:05:30 WARNING     File /mnt/d/research/yaml_playground/unit_tests/tests/examples/ispass_accelergy_2020/02_primitive_architecture_energy/input/action_counts.yaml is outdated. File version is 0.3,  while the latest version is 0.4. 
+ Please update the file to the latest version.
+2023-01-14 12:05:30 INFO        Parsing file /mnt/d/research/yaml_playground/unit_tests/tests/examples/ispass_accelergy_2020/02_primitive_architecture_energy/input/ERT.yaml for ERT info
+2023-01-14 12:05:30 WARNING     File /mnt/d/research/yaml_playground/unit_tests/tests/examples/ispass_accelergy_2020/02_primitive_architecture_energy/input/ERT.yaml is outdated. File version is 0.3,  while the latest version is 0.4. 
+ Please update the file to the latest version.
+2023-01-14 12:05:30 INFO        Parsing file /mnt/d/research/yaml_playground/unit_tests/tests/examples/ispass_accelergy_2020/02_primitive_architecture_energy/input/flattened_architecture.yaml for architecture info
+2023-01-14 12:05:30 WARNING     File /mnt/d/research/yaml_playground/unit_tests/tests/examples/ispass_accelergy_2020/02_primitive_architecture_energy/input/flattened_architecture.yaml is outdated. File version is 0.3,  while the latest version is 0.4. 
+ Please update the file to the latest version.
+2023-01-14 12:05:30 WARNING     
+2023-01-14 12:05:30 WARNING     Failed to evaluate: 5ns
+2023-01-14 12:05:30 WARNING     Location: arch attribute latency
+2023-01-14 12:05:30 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:30 WARNING     Available bindings: 
+2023-01-14 12:05:30 WARNING         datawidth = 16
+2023-01-14 12:05:30 WARNING         latency = 5ns
+2023-01-14 12:05:30 WARNING         num_pipeline_stages = 1
+2023-01-14 12:05:30 WARNING         technology = 45nm
+2023-01-14 12:05:30 WARNING         voltage = 1V
+2023-01-14 12:05:30 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:30 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:30 WARNING     expression in single or double quotes:
+2023-01-14 12:05:30 WARNING         Found expression: 5ns
+2023-01-14 12:05:30 WARNING         Expression as valid string: "5ns"
+2023-01-14 12:05:30 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:30 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:30 WARNING     
+2023-01-14 12:05:30 WARNING     Failed to evaluate: 45nm
+2023-01-14 12:05:30 WARNING     Location: arch attribute technology
+2023-01-14 12:05:30 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:30 WARNING     Available bindings: 
+2023-01-14 12:05:30 WARNING         datawidth = 16
+2023-01-14 12:05:30 WARNING         latency = 5ns
+2023-01-14 12:05:30 WARNING         num_pipeline_stages = 1
+2023-01-14 12:05:30 WARNING         technology = 45nm
+2023-01-14 12:05:30 WARNING         voltage = 1V
+2023-01-14 12:05:30 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:30 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:30 WARNING     expression in single or double quotes:
+2023-01-14 12:05:30 WARNING         Found expression: 45nm
+2023-01-14 12:05:30 WARNING         Expression as valid string: "45nm"
+2023-01-14 12:05:30 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:30 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:30 WARNING     
+2023-01-14 12:05:30 WARNING     Failed to evaluate: 1V
+2023-01-14 12:05:30 WARNING     Location: arch attribute voltage
+2023-01-14 12:05:30 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:30 WARNING     Available bindings: 
+2023-01-14 12:05:30 WARNING         datawidth = 16
+2023-01-14 12:05:30 WARNING         latency = 5ns
+2023-01-14 12:05:30 WARNING         num_pipeline_stages = 1
+2023-01-14 12:05:30 WARNING         technology = 45nm
+2023-01-14 12:05:30 WARNING         voltage = 1V
+2023-01-14 12:05:30 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:30 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:30 WARNING     expression in single or double quotes:
+2023-01-14 12:05:30 WARNING         Found expression: 1V
+2023-01-14 12:05:30 WARNING         Expression as valid string: "1V"
+2023-01-14 12:05:30 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:30 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:30 WARNING     
+2023-01-14 12:05:30 WARNING     Failed to evaluate: 5ns
+2023-01-14 12:05:30 WARNING     Location: arch attribute latency
+2023-01-14 12:05:30 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:30 WARNING     Available bindings: 
+2023-01-14 12:05:30 WARNING         datawidth = 16
+2023-01-14 12:05:30 WARNING         depth = 24
+2023-01-14 12:05:30 WARNING         latency = 5ns
+2023-01-14 12:05:30 WARNING         n_ports = 2
+2023-01-14 12:05:30 WARNING         technology = 45nm
+2023-01-14 12:05:30 WARNING         voltage = 1V
+2023-01-14 12:05:30 WARNING         width = 16
+2023-01-14 12:05:30 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:30 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:30 WARNING     expression in single or double quotes:
+2023-01-14 12:05:30 WARNING         Found expression: 5ns
+2023-01-14 12:05:30 WARNING         Expression as valid string: "5ns"
+2023-01-14 12:05:30 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:30 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:30 WARNING     
+2023-01-14 12:05:30 WARNING     Failed to evaluate: 45nm
+2023-01-14 12:05:30 WARNING     Location: arch attribute technology
+2023-01-14 12:05:30 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:30 WARNING     Available bindings: 
+2023-01-14 12:05:30 WARNING         datawidth = 16
+2023-01-14 12:05:30 WARNING         depth = 24
+2023-01-14 12:05:30 WARNING         latency = 5ns
+2023-01-14 12:05:30 WARNING         n_ports = 2
+2023-01-14 12:05:30 WARNING         technology = 45nm
+2023-01-14 12:05:30 WARNING         voltage = 1V
+2023-01-14 12:05:30 WARNING         width = 16
+2023-01-14 12:05:30 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:30 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:30 WARNING     expression in single or double quotes:
+2023-01-14 12:05:30 WARNING         Found expression: 45nm
+2023-01-14 12:05:30 WARNING         Expression as valid string: "45nm"
+2023-01-14 12:05:30 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:30 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:30 WARNING     
+2023-01-14 12:05:30 WARNING     Failed to evaluate: 1V
+2023-01-14 12:05:30 WARNING     Location: arch attribute voltage
+2023-01-14 12:05:30 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:30 WARNING     Available bindings: 
+2023-01-14 12:05:30 WARNING         datawidth = 16
+2023-01-14 12:05:30 WARNING         depth = 24
+2023-01-14 12:05:30 WARNING         latency = 5ns
+2023-01-14 12:05:30 WARNING         n_ports = 2
+2023-01-14 12:05:30 WARNING         technology = 45nm
+2023-01-14 12:05:30 WARNING         voltage = 1V
+2023-01-14 12:05:30 WARNING         width = 16
+2023-01-14 12:05:30 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:30 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:30 WARNING     expression in single or double quotes:
+2023-01-14 12:05:30 WARNING         Found expression: 1V
+2023-01-14 12:05:30 WARNING         Expression as valid string: "1V"
+2023-01-14 12:05:30 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:30 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:30 WARNING     
+2023-01-14 12:05:30 WARNING     Failed to evaluate: 5ns
+2023-01-14 12:05:30 WARNING     Location: arch attribute latency
+2023-01-14 12:05:30 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:30 WARNING     Available bindings: 
+2023-01-14 12:05:30 WARNING         depth = 1024
+2023-01-14 12:05:30 WARNING         latency = 5ns
+2023-01-14 12:05:30 WARNING         n_banks = 1
+2023-01-14 12:05:30 WARNING         n_rd_ports = 0
+2023-01-14 12:05:30 WARNING         n_rdwr_ports = 2
+2023-01-14 12:05:30 WARNING         n_wr_ports = 0
+2023-01-14 12:05:30 WARNING         technology = 45nm
+2023-01-14 12:05:30 WARNING         voltage = 1V
+2023-01-14 12:05:30 WARNING         width = 32
+2023-01-14 12:05:30 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:30 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:30 WARNING     expression in single or double quotes:
+2023-01-14 12:05:30 WARNING         Found expression: 5ns
+2023-01-14 12:05:30 WARNING         Expression as valid string: "5ns"
+2023-01-14 12:05:30 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:30 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:30 WARNING     
+2023-01-14 12:05:30 WARNING     Failed to evaluate: 45nm
+2023-01-14 12:05:30 WARNING     Location: arch attribute technology
+2023-01-14 12:05:30 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:30 WARNING     Available bindings: 
+2023-01-14 12:05:30 WARNING         depth = 1024
+2023-01-14 12:05:30 WARNING         latency = 5ns
+2023-01-14 12:05:30 WARNING         n_banks = 1
+2023-01-14 12:05:30 WARNING         n_rd_ports = 0
+2023-01-14 12:05:30 WARNING         n_rdwr_ports = 2
+2023-01-14 12:05:30 WARNING         n_wr_ports = 0
+2023-01-14 12:05:30 WARNING         technology = 45nm
+2023-01-14 12:05:30 WARNING         voltage = 1V
+2023-01-14 12:05:30 WARNING         width = 32
+2023-01-14 12:05:30 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:30 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:30 WARNING     expression in single or double quotes:
+2023-01-14 12:05:30 WARNING         Found expression: 45nm
+2023-01-14 12:05:30 WARNING         Expression as valid string: "45nm"
+2023-01-14 12:05:30 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:30 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:30 WARNING     
+2023-01-14 12:05:30 WARNING     Failed to evaluate: 1V
+2023-01-14 12:05:30 WARNING     Location: arch attribute voltage
+2023-01-14 12:05:30 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:30 WARNING     Available bindings: 
+2023-01-14 12:05:30 WARNING         depth = 1024
+2023-01-14 12:05:30 WARNING         latency = 5ns
+2023-01-14 12:05:30 WARNING         n_banks = 1
+2023-01-14 12:05:30 WARNING         n_rd_ports = 0
+2023-01-14 12:05:30 WARNING         n_rdwr_ports = 2
+2023-01-14 12:05:30 WARNING         n_wr_ports = 0
+2023-01-14 12:05:30 WARNING         technology = 45nm
+2023-01-14 12:05:30 WARNING         voltage = 1V
+2023-01-14 12:05:30 WARNING         width = 32
+2023-01-14 12:05:30 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:30 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:30 WARNING     expression in single or double quotes:
+2023-01-14 12:05:30 WARNING         Found expression: 1V
+2023-01-14 12:05:30 WARNING         Expression as valid string: "1V"
+2023-01-14 12:05:30 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:30 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:30 INFO        primitive component file parsed: 
+2023-01-14 12:05:30 INFO        /home/tanner/.local/share/accelergy/primitive_component_libs/primitive_component.lib.yaml
+2023-01-14 12:05:30 WARNING     wire redefined in /home/tanner/.local/share/accelergy/primitive_component_libs/wire.lib.yaml
+2023-01-14 12:05:30 WARNING     wire redefined in /home/tanner/.local/share/accelergy/primitive_component_libs/wire.lib.yaml
+2023-01-14 12:05:30 INFO        primitive component file parsed: 
+2023-01-14 12:05:30 INFO        /home/tanner/.local/share/accelergy/primitive_component_libs/wire.lib.yaml
+2023-01-14 12:05:30 INFO        primitive component file parsed: 
+2023-01-14 12:05:30 INFO        /home/tanner/.local/share/accelergy/primitive_component_libs/neurosim_components.lib.yaml
+2023-01-14 12:05:30 INFO        primitive component file parsed: 
+2023-01-14 12:05:30 INFO        /home/tanner/.local/share/accelergy/primitive_component_libs/soc_primitives.lib.yaml
+2023-01-14 12:05:30 INFO        primitive component file parsed: 
+2023-01-14 12:05:30 INFO        /home/tanner/.local/share/accelergy/primitive_component_libs/pim_primitive_component.lib.yaml
+2023-01-14 12:05:30 WARNING     ADC redefined in /home/tanner/.local/share/accelergy/primitive_component_libs/analog_components.lib.yaml
+2023-01-14 12:05:30 INFO        primitive component file parsed: 
+2023-01-14 12:05:30 INFO        /home/tanner/.local/share/accelergy/primitive_component_libs/analog_components.lib.yaml
+2023-01-14 12:05:30 INFO        primitive component file parsed: 
+2023-01-14 12:05:30 INFO        /mnt/d/Research/pim_zoo/library/scaling.lib.yaml
+2023-01-14 12:05:30 WARNING     No compound component classes specified, architecture can only contain primitive components
+2023-01-14 12:05:30 WARNING     
+2023-01-14 12:05:30 WARNING     Failed to evaluate: 5ns
+2023-01-14 12:05:30 WARNING     Location: intmac
+2023-01-14 12:05:30 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:30 WARNING     Available bindings: 
+2023-01-14 12:05:30 WARNING         datawidth = 16
+2023-01-14 12:05:30 WARNING         latency = 5ns
+2023-01-14 12:05:30 WARNING         num_pipeline_stages = 1
+2023-01-14 12:05:30 WARNING         technology = 45nm
+2023-01-14 12:05:30 WARNING         voltage = 1V
+2023-01-14 12:05:30 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:30 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:30 WARNING     expression in single or double quotes:
+2023-01-14 12:05:30 WARNING         Found expression: 5ns
+2023-01-14 12:05:30 WARNING         Expression as valid string: "5ns"
+2023-01-14 12:05:30 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:30 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:30 WARNING     
+2023-01-14 12:05:30 WARNING     Failed to evaluate: 45nm
+2023-01-14 12:05:30 WARNING     Location: intmac
+2023-01-14 12:05:30 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:30 WARNING     Available bindings: 
+2023-01-14 12:05:30 WARNING         datawidth = 16
+2023-01-14 12:05:30 WARNING         latency = 5ns
+2023-01-14 12:05:30 WARNING         num_pipeline_stages = 1
+2023-01-14 12:05:30 WARNING         technology = 45nm
+2023-01-14 12:05:30 WARNING         voltage = 1V
+2023-01-14 12:05:30 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:30 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:30 WARNING     expression in single or double quotes:
+2023-01-14 12:05:30 WARNING         Found expression: 45nm
+2023-01-14 12:05:30 WARNING         Expression as valid string: "45nm"
+2023-01-14 12:05:30 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:30 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:30 WARNING     
+2023-01-14 12:05:30 WARNING     Failed to evaluate: 1V
+2023-01-14 12:05:30 WARNING     Location: intmac
+2023-01-14 12:05:30 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:30 WARNING     Available bindings: 
+2023-01-14 12:05:30 WARNING         datawidth = 16
+2023-01-14 12:05:30 WARNING         latency = 5ns
+2023-01-14 12:05:30 WARNING         num_pipeline_stages = 1
+2023-01-14 12:05:30 WARNING         technology = 45nm
+2023-01-14 12:05:30 WARNING         voltage = 1V
+2023-01-14 12:05:30 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:30 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:30 WARNING     expression in single or double quotes:
+2023-01-14 12:05:30 WARNING         Found expression: 1V
+2023-01-14 12:05:30 WARNING         Expression as valid string: "1V"
+2023-01-14 12:05:30 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:30 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:30 WARNING     
+2023-01-14 12:05:30 WARNING     Failed to evaluate: 5ns
+2023-01-14 12:05:30 WARNING     Location: regfile
+2023-01-14 12:05:30 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:30 WARNING     Available bindings: 
+2023-01-14 12:05:30 WARNING         datawidth = 16
+2023-01-14 12:05:30 WARNING         depth = 24
+2023-01-14 12:05:30 WARNING         latency = 5ns
+2023-01-14 12:05:30 WARNING         n_ports = 2
+2023-01-14 12:05:30 WARNING         technology = 45nm
+2023-01-14 12:05:30 WARNING         voltage = 1V
+2023-01-14 12:05:30 WARNING         width = 16
+2023-01-14 12:05:30 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:30 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:30 WARNING     expression in single or double quotes:
+2023-01-14 12:05:30 WARNING         Found expression: 5ns
+2023-01-14 12:05:30 WARNING         Expression as valid string: "5ns"
+2023-01-14 12:05:30 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:30 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:30 WARNING     
+2023-01-14 12:05:30 WARNING     Failed to evaluate: 45nm
+2023-01-14 12:05:30 WARNING     Location: regfile
+2023-01-14 12:05:30 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:30 WARNING     Available bindings: 
+2023-01-14 12:05:30 WARNING         datawidth = 16
+2023-01-14 12:05:30 WARNING         depth = 24
+2023-01-14 12:05:30 WARNING         latency = 5ns
+2023-01-14 12:05:30 WARNING         n_ports = 2
+2023-01-14 12:05:30 WARNING         technology = 45nm
+2023-01-14 12:05:30 WARNING         voltage = 1V
+2023-01-14 12:05:30 WARNING         width = 16
+2023-01-14 12:05:30 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:30 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:30 WARNING     expression in single or double quotes:
+2023-01-14 12:05:30 WARNING         Found expression: 45nm
+2023-01-14 12:05:30 WARNING         Expression as valid string: "45nm"
+2023-01-14 12:05:30 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:30 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:30 WARNING     
+2023-01-14 12:05:30 WARNING     Failed to evaluate: 1V
+2023-01-14 12:05:30 WARNING     Location: regfile
+2023-01-14 12:05:30 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:30 WARNING     Available bindings: 
+2023-01-14 12:05:30 WARNING         datawidth = 16
+2023-01-14 12:05:30 WARNING         depth = 24
+2023-01-14 12:05:30 WARNING         latency = 5ns
+2023-01-14 12:05:30 WARNING         n_ports = 2
+2023-01-14 12:05:30 WARNING         technology = 45nm
+2023-01-14 12:05:30 WARNING         voltage = 1V
+2023-01-14 12:05:30 WARNING         width = 16
+2023-01-14 12:05:30 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:30 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:30 WARNING     expression in single or double quotes:
+2023-01-14 12:05:30 WARNING         Found expression: 1V
+2023-01-14 12:05:30 WARNING         Expression as valid string: "1V"
+2023-01-14 12:05:30 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:30 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:30 WARNING     
+2023-01-14 12:05:30 WARNING     Failed to evaluate: 5ns
+2023-01-14 12:05:30 WARNING     Location: SRAM
+2023-01-14 12:05:30 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:30 WARNING     Available bindings: 
+2023-01-14 12:05:30 WARNING         depth = 1024
+2023-01-14 12:05:30 WARNING         latency = 5ns
+2023-01-14 12:05:30 WARNING         n_banks = 1
+2023-01-14 12:05:30 WARNING         n_rd_ports = 0
+2023-01-14 12:05:30 WARNING         n_rdwr_ports = 2
+2023-01-14 12:05:30 WARNING         n_wr_ports = 0
+2023-01-14 12:05:30 WARNING         technology = 45nm
+2023-01-14 12:05:30 WARNING         voltage = 1V
+2023-01-14 12:05:30 WARNING         width = 32
+2023-01-14 12:05:30 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:30 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:30 WARNING     expression in single or double quotes:
+2023-01-14 12:05:30 WARNING         Found expression: 5ns
+2023-01-14 12:05:30 WARNING         Expression as valid string: "5ns"
+2023-01-14 12:05:30 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:30 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:30 WARNING     
+2023-01-14 12:05:30 WARNING     Failed to evaluate: 45nm
+2023-01-14 12:05:30 WARNING     Location: SRAM
+2023-01-14 12:05:30 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:30 WARNING     Available bindings: 
+2023-01-14 12:05:30 WARNING         depth = 1024
+2023-01-14 12:05:30 WARNING         latency = 5ns
+2023-01-14 12:05:30 WARNING         n_banks = 1
+2023-01-14 12:05:30 WARNING         n_rd_ports = 0
+2023-01-14 12:05:30 WARNING         n_rdwr_ports = 2
+2023-01-14 12:05:30 WARNING         n_wr_ports = 0
+2023-01-14 12:05:30 WARNING         technology = 45nm
+2023-01-14 12:05:30 WARNING         voltage = 1V
+2023-01-14 12:05:30 WARNING         width = 32
+2023-01-14 12:05:30 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:30 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:30 WARNING     expression in single or double quotes:
+2023-01-14 12:05:30 WARNING         Found expression: 45nm
+2023-01-14 12:05:30 WARNING         Expression as valid string: "45nm"
+2023-01-14 12:05:30 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:30 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:30 WARNING     
+2023-01-14 12:05:30 WARNING     Failed to evaluate: 1V
+2023-01-14 12:05:30 WARNING     Location: SRAM
+2023-01-14 12:05:30 WARNING     Problem encountered: SyntaxError: unexpected EOF while parsing (<string>, line 1)
+2023-01-14 12:05:30 WARNING     Available bindings: 
+2023-01-14 12:05:30 WARNING         depth = 1024
+2023-01-14 12:05:30 WARNING         latency = 5ns
+2023-01-14 12:05:30 WARNING         n_banks = 1
+2023-01-14 12:05:30 WARNING         n_rd_ports = 0
+2023-01-14 12:05:30 WARNING         n_rdwr_ports = 2
+2023-01-14 12:05:30 WARNING         n_wr_ports = 0
+2023-01-14 12:05:30 WARNING         technology = 45nm
+2023-01-14 12:05:30 WARNING         voltage = 1V
+2023-01-14 12:05:30 WARNING         width = 32
+2023-01-14 12:05:30 WARNING     Please ensure that the expression used is a valid Python expression.
+2023-01-14 12:05:30 WARNING     Strings are allowed here. If you meant to enter a string, please wrap the
+2023-01-14 12:05:30 WARNING     expression in single or double quotes:
+2023-01-14 12:05:30 WARNING         Found expression: 1V
+2023-01-14 12:05:30 WARNING         Expression as valid string: "1V"
+2023-01-14 12:05:30 WARNING     Expression will be treated as a string. This will be deprecated in the
+2023-01-14 12:05:30 WARNING     future. Please wrap quotes around the expression to specify a string.
+2023-01-14 12:05:30 INFO        Calculated "n_banks" = 1
+2023-01-14 12:05:30 INFO        Estimator plug-in identified by: /home/tanner/.local/share/accelergy/estimation_plug_ins/accelergy-wire-plugin/wire.estimator.yaml
+2023-01-14 12:05:30 INFO        Estimator plug-in identified by: /home/tanner/.local/share/accelergy/estimation_plug_ins/accelergy-aladdin-plug-in/aladdin.estimator.yaml
+2023-01-14 12:05:30 INFO        Estimator plug-in identified by: /home/tanner/.local/share/accelergy/estimation_plug_ins/accelergy-analog-plug-in/analog.estimator.yaml
+2023-01-14 12:05:31 INFO        Estimator plug-in identified by: /home/tanner/.local/share/accelergy/estimation_plug_ins/accelergy-table-based-plug-ins/table.estimator.yaml
+2023-01-14 12:05:31 INFO        Estimator plug-in identified by: /home/tanner/.local/share/accelergy/estimation_plug_ins/accelergy-neurosim-plugin/neurosim.estimator.yaml
+2023-01-14 12:05:31 INFO        Estimator plug-in identified by: /home/tanner/.local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti.estimator.yaml
+2023-01-14 12:05:31 INFO        Estimator plug-in identified by: /mnt/d/Research/pim_zoo/library/scaling.estimator.yaml
+2023-01-14 12:05:31 INFO        Added estimator AccelergyObject that estimates accelergy_example_object with actions do_action, read, write
+2023-01-14 12:05:31 INFO        Found estimator plug-in: <WireEstimator.WireEstimator object at 0x7f445c202910>
+2023-01-14 12:05:31 INFO        Found estimator plug-in: <AladdinTable.AladdinTable object at 0x7f445c202940>
+2023-01-14 12:05:31 INFO        Found estimator plug-in: <AnalogEstimator.AnalogEstimator object at 0x7f445c20a100>
+2023-01-14 12:05:31 INFO        Found estimator plug-in: <SetsOfTables.SetsOfTables object at 0x7f445c20aee0>
+2023-01-14 12:05:31 INFO        Found estimator plug-in: <NeuroWrapper.NeuroWrapper object at 0x7f445c1c75e0>
+2023-01-14 12:05:31 INFO        Found estimator plug-in: <CactiWrapper.CactiWrapper object at 0x7f4406ae8910>
+2023-01-14 12:05:31 INFO        Found estimator plug-in: <ScalingEstimator.ScalingEstimator object at 0x7f4406ae8940>
+2023-01-14 12:05:31 INFO        Found estimator plug-in: <accelergy.plug_in_interface.estimator_wrapper.EstimatorWrapper object at 0x7f440693cc70>
+2023-01-14 12:05:31 INFO        
+2023-01-14 12:05:31 INFO        **AREA ESTIMATION** for intmac(datawidth=16, latency=5ns, num_pipeline_stages=1, technology=45nm, voltage=1V)
+2023-01-14 12:05:31 WARNING     Plug-in Wire Estimator is using a deprecated interface. Please update to new interface.
+2023-01-14 12:05:31 INFO        Aladdin_table estimated 1239.5u^2 with accuracy 70%. 
+2023-01-14 12:05:31 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:31 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:31 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:31 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:31 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Identifies a set of tables named: test_tables
+2023-01-14 12:05:31 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:31 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:31 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Cound not find area for intmac
+2023-01-14 12:05:31 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:31 INFO        
+2023-01-14 12:05:31 INFO        **AREA ESTIMATION** for regfile(datawidth=16, depth=24, latency=5ns, n_ports=2, technology=45nm, voltage=1V, width=16)
+2023-01-14 12:05:31 INFO        Aladdin_table estimated 358.18u^2 with accuracy 70%. 
+2023-01-14 12:05:31 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:31 DEBUG       | Aladdin_table with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:31 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:31 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:31 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:31 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:31 DEBUG       | Cacti with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:31 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Cound not find area for regfile
+2023-01-14 12:05:31 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:31 INFO        
+2023-01-14 12:05:31 INFO        **AREA ESTIMATION** for SRAM(depth=1024, latency=5ns, n_banks=1, n_rd_ports=0, n_rdwr_ports=2, n_wr_ports=0, technology=45nm, voltage=1V, width=32)
+2023-01-14 12:05:31 INFO        Cacti estimated 29133.3u^2 with accuracy 70%. Messages:
+2023-01-14 12:05:31 INFO        | Querying CACTI for request: {'class_name': 'SRAM', 'attributes': ordereddict([('depth', 1024), ('latency', '5ns'), ('n_banks', 1), ('n_rd_ports', 0), ('n_rdwr_ports', 2), ('n_wr_ports', 0), ('technology', '45nm'), ('voltage', '1V'), ('width', 32)])}
+2023-01-14 12:05:31 INFO        | copy /home/tanner/.local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/default_SRAM.cfg to /home/tanner/.local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti/01_14_12_05_31_SRAM.cfg
+2023-01-14 12:05:31 INFO        | removing temp file: /home/tanner/.local/share/accelergy/estimation_plug_ins/accelergy-cacti-plug-in/cacti/01_14_12_05_31_SRAM.cfg
+2023-01-14 12:05:31 DEBUG       Why plug-ins did not estimate:
+2023-01-14 12:05:31 DEBUG       | Cacti with accuracy 70% estimating accuracy: No messages found.
+2023-01-14 12:05:31 DEBUG       | Wire Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:31 DEBUG       | Aladdin_table with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:31 DEBUG       | Analog Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:31 DEBUG       | table-based-plug-ins with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:31 DEBUG       | Neurosim Estimator with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:31 DEBUG       | Library with accuracy 0% estimating accuracy: ValueError: Cound not find area for SRAM
+2023-01-14 12:05:31 DEBUG       | AccelergyObject with accuracy 0% estimating accuracy: Accuracy is 0%. Not supported.
+2023-01-14 12:05:31 INFO        verbose flattened architecture is saved to:
+2023-01-14 12:05:31 INFO        ./flattened_architecture_verbose.yaml
+2023-01-14 12:05:31 INFO        energy reference table is saved to:
+2023-01-14 12:05:31 INFO        ./ERT.yaml
+2023-01-14 12:05:31 INFO        verbose energy reference table summary is saved to:
+2023-01-14 12:05:31 INFO        ./ERT_summary_verbose.yaml
+2023-01-14 12:05:31 INFO        energy estimations are saved to:
+2023-01-14 12:05:31 INFO        ./energy_estimation.yaml
+2023-01-14 12:05:31 INFO        area reference table is saved to:
+2023-01-14 12:05:31 INFO        ./ART.yaml
+2023-01-14 12:05:31 INFO        verbose area reference table summary is saved to:
+2023-01-14 12:05:31 INFO        ./ART_summary_verbose.yaml
+    _                _                      
+   / \   ___ ___ ___| | ___ _ __ __ _ _   _ 
+  / _ \ / __/ __/ _ \ |/ _ \ '__/ _` | | | |
+ / ___ \ (_| (_|  __/ |  __/ | | (_| | |_| |
+/_/   \_\___\___\___|_|\___|_|  \__, |\__, |
+                                |___/ |___/ 
+
+{'ERT': 1, 'ERT_summary': 1, 'ART': 1, 'ART_summary': 1, 'energy_estimation': 1, 'flattened_arch': 1}
+Compute ART = 1, Compute ERT = 1, Compute Energy Estimate = 1
+Loaded 201 components from library.
+Getting all estimators in module <module 'python_plug_in' from '/mnt/d/research/yaml_playground/plug_ins/test_plug_in.py'>
+['/home/tanner/.local/share/accelergy/estimation_plug_ins', '/mnt/d/Research/NVM/ADC/Plugin', '/mnt/d/Research/pim_zoo/library']
+

@@ -1,0 +1,83 @@
+ERT:
+  version: 0.3
+  tables:
+  - name: arch.three_level_hierarchy
+    actions:
+    - name: read
+      arguments: null
+      energy: 64.0
+    - name: write
+      arguments: null
+      energy: 0.125
+  - name: arch.two_level_hierarchy
+    actions:
+    - name: read
+      arguments: null
+      energy: 32.0
+    - name: write
+      arguments: null
+      energy: 0.25
+  - name: arch.one_level_hierarchy
+    actions:
+    - name: read
+      arguments: null
+      energy: 8.0
+    - name: write
+      arguments: null
+      energy: 0.5
+  - name: arch.three_level_hierarchy_with_area_share
+    actions:
+    - name: read
+      arguments: null
+      energy: 64.0
+    - name: write
+      arguments: null
+      energy: 0.125
+  - name: arch.two_level_hierarchy_with_area_share
+    actions:
+    - name: read
+      arguments: null
+      energy: 32.0
+    - name: write
+      arguments: null
+      energy: 0.25
+  - name: arch.one_level_hierarchy_with_area_share
+    actions:
+    - name: read
+      arguments: null
+      energy: 8.0
+    - name: write
+      arguments: null
+      energy: 0.5
+  - name: arch.three_level_hierarchy_with_area_share_defined_not_in_attrs
+    actions:
+    - name: read
+      arguments: null
+      energy: 64.0
+    - name: write
+      arguments: null
+      energy: 0.125
+  - name: arch.two_level_hierarchy_with_area_share_defined_not_in_attrs
+    actions:
+    - name: read
+      arguments: null
+      energy: 32.0
+    - name: write
+      arguments: null
+      energy: 0.25
+  - name: arch.one_level_hierarchy_with_area_share_defined_not_in_attrs
+    actions:
+    - name: read
+      arguments: null
+      energy: 8.0
+    - name: write
+      arguments: null
+      energy: 0.5
+  - name: arch.two_subcomponents_different_shares
+    actions:
+    - name: read
+      arguments: null
+      energy: 12.0
+    - name: write
+      arguments: null
+      energy: 0.75

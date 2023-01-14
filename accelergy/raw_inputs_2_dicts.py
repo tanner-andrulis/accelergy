@@ -1,8 +1,7 @@
-from yaml import load
 from copy import deepcopy
 from accelergy.parsing_utils import *
-from collections import OrderedDict
-
+from collections import OrderedDict # ; OrderedDict = dict
+import accelergy.version as version
 
 class RawInputs2Dicts():
     def __init__(self, input_info):
@@ -20,47 +19,15 @@ class RawInputs2Dicts():
         self.arch_variables = {}
         self.load_and_construct_dicts()
 
-
-    def check_input_parser_version(self, input_parser_version, input_file_type, input_file_path):
-        # Accelergy v0.3 can parser input files of version 0.2 and 0.3 (except ERT)
-        if input_file_type is not 'ERT':
-            if input_file_type == 'config':
-                ASSERT_MSG(input_parser_version == 0.2 or input_parser_version == 0.3,
-                           'config file version outdated. Latest version is v.%s \
-                            \n Please delete the original file, and run accelergy to create a new default config file.\
-                            \n Please ADD YOUR USER_DEFINED file paths BACK to the updated config file at \
-                            ~/.config/accelergy/accelergy_config.yaml' % self.parser_version)
-            else:
-                ASSERT_MSG(input_parser_version == 0.2 or input_parser_version == 0.3,
-                           'input parser version for %s is v%s, cannot be parsed by current accelergy v%s'
-                           % (input_file_path, input_parser_version, self.parser_version))
-
-            # if input_parser_version < self.parser_version:
-            #     WARN('Your %s input file has an older version. The most up-to-date version is %s '
-            #          '--> Only the value of the "version" key needs to be updated '
-            #          '(the syntax of the content does not need to be updated) '
-            #          '\n --- OK'
-            #          %(input_file_path, self.parser_version))
-        else:
-            ASSERT_MSG(input_parser_version == 0.3,
-                       'ERT input file is version v%s, cannot be parsed by Accelergy v%s. '
-                       '\n---> Please use Accelergy v0.2/ update your ERT input file format/ '
-                       'regenerate the ERT using your design description'
-                       % (input_parser_version, self.parser_version))
-
     def load_and_construct_dicts(self):
         # load and classify input files
-
         # construct new or parse existing config file
         self.construct_parse_config_file()
         
         # merge all paths (input + compound compondnt lib)
         all_paths = self.path_arglist
-        if "compound_components" in self.config:
-            for cc_lib_path in self.config["compound_components"]:
-                all_paths.append(cc_lib_path)
-        else:
-            WARN("No default paths for compound components specified in config")
+        for cc_lib_path in self.config["compound_components"]:
+            all_paths.append(cc_lib_path)
         
         # go through each path in the merged list
         input_file_info = {}
@@ -87,14 +54,8 @@ class RawInputs2Dicts():
         if 'variables' in input_file_info:
             for variable_spec in input_file_info['variables']:
                 for var_name, var_var in variable_spec['content']['variables'].items():
-                    if type(var_var) is str:
-                        if var_var in variable_spec['content']['variables']:
-                            variable_spec['content']['variables'][var_name] = variable_spec['content']['variables'][var_var]
-                        else:
-                            v = parse_expression_for_arithmetic(var_var, variable_spec['content']['variables'])
-                            if isinstance(v, str):
-                                arithmetic_failed_evaluate_warn(var_var, var_name, 'variables', variable_spec['content']['variables'])
-                            variable_spec['content']['variables'][var_name] = v
+                    v = parse_expression_for_arithmetic_new(var_var, variable_spec['content']['variables'], f'attribute {var_name}', strings_allowed=True)
+                    variable_spec['content']['variables'][var_name] = v
 
                 self.arch_variables.update(variable_spec['content']['variables'])
 
@@ -112,8 +73,7 @@ class RawInputs2Dicts():
 
     def load_file(self, file_path):
         if '.yaml' in file_path:
-            file_obj = open(file_path)
-            file = load(file_obj, accelergy_loader)
+            file = load_yaml(file_path)
             loaded_content_list =[]
             for top_key in file.keys():
                 if top_key not in self.possible_top_keys:
@@ -122,7 +82,6 @@ class RawInputs2Dicts():
                     # YAML_parser_fname = top_key + '_input_parser'
                     loaded_content_list.append({'top_key': top_key, 'content': file, 'path': file_path})
                     # getattr(self, YAML_parser_fname)(file_info)
-            file_obj.close()
             return loaded_content_list
 
     def architecture_input_parser(self, file_info):
@@ -139,13 +98,13 @@ class RawInputs2Dicts():
 
         # check top-level syntax of input file
         ASSERT_MSG('version' in content[top_key], '%s must contain "version" key' % (file_path))
-        self.check_input_parser_version(content[top_key]['version'], 'architecture', file_path)
+        version.check_input_parser_version(content[top_key]['version'], 'architecture', file_path)
 
         if 'subtree' in content[top_key]:
-            ASSERT_MSG(type(content[top_key]['subtree']) is list,
+            ASSERT_MSG(isinstance(content[top_key]['subtree'], list),
                        'File content not legal: %s, subtree key must have value of type list' % (file_path))
         elif 'local' in content[top_key]:
-            ASSERT_MSG(type(content[top_key]['local']) is list,
+            ASSERT_MSG(isinstance(content[top_key]['local'], list),
                        'File content not legal: %s, local key must have value of type list' % (file_path))
         else:
             ERROR_CLEAN_EXIT('Architecture Description must contain subtree or local key at top-level')
@@ -159,7 +118,7 @@ class RawInputs2Dicts():
             global_attributes = {} if 'attributes' not in arch_comp_list['subtree'][0] \
                 else arch_comp_list['subtree'][0]['attributes']
             if 'attributes' in arch_comp_list['subtree']:
-                ASSERT_MSG(type(arch_comp_list['subtree'['attributes']]) is dict,
+                ASSERT_MSG(isinstance(arch_comp_list['subtree'['attributes']], dict),
                            'attributes must be specified in dictionary format')
             arch_comp_list['subtree'][0] = self.tree_node_classification(OrderedDict(arch_comp_list['subtree'][0]), arch_name, global_attributes)
         else:
@@ -178,16 +137,9 @@ class RawInputs2Dicts():
         all_attrs = deepcopy(node_attrs)
         all_attrs.update(self.arch_variables)
         for attr_name, attr_val in node_attrs.items():
-            if type(attr_val) is str:
-                if attr_val in all_attrs:
-                    node_attrs[attr_name] = all_attrs[attr_val]
-                    all_attrs[attr_name] = all_attrs[attr_val]
-                else:
-                    v = parse_expression_for_arithmetic(attr_val, all_attrs)
-                    if isinstance(v, str):
-                        arithmetic_failed_evaluate_warn(attr_val, attr_name, prefix, node_attrs)
-                    node_attrs[attr_name] = v
-                    all_attrs[attr_name] = node_attrs[attr_name]
+            v = parse_expression_for_arithmetic_new(attr_val, all_attrs, f'arch attribute {attr_name}', strings_allowed=True)
+            node_attrs[attr_name] = v
+            all_attrs[attr_name] = node_attrs[attr_name]
 
         if 'subtree' in node_description:
             ASSERT_MSG(isinstance(node_description['subtree'], list), " %s.subtree has to be a list"%(prefix))
@@ -202,7 +154,7 @@ class RawInputs2Dicts():
                 if 'attributes' not in node_info:
                     node_info['attributes'] = {}
                 else:
-                    ASSERT_MSG(type(node_info['attributes']) is dict,
+                    ASSERT_MSG(isinstance(node_info['attributes'], dict),
                     '%s: attributes must be specified in dictionary format'%(node_info['name']))
                 for attr_name, attr_val in node_attrs.items():
                     if attr_name not in node_info['attributes']:
@@ -211,16 +163,9 @@ class RawInputs2Dicts():
                 all_attrs = deepcopy(node_info['attributes'])
                 all_attrs.update(self.arch_variables)
                 for attr_name, attr_val in node_info['attributes'].items():
-                    if type(attr_val) is str:
-                        if attr_val in all_attrs:
-                            node_info['attributes'][attr_name] = all_attrs[attr_val]
-                            all_attrs[attr_name] = all_attrs[attr_val]
-                        else:
-                            v = parse_expression_for_arithmetic(attr_val, all_attrs)
-                            if isinstance(v, str):
-                                arithmetic_failed_evaluate_warn(attr_val, attr_name, 'variables', node_info)
-                            node_info['attributes'][attr_name] = v
-                            all_attrs[attr_name] = node_info['attributes'][attr_name]
+                    v = parse_expression_for_arithmetic_new(attr_val, all_attrs, f'arch attribute {attr_name}', strings_allowed=True)
+                    node_info['attributes'][attr_name] = v
+                    all_attrs[attr_name] = node_info['attributes'][attr_name]
 
 
                 name_base, list_suffix, list_length = interpret_component_list(node_info['name'], all_attrs)
@@ -275,23 +220,22 @@ class RawInputs2Dicts():
         top_key = 'compound_components'
 
         file_path = file_info['path']
-        file_reload = load(open(file_path), accelergy_loader_ordered)
-        content = file_reload
+        content = load_yaml(file_path)
 
         # check top level syntax, check parser version
         ASSERT_MSG('version' and 'classes' in content[top_key],
                    'File content not legal: %s, %s must contain '
                    '"version" and "classes" keys' % (file_path, top_key))
-        self.check_input_parser_version(content[top_key]['version'], 'compound_component', file_path)
-        ASSERT_MSG(type(content[top_key]['classes']) is list,
+        version.check_input_parser_version(content[top_key]['version'], 'compound_component', file_path)
+        ASSERT_MSG(isinstance(content[top_key]['classes'], list),
                    'File content not legal: %s, "classes" key must have value of type list' % file_path)
 
         # check syntax of each specified cc class and add into the cc_class_dict
         cc_classes_list = content[top_key]['classes']
         for cc_class in cc_classes_list:
-            ASSERT_MSG('name' in cc_class.keys() and 'attributes' in cc_class.keys()
-                       and 'actions' in cc_class.keys() and 'subcomponents' in cc_class.keys(),
-                       'missing required keys in compound component class description: \n %s' % cc_class)
+            for needed_key in ['name', 'attributes', 'actions', 'subcomponents']:
+                ASSERT_MSG(needed_key in cc_class.keys(),
+                           f'Missing required key "{needed_key}" in compound component class description: {cc_class}')
             if cc_class['name'] in self.cc_classes_dict:
                 WARN('Redefined compound component class %s in file %s' % (cc_class['name'], file_path))
             for subcomponent_info in cc_class['subcomponents']:
@@ -299,7 +243,8 @@ class RawInputs2Dicts():
                            '"name" and "class" keys must be specified for the subcomponents of the '
                            'compound component class: %s' % (cc_class['name']))
                 if 'area_share' not in subcomponent_info:
-                    subcomponent_info['area_share'] = 1  # default area share is 1
+                    # Try to grab it from the attributes if it's there. Otherwise, default to 1.0
+                    subcomponent_info['area_share'] = subcomponent_info.get('attributes', {}).get('area_share', 1.0)
             for action_info in cc_class['actions']:
                 ASSERT_MSG('name' in action_info.keys() and 'subcomponents' in action_info.keys(),
                            '"name" and "subcomponents" keys must be specified for compound action %s' % (
@@ -325,20 +270,15 @@ class RawInputs2Dicts():
 
         possible_config_dirs = ['.' + os.sep, os.path.expanduser('~') + '/.config/accelergy/']
         config_file_name = 'accelergy_config.yaml'
-        for possible_dir in possible_config_dirs:
-            if os.path.exists(possible_dir + config_file_name):
-                original_config_file_path = possible_dir + config_file_name
-                original_content_obj = open(original_config_file_path)
-                original_content = load(original_content_obj, accelergy_loader)
-                original_content_obj.close()
-                INFO('config file located:', original_config_file_path)
-                print('config file content: \n', original_content)
-                if 'version' not in original_content:
-                    ERROR_CLEAN_EXIT('config file has no version number, cannot proceed')
-                file_version = original_content['version']
-                self.check_input_parser_version(file_version, 'config', original_config_file_path)
-                self.config = original_content
-                return
+        if (original_config_file_path := get_config_file_path()) is not None:
+            original_content = load_yaml(original_config_file_path)
+            INFO('config file located:', original_config_file_path)
+            if 'version' not in original_content:
+                ERROR_CLEAN_EXIT('config file has no version number, cannot proceed')
+            file_version = original_content['version']
+            version.check_input_parser_version(file_version, 'config', original_config_file_path)
+            self.config = original_content
+            return
 
         create_folder(possible_config_dirs[1])
         config_file_path = possible_config_dirs[1] + config_file_name
@@ -374,13 +314,11 @@ class RawInputs2Dicts():
 
 
     def expand_primitive_component_lib_info(self, pc_path):
-        primitive_component_list_obj = open(pc_path)
-        primitive_component_list = load(primitive_component_list_obj, accelergy_loader)
-        primitive_component_list_obj.close()
+        primitive_component_list = load_yaml(pc_path)
         for idx in range(len(primitive_component_list['classes'])):
             pc_description = primitive_component_list['classes'][idx]
             if pc_description['name'] in self.pc_classes_dict:
-                WARN(pc_description['name'], 'redefined in', pc_path)
+                WARN(f'{pc_description["name"]} redefined in {pc_path}')
             self.pc_classes_dict[pc_description['name']] = deepcopy(pc_description)
         INFO('primitive component file parsed: ', pc_path)
 
@@ -392,7 +330,7 @@ class RawInputs2Dicts():
 
         ASSERT_MSG('version' and 'tables' in content, 'ERT input must contain the "version" and "tables" keys')
         ASSERT_MSG(isinstance(content['tables'], list), 'ERT tables must be in the form of list')
-        self.check_input_parser_version(content['version'], 'ERT', file_path)
+        version.check_input_parser_version(content['version'], 'ERT', file_path)
 
         for ERT_component_entry in ERT_component_entry_list:
             ASSERT_MSG('name' and 'actions' in ERT_component_entry,
@@ -410,7 +348,7 @@ class RawInputs2Dicts():
         file_path = file_info['path']
         ASSERT_MSG('version' in file_info['content'][top_key],
                    'Please specify the version of the action counts file: %s' % (file_path))
-        self.check_input_parser_version(file_info['content'][top_key]['version'], 'action counts', file_path)
+        version.check_input_parser_version(file_info['content'][top_key]['version'], 'action counts', file_path)
         action_counts_dict = file_info['content'][top_key]
         ASSERT_MSG('subtree' in action_counts_dict or 'local' in action_counts_dict,
                    'the action counts must contain the "subtree" key or "local" key at the top level: %s' % file_path)
@@ -464,6 +402,9 @@ class RawInputs2Dicts():
                    'config is not properly defined \n %s' % self.config)
         path_list = self.config['estimator_plug_ins']
         return path_list
+
+    def get_python_plug_in_paths(self):
+        return self.config.get('python_plug_ins', '')
 
     def get_action_counts_dict(self):
         if self.action_counts_dict == {}:

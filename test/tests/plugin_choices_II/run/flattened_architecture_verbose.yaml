@@ -1,0 +1,168 @@
+architecture:
+  version: 0.3
+  local:
+  - name: arch.pick_higher_accuracy
+    class: pick_higher_accuracy
+    attributes: {}
+    primitive_components:
+    - name: component
+      class: component
+      attributes: {unused_parameter: 1, plug_in: "LowAccuracyPlugIn", min_accuracy: 40}
+      area_share: 1
+    actions:
+    - name: action_a
+      arguments: null
+      primitive_actions:
+      - name: component
+        action: action_a
+        arguments: null
+        action_share: 1.0
+    - name: action_b
+      arguments: null
+      primitive_actions:
+      - name: component
+        action: action_b
+        arguments: null
+        action_share: 1.0
+  - name: arch.no_match_init
+    class: no_match_init
+    attributes: {}
+    primitive_components:
+    - name: component
+      class: component
+      attributes: {unused_parameter: 1}
+      area_share: 1
+    actions:
+    - name: action_a
+      arguments: null
+      primitive_actions:
+      - name: component
+        action: action_a
+        arguments:
+          required_parameter: 1
+        action_share: 1.0
+    - name: action_b
+      arguments: null
+      primitive_actions:
+      - name: component
+        action: action_b
+        arguments:
+          required_parameter: 1
+        action_share: 1.0
+  - name: arch.no_match_args
+    class: no_match_args
+    attributes: {}
+    primitive_components:
+    - name: component
+      class: component
+      attributes: {required_parameter: 3}
+      area_share: 1
+    actions:
+    - name: action_a
+      arguments: null
+      primitive_actions:
+      - name: component
+        action: action_a
+        arguments: {}
+        action_share: 1.0
+    - name: action_b
+      arguments: null
+      primitive_actions:
+      - name: component
+        action: action_b
+        arguments: {}
+        action_share: 1.0
+  - name: arch.match_args_init
+    class: match_args_init
+    attributes: {}
+    primitive_components:
+    - name: component
+      class: component
+      attributes: {required_parameter: 3, optional_parameter: 9}
+      area_share: 1
+    actions:
+    - name: action_a
+      arguments: null
+      primitive_actions:
+      - name: component
+        action: action_a
+        arguments:
+          required_parameter: 5
+        action_share: 1.0
+    - name: action_b
+      arguments: null
+      primitive_actions:
+      - name: component
+        action: action_b
+        arguments:
+          required_parameter: 5
+        action_share: 1.0
+    - name: action_c
+      arguments: null
+      primitive_actions:
+      - name: component
+        action: action_c
+        arguments:
+          required_1: 1
+          required_2: 3
+        action_share: 1.0
+    - name: action_c_optional_arg_override
+      arguments: null
+      primitive_actions:
+      - name: component
+        action: action_c
+        arguments:
+          optional: 9
+          required_1: 1
+          required_2: 3
+        action_share: 1.0
+  - name: arch.error_in_area
+    class: error_in_area
+    attributes: {}
+    primitive_components:
+    - name: component
+      class: component
+      attributes: {required_parameter: 1000}
+      area_share: 1
+    actions:
+    - name: action_a
+      arguments: null
+      primitive_actions:
+      - name: component
+        action: action_a
+        arguments:
+          required_parameter: 1
+        action_share: 1.0
+    - name: action_b
+      arguments: null
+      primitive_actions:
+      - name: component
+        action: action_b
+        arguments:
+          required_parameter: 3
+        action_share: 1.0
+  - name: arch.error_in_init
+    class: error_in_init
+    attributes: {}
+    primitive_components:
+    - name: component
+      class: component
+      attributes: {required_parameter: -1}
+      area_share: 1
+    actions:
+    - name: action_a
+      arguments: null
+      primitive_actions:
+      - name: component
+        action: action_a
+        arguments:
+          required_parameter: 1
+        action_share: 1.0
+    - name: action_b
+      arguments: null
+      primitive_actions:
+      - name: component
+        action: action_b
+        arguments:
+          required_parameter: 1
+        action_share: 1.0

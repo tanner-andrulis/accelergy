@@ -1,0 +1,42 @@
+ART_summary:
+  version: 0.3
+  table_summary:
+  - name: simple_compound.PE[0..4].MAC
+    area: 1433.047
+    primitive_estimations:
+    - name: mac
+      estimator: Aladdin_table
+      area: 1239.5
+      area_share: 1
+      total_component_area: 1239.5
+    - name: output_fifo
+      estimator: Aladdin_table
+      area: 193.547
+      area_share: 1
+      total_component_area: 193.547
+  - name: simple_compound.PE[0..4].buffer
+    area: 537.18
+    primitive_estimations:
+    - name: storage
+      estimator: Aladdin_table
+      area: 358.18
+      area_share: 1
+      total_component_area: 358.18
+    - name: address_generators[0..1]
+      estimator: Aladdin_table
+      area: 89.5
+      area_share: 1
+      total_component_area: 179.0
+  - name: simple_compound.GLB
+    area: 39629.0
+    primitive_estimations:
+    - name: storage
+      estimator: Cacti
+      area: 39450.0
+      area_share: 1
+      total_component_area: 39450.0
+    - name: address_generators[0..1]
+      estimator: Aladdin_table
+      area: 89.5
+      area_share: 1
+      total_component_area: 179.0

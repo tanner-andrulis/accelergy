@@ -1,4 +1,5 @@
 from accelergy.parsing_utils import *
+from accelergy.component_class import ComponentClass
 
 def arch_dict_2_obj(arch_dict, cc_classes, pc_classes):
     fully_defined_arch_dict = fully_define_arch_dict(arch_dict, cc_classes, pc_classes)
@@ -8,18 +9,23 @@ def fully_define_arch_dict(arch_dict, cc_classes, pc_classes):
     for cname, cinfo in arch_dict['components'].items():
         ASSERT_MSG('class' in cinfo or 'subclass' in cinfo, 'Please specify class name for %s'%(cname))
         class_name = cinfo['subclass'] if 'subclass' in cinfo else cinfo['class']
-        ASSERT_MSG(class_name in cc_classes or class_name in pc_classes, 'class "%s" is not defined'%class_name)
-        class_obj = cc_classes[class_name] if class_name in cc_classes else pc_classes[class_name]
+        # ASSERT_MSG(class_name in cc_classes or class_name in pc_classes, 'class "%s" is not defined'%class_name)
+        if class_name in cc_classes:
+            class_obj = cc_classes[class_name]
+        elif class_name in pc_classes:
+            class_obj = pc_classes[class_name]
+        else:
+            pc_classes[class_name] = ComponentClass({'name': class_name, 'attributes': {}, 'actions': []})
+            class_obj = pc_classes[class_name]
+
         attrs_to_be_applied = class_obj.get_default_attr_to_apply(cinfo['attributes'])
         for attr_name, attr_val in attrs_to_be_applied.items():
             cinfo['attributes'][attr_name] = attr_val
         for attr_name, attr_val in cinfo['attributes'].items():
-            if type(attr_val) is str:
+            if isinstance(attr_val, str):
                 if attr_val in cinfo['attributes']:
                     cinfo['attributes'][attr_name] = cinfo['attributes'][attr_val]
-                v = parse_expression_for_arithmetic(attr_val, cinfo['attributes'])
-                if isinstance(v, str):
-                    arithmetic_failed_evaluate_warn(attr_val, attr_name, cname, cinfo['attributes'])
+                v = parse_expression_for_arithmetic_new(attr_val, cinfo['attributes'], class_name)
                 cinfo['attributes'][attr_name] = v
 
     return arch_dict
@@ -52,7 +58,7 @@ class Architecture(object):
         return self.component_dict[compName]
 
     def generate_flattened_arch(self):
-        from collections import OrderedDict
+        from collections import OrderedDict # ; OrderedDict = dict
         flattened_arch = {'architecture': OrderedDict({'version': self.version, 'local': []})}
         for cname in self.get_component_name_list():
             cobj = self.get_component(cname)
@@ -94,8 +100,14 @@ class ArchComp():
     def get_dict_representation(self):
         return self.dict_representation
 
-
-
+    def get_area_share(self):
+        if 'area_share' in self.dict_representation:
+            return self.dict_representation['area_share']
+        
+        if 'area_share' in self.dict_representation['attributes']:
+            return self.dict_representation['attributes']['area_share']
+        
+        return 1.0
 
 
 

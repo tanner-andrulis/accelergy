@@ -18,8 +18,8 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-from collections import OrderedDict
-from accelergy.utils import *
+from collections import OrderedDict # ; OrderedDict = dict
+from accelergy.utils.utils import *
 
 class EnergyCalculator:
     def __init__(self, info):

@@ -20,11 +20,12 @@
 
 from accelergy.raw_inputs_2_dicts import RawInputs2Dicts
 from accelergy.system_state import SystemState
-from accelergy.io import parse_commandline_args, generate_output_files
-from accelergy.utils import *
+from accelergy.input_output import parse_commandline_args, generate_output_files
+from accelergy.utils.utils import *
+import accelergy.version as version
 
-def main():
-    accelergy_version = 0.3
+def run():
+    accelergy_version = version.__version__
 
     # ----- Interpret Commandline Arguments
     args = parse_commandline_args()

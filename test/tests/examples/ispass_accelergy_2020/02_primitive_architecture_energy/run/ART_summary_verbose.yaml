@@ -1,0 +1,27 @@
+ART_summary:
+  version: 0.3
+  table_summary:
+  - name: simple_primitive.PE.MAC
+    area: 1239.5
+    primitive_estimations:
+    - name: simple_primitive.PE.MAC
+      estimator: Aladdin_table
+      area: 1239.5
+      area_share: 1.0
+      total_component_area: 1239.5
+  - name: simple_primitive.PE.buffer
+    area: 358.18
+    primitive_estimations:
+    - name: simple_primitive.PE.buffer
+      estimator: Aladdin_table
+      area: 358.18
+      area_share: 1.0
+      total_component_area: 358.18
+  - name: simple_primitive.GLB
+    area: 29133.3
+    primitive_estimations:
+    - name: simple_primitive.GLB
+      estimator: Cacti
+      area: 29133.3
+      area_share: 1.0
+      total_component_area: 29133.3

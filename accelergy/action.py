@@ -1,6 +1,6 @@
 from copy import deepcopy
 
-from accelergy.utils import *
+from accelergy.utils.utils import *
 from accelergy.parsing_utils import *
 
 
@@ -31,7 +31,8 @@ class Action(object):
     def set_arguments(self, action_def_dict):
         if 'arguments' in action_def_dict:
             self._arguments = {}
-            for arg_name, arg_range in action_def_dict['arguments'].items():
+            sorted_args = sorted(action_def_dict['arguments'].items(), key=lambda x: x[0])
+            for arg_name, arg_range in sorted_args:
                 self._arguments[arg_name] = arg_range
 
     def set_subcomponents(self, action_def_dict):
@@ -105,7 +106,7 @@ class Action(object):
         total_entries = 1
         argument_range_record = {}
         for arg_name, arg_range in args.items():
-            ASSERT_MSG(type(arg_range) is str, '%s: argument value for action %s is not string, cannot parse range'%(arg_name,self.name))
+            ASSERT_MSG(isinstance(arg_range, str), '%s: argument value for action %s is not string, cannot parse range'%(arg_name,self.name))            
             ASSERT_MSG('..' in arg_range, '%s: argument value for action %s is not range, cannot parse range'%(arg_name,self.name))
             new_arg_range = Action.map_arg_range_bounds(arg_range, mappingDict)[0]
             startIdx, endIdx = Action.parse_arg_range(new_arg_range)
@@ -128,7 +129,7 @@ class Action(object):
     @staticmethod
     def parse_arg_range(arg_range):
         """ Parse the start index and end index for an argument range"""
-        if type(arg_range) is not str or '..' not in arg_range:
+        if not isinstance(arg_range, str) or '..' not in arg_range:
             ERROR_CLEAN_EXIT('cannot parse the argument range specification: ', arg_range)
         split_sub_string = arg_range.split('..')
         start_idx = int(split_sub_string[0])
@@ -176,26 +177,19 @@ class Action(object):
         try:
             start_idx = int(split_sub_string[0])
         except ValueError:
-            v = parse_expression_for_arithmetic(split_sub_string[0], attributes_dict)
-            if not isinstance(v, str):
-                start_idx = v
-            else:
-                if split_sub_string[0] not in attributes_dict:
-                    print(f'ERROR: {split_sub_string[0]} is not a valid expression.')
-                    ERROR_CLEAN_EXIT('cannot find mapping from', arg_range_str, 'to', attributes_dict)
-                start_idx = attributes_dict[split_sub_string[0]]
+            v = parse_expression_for_arithmetic_new(split_sub_string[0], attributes_dict, 'index range expression', strings_allowed=False)
             detect_arg_range_binding = True
 
         # process the end index
         try:
             end_idx = int(split_sub_string[1])
         except ValueError:
-            v = parse_expression_for_arithmetic(split_sub_string[1], attributes_dict)
+            v = parse_expression_for_arithmetic_new(split_sub_string[1], attributes_dict, 'index range expression', strings_allowed=False)
             if not isinstance(v, str):
                 end_idx = v
             else:
                 if split_sub_string[1] not in attributes_dict:
-                    print(f'ERROR: {split_sub_string[1]} is not a valid expression.')
+                    ERROR(f'ERROR: {split_sub_string[1]} is not a valid expression.')
                     ERROR_CLEAN_EXIT('cannot find mapping from', arg_range_str, 'to', attributes_dict)
                 end_idx = attributes_dict[split_sub_string[1]]
             detect_arg_range_binding = True
@@ -206,7 +200,7 @@ class Action(object):
 
     @staticmethod
     def parse_arg_range(arg_range):
-        if type(arg_range) is not str or '..' not in arg_range:
+        if not isinstance(arg_range, str) or '..' not in arg_range:
             ERROR_CLEAN_EXIT('cannot parse the argument range specification: ', arg_range)
         split_sub_string = arg_range.split('..')
         start_idx = int(split_sub_string[0])

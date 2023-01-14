@@ -1,8 +1,8 @@
 from copy import deepcopy
-from accelergy.utils import *
+from accelergy.utils.utils import *
 from accelergy.action import Action
 from accelergy.subcomponent import Subcomponent
-from collections import OrderedDict
+from collections import OrderedDict # ; OrderedDict = dict
 
 class ComponentClass:
     def __init__(self, class_dict):
@@ -21,13 +21,16 @@ class ComponentClass:
             self.type = 'primitive'
         self._primitive_type = class_dict['primitive_type'] if 'primitive_type' in class_dict else None
 
+    def add_action(self, action):
+        ASSERT_MSG('name' in action, '%s class actions must contain "name" keys'%(self.get_name()))
+        self._actions[action['name']] = Action(action)
+
     def set_actions(self, action_list):
-        ASSERT_MSG(type(action_list) is list,
+        ASSERT_MSG(isinstance(action_list, list),
                    '%s class description must specify its actions in list format'%(self.get_name()))
         for action in action_list:
-            ASSERT_MSG('name' in action, '%s class actions must contain "name" keys'%(self.get_name()))
-            self._actions[action['name']] = Action(action)
-
+            self.add_action(action)
+            
     #-----------------------------------------------------
     # Getters
     #-----------------------------------------------------
@@ -59,7 +62,9 @@ class ComponentClass:
         return list(self._actions.keys())
 
     def get_action(self, actionName):
-        ASSERT_MSG(actionName in self._actions, '%s does not exist in class %s'%(actionName, self.get_name()))
+        # ASSERT_MSG(actionName in self._actions, '%s does not exist in class %s'%(actionName, self.get_name()))
+        if actionName not in self._actions:
+            self.add_action({'name': actionName, 'subcomponents': []})
         return self._actions[actionName]
 
     def get_subcomponents_as_dict(self):
