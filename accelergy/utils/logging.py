@@ -3,7 +3,6 @@ import queue
 from typing import Callable, List, Union
 from logging.handlers import QueueHandler, QueueListener
 
-# TIMESTAMP LEVELNAME NAME MESSAGE
 logging.basicConfig(
     format='%(asctime)s %(levelname)-8s    %(message)s',
     datefmt='%Y-%m-%d %H:%M:%S',
