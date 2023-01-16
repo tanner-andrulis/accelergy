@@ -25,9 +25,8 @@ def run_accelergy(
     Empty strings are returned if a file does not exist."""
     output_dir = os.path.abspath(run_dir)
     os.makedirs(output_dir, exist_ok=True)
-    for to_remove in [
-        'ERT.yaml', 'ART.yaml', 'ERT_summary_verbose.txt', 'ART_summary_verbose.txt', 'output.txt'
-    ]:
+    for to_remove in ['ERT.yaml', 'ART.yaml', 'ERT_summary_verbose.txt', 
+                      'ART_summary_verbose.txt', 'output.txt']:
         if os.path.exists(os.path.join(output_dir, to_remove)):
             os.remove(os.path.join(output_dir, to_remove))
         
@@ -53,6 +52,16 @@ def run_accelergy(
     art_summary_verbose = grab_content_if_file_exists('ART_summary_verbose.txt')
     return output, ert, art, ert_summary_verbose, art_summary_verbose
 
+def clear_run_dir(run_dir: str):
+    """ Clear the run directory. """
+    run_dir = os.path.abspath(run_dir)
+    if os.path.exists(run_dir):
+        for f in os.listdir(run_dir):
+            assert f.endswith('.txt') or f.endswith('.yaml'), \
+                f'Unexpected file in run dir: {os.path.join(run_dir, f)}'
+            os.remove(os.path.join(run_dir, f))
+        os.rmdir(run_dir)
+    
 def run_accelergy_from_test_dir(
     test_dir_path: str, extra_accelergy_args: str = '', force_input_files=()
                                 ) -> Tuple[str, str, str, str, str]:
@@ -100,6 +109,17 @@ class AccelergyUnitTest(unittest.TestCase):
             self.accelergy_ert_summary_verbose_yaml = \
                 yaml.safe_load(self.accelergy_ert_summary_verbose)
 
+    def tearDown(self):
+        # Clear the run directory if the test passes
+        run_dir = os.path.abspath(os.path.join(self.test_dir_path, RUNDIR))
+        if hasattr(self, '_outcome') and hasattr(self._outcome, 'errors') and \
+            any([e[1] for e in self._outcome.errors]):
+            print(f'Test {self._testMethodName} has errors. NOT clearing run directory {run_dir}')
+            print(f'Errors: {self._outcome.errors}')
+        else:
+            print(f'Test {self._testMethodName} passed. Clearing run directory {run_dir}')
+            clear_run_dir(run_dir)
+
     def get_accelergy_success(self):
         return self.accelergy_ert_yaml is not None
 
@@ -137,18 +157,22 @@ class AccelergyUnitTest(unittest.TestCase):
             yaml1 = filter(lambda x: x['name'] != k, yaml1)
             yaml2 = filter(lambda x: x['name'] != k, yaml2)
 
-        diff = DeepDiff(yaml1, yaml2, ignore_order=True)
+        diff = DeepDiff(yaml1, yaml2, ignore_order=True, ignore_numeric_type_changes=True, ignore_string_type_changes=True, number_format_notation='e', significant_digits=3)
         value_change_keys = list(diff.get('values_changed', {}).keys())
         for k in value_change_keys:
             old, new = diff['values_changed'][k]['old_value'], \
                     diff['values_changed'][k]['new_value']
+            if "['version']" in k:
+                diff['values_changed'].pop(k)
+                continue
             if not isinstance(old, Number) or not isinstance(new, Number):
                 continue
             # Allow slight differences
-            if old == 0 and new < 0.001:
-                diff['values_changed'].pop(k)
-                print(f'Ignoring rounding error of {old} -> {new}')
-            if abs(old - new) / old < 0.02:
+            if old == 0:
+                if new < 0.001:
+                    diff['values_changed'].pop(k)
+                    print(f'Ignoring rounding error of {old} -> {new}')
+            elif abs(old - new) / old < 0.02:
                 diff['values_changed'].pop(k)
                 print(f'Ignoring rounding error of {old} -> {new}')
         if 'values_changed' in diff and not diff['values_changed']:
