@@ -269,7 +269,7 @@ class CompoundComponent:
             including: (1) attributes (2) class (2) flattened primitive list (2) flattened actions
         """
 
-        from collections import OrderedDict # ; OrderedDict = dict
+        from collections import OrderedDict
         cc_dict = OrderedDict()
 
         subcomponent_dict = self.get_subcomponents_as_dict()

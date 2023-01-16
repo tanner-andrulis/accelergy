@@ -58,7 +58,7 @@ class Architecture(object):
         return self.component_dict[compName]
 
     def generate_flattened_arch(self):
-        from collections import OrderedDict # ; OrderedDict = dict
+        from collections import OrderedDict
         flattened_arch = {'architecture': OrderedDict({'version': self.version, 'local': []})}
         for cname in self.get_component_name_list():
             cobj = self.get_component(cname)

@@ -2,7 +2,7 @@ from copy import deepcopy
 from accelergy.utils.utils import *
 from accelergy.action import Action
 from accelergy.subcomponent import Subcomponent
-from collections import OrderedDict # ; OrderedDict = dict
+from collections import OrderedDict
 
 class ComponentClass:
     def __init__(self, class_dict):

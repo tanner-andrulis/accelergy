@@ -40,7 +40,7 @@ class PrimitiveComponent():
         return self._actions
 
     def get_dict_representation(self):
-        from collections import OrderedDict # ; OrderedDict = dict
+        from collections import OrderedDict
         dict_rep = OrderedDict({'name': self.get_name(),
                 'class': self.get_class_name(),
                 'actions': []})

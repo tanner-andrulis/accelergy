@@ -1,6 +1,6 @@
 from copy import deepcopy
 from accelergy.parsing_utils import *
-from collections import OrderedDict # ; OrderedDict = dict
+from collections import OrderedDict
 import accelergy.version as version
 
 class RawInputs2Dicts():
