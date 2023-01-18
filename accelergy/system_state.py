@@ -57,8 +57,8 @@ class SystemState():
         for plug_in in self.plug_ins:
             if isinstance(plug_in, AccelergyPlugIn) and not \
                     getattr(plug_in, '_accelergy_plug_in_initialized', False):
-                raise Exception(f'Plug-in {plug_in.get_name()} is not initialized. Please call ' \
-                                f'super().__init__() in the plug-in\'s __init__ method.')
+                ERROR_CLEAN_EXIT(f'Plug-in {plug_in.get_name()} is not initialized. Please call ' \
+                                 f'super().__init__() in the plug-in\'s __init__ method.')
 
     def set_ERT(self, ERT):
         self.ERT = ERT
