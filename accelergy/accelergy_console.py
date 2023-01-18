@@ -171,61 +171,69 @@ def run():
 
 
 def main():
-    try:
+    if False:
         run()
-    except Exception as e:
-        import traceback
-        from traceback import linecache
-        import re
-        tb = sys.exc_info()[2]
+    else:
+        try:
+            run()
+        except Exception as e:
+            import traceback
+            from traceback import linecache
+            import re
+            tb = sys.exc_info()[2]
 
-        print('\n' * 5 + '=' * 60)
-        print(f'Accelergy has encountered an error and crashed. Error below: ')
-        print('=' * 60)
-        print('|| ' + traceback.format_exc().strip().replace('\n', '\n|| '))
-        print('=' * 60)
-        print(f'Stack with local variables (most recent call last):')
-        stack = []
-        while tb:
-            stack.append((tb.tb_frame, tb.tb_lineno))
-            tb = tb.tb_next
-
-        frameno = 3
-        current_frame = frameno
-        contextrange = 3
-        for frame, lineno in stack[-frameno:]:
-            current_frame -= 1
-            line = linecache.getline(frame.f_code.co_filename, lineno, frame.f_globals)
-            context = []
-            for i in range(lineno - contextrange, lineno + contextrange + 1):
-                try:
-                    l = linecache.getline(frame.f_code.co_filename, i, frame.f_globals)
-                    context.append((i, l))
-                except:
-                    pass
-            stripamount = min(len(c[1]) - len(c[1].lstrip()) for c in context)
-            context = [('         ' if c[0] != lineno else 'ERROR >> ') + str(c[0]) + 
-                        ': ' + c[1][stripamount:] for c in context]
-            
-            if current_frame != frameno:
-                print('=' * 60)
-            print(f'Frame {current_frame}')
+            print('\n' * 5 + '=' * 60)
+            print(f'Accelergy has encountered an error and crashed. Error below: ')
             print('=' * 60)
-            print(f'| {frame.f_code.co_filename}:{lineno}')
-            print(f'| {type(e).__name__}: {e}')
-            contextlines = '\n'.join(context)
-            for k, v in frame.f_locals.items():
-                if re.findall(r'\W' + k + r'\W', contextlines):
-                    startline = f'Local var {k} ='
+            print('|| ' + traceback.format_exc().strip().replace('\n', '\n|| '))
+            print('=' * 60)
+            print(f'Stack with local variables (most recent call last):')
+            stack = []
+            while tb:
+                stack.append((tb.tb_frame, tb.tb_lineno))
+                tb = tb.tb_next
+
+            frameno = 3
+            current_frame = frameno
+            contextrange = 3
+            for frame, lineno in stack[-frameno:]:
+                current_frame -= 1
+                line = linecache.getline(frame.f_code.co_filename, lineno, frame.f_globals)
+                context = []
+                for i in range(lineno - contextrange, lineno + contextrange + 1):
                     try:
-                        strv = str(v)
+                        l = linecache.getline(frame.f_code.co_filename, i, frame.f_globals)
+                        context.append((i, l))
                     except:
-                        strv = '<Unable to print this variable]>'
-                    print(f'| {startline:<40} {strv}')
-            for c in context:
-                print('| ' + c, end='')
-            
+                        pass
+                stripamount = min(len(c[1]) - len(c[1].lstrip()) for c in context)
+                context = [('         ' if c[0] != lineno else 'ERROR >> ') + str(c[0]) + 
+                           ': ' + c[1][stripamount:] for c in context]
+                
+                if current_frame != frameno:
+                    print('=' * 60)
+                print(f'Frame {current_frame}')
+                print('=' * 60)
+                print(f'| {frame.f_code.co_filename}:{lineno}')
+                print(f'| {type(e).__name__}: {e}')
+                contextlines = '\n'.join(context)
+                for k, v in frame.f_locals.items():
+                    if re.findall(r'\W' + k + r'\W', contextlines):
+                        startline = f'Local var {k} ='
+                        try:
+                            strv = str(v)
+                        except:
+                            strv = '<Unable to print this variable]>'
+                        print(f'| {startline:<40} {strv}')
+                for c in context:
+                    print('| ' + c, end='')
+                
 
-        print('=' * 60)
+            print('=' * 60)
+            print('|| ' + traceback.format_exc().strip().replace('\n', '\n|| '))
+            print('=' * 60)
+            print('Accelergy has encountered an error and crashed. Error above. ')
+            print('=' * 60 + '\n')
 
-        exit(-1)
+
+            exit(-1)

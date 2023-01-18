@@ -27,16 +27,16 @@ if __name__ == '__main__':
     suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.IspassTestAccelergy01))
     suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.IspassTestAccelergy02))
     suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.IspassTestAccelergy03))
-    # suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.IspassTestAccelergy04)) BROKEN: Different numbers from Aladdin plug-in. See commit e741e80f1ca385dfaea0a7d4c09ad7d09794239f of the Aladdin plug-in.
+    # suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.IspassTestAccelergy04)) PROBLEM: Different numbers from Aladdin plug-in. See commit e741e80f1ca385dfaea0a7d4c09ad7d09794239f of the Aladdin plug-in.
     suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.IspassTestTimeloop00))
     suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.IspassTestTimeloop01))
-    # suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.IspassTestTimeloop02)) BROKEN: Example uses dummy table
-    # suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.IspassTestTimeloop03)) BROKEN: Example uses dummy table
-    # suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.IspassTestTimeloop04)) BROKEN: Example uses dummy table
-    # suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.IspassTestTimeloop05)) BROKEN: Example uses dummy table
-    # suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.IspassTestTimeloop06)) BROKEN: Example uses dummy table
-    # suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.IspassTestTimeloopAccelergy00)) BROKEN: Example uses dummy table
-    # suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.IspassTestTimeloopAccelergy01)) BROKEN: Example uses dummy table
+    # suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.IspassTestTimeloop02)) PROBLEM: Example uses dummy table
+    # suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.IspassTestTimeloop03)) PROBLEM: Example uses dummy table
+    # suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.IspassTestTimeloop04)) PROBLEM: Example uses dummy table
+    # suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.IspassTestTimeloop05)) PROBLEM: Example uses dummy table
+    # suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.IspassTestTimeloop06)) PROBLEM: Example uses dummy table
+    # suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.IspassTestTimeloopAccelergy00)) PROBLEM: Example uses dummy table
+    # suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.IspassTestTimeloopAccelergy01)) PROBLEM: Example uses dummy table
     suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.IscaTest01))
     suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.IscaTest02))
     suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.IscaTest03))
@@ -45,22 +45,22 @@ if __name__ == '__main__':
     suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.IscaTest06))
     suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.IscaTest07))
     suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.IscaTest08))
-    # suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.IscaTest09)) BROKEN: Example uses dummy table
-    # suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.IscaTest10)) BROKEN: Example uses dummy table
-    # suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.IscaTest11)) BROKEN: Different numbers for address generation. Aladdin plug-in change?
-    # suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.BaselineTest01)) BROKEN: Example uses dummy table
-    # suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.BaselineTest02)) BROKEN: Different numbers for address generation. Aladdin plug-in change?
-    # suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.BaselineTest03))  BROKEN: Example uses dummy table
-    # suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.BaselineTest04)) BROKEN: Example uses dummy table
-    # suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.BaselineTest05)) BROKEN: Example uses dummy table
-    # suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.BaselineTest06)) Not really broken, but don't want to make users install the tables to run the tests
-    # suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.BaselineTest07)) BROKEN: Example uses dummy table
+    # suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.IscaTest09)) PROBLEM: Example uses dummy table
+    # suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.IscaTest10)) PROBLEM: Example uses dummy table
+    # suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.IscaTest11)) PROBLEM: Different numbers for address generation. Aladdin plug-in change?
+    # suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.BaselineTest01)) PROBLEM: Example uses dummy table
+    # suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.BaselineTest02)) PROBLEM: Different numbers for address generation. Aladdin plug-in change?
+    # suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.BaselineTest03))  PROBLEM: Example uses dummy table
+    # suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.BaselineTest04)) PROBLEM: Example uses dummy table
+    # suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.BaselineTest05)) PROBLEM: Example uses dummy table
+    # suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.BaselineTest06)) Don't want to make users install the tables to run the tests
+    # suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.BaselineTest07)) PROBLEM: Example uses dummy table
     suite.addTests(test_loader.loadTestsFromTestCase(tests.exercises.test.BaselineTest08))
     
     
     
     unittest.TextTestRunner(verbosity=2).run(suite)
-    print(f'Broken tests skipped:')
+    print(f'Tests with problems skipped:')
     print('\ttests.exercises.test.IspassTestAccelergy04')
     print('\ttests.exercises.test.IspassTestTimeloop02')
     print('\ttests.exercises.test.IspassTestTimeloop03')
@@ -77,6 +77,5 @@ if __name__ == '__main__':
     print('\ttests.exercises.test.BaselineTest03')
     print('\ttests.exercises.test.BaselineTest04')
     print('\ttests.exercises.test.BaselineTest05')
-    print('\ttests.exercises.test.BaselineTest06')
     print('\ttests.exercises.test.BaselineTest07')
     

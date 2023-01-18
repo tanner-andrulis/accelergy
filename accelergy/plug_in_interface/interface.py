@@ -218,6 +218,7 @@ class AccelergyQuery():
 class AccelergyPlugIn(ListLoggable, ABC):
     def __init__(self):
         super().__init__(name=self.get_name())
+        self._accelergy_plug_in_initialized = True
 
     @abstractmethod
     def primitive_action_supported(query: AccelergyQuery) -> AccuracyEstimation:
