@@ -31,8 +31,6 @@ def parse_commandline_args():
     
     for i in range(len(sys.argv) - 1):
         if (sys.argv[i] == '-v' or sys.argv[i] == '--verbose') and sys.argv[i+1] == '1':
-            WARN(f'The "-v/--verbose 1" option is deprecated. Please omit the "1" and only include'
-                 f' the "-v/--verbose" option to enable verbose mode.')
             sys.argv.pop(i+1)
             break
         
