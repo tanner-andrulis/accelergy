@@ -407,7 +407,7 @@ class RawInputs2Dicts():
         return path_list
 
     def get_python_plug_in_paths(self):
-        return self.config.get('python_plug_ins', '')
+        return self.config.get('python_plug_ins', [])
 
     def get_action_counts_dict(self):
         if self.action_counts_dict == {}:
