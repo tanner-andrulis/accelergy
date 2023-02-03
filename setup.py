@@ -20,7 +20,7 @@ setup(
       author_email='nelliewu@mit.edu',
       license='MIT',
       packages=['accelergy'],
-      install_requires = ['pyYAML >= 1.1', 'yamlordereddictloader >= 0.4', 'pyfiglet'],
+      install_requires = ['pyYAML >= 1.1', 'yamlordereddictloader >= 0.4', 'pyfiglet', 'ruamel.yaml >= 0.17.20'],
       python_requires = '>=3.8',
       data_files=[('share/accelergy/primitive_component_libs/',
                     ['share/primitive_component_libs/primitive_component.lib.yaml',
