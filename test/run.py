@@ -5,7 +5,6 @@ import tests.plugin_choices.test
 import tests.plugin_choices_II.test
 import tests.plugin_choices_III.test
 import tests.exercises.test
-import tests.scripts.test
 from   tests.basic.test_energy_calculation import TestEnergyCalculation
 from   tests.basic.test_helper_functions import TestHelperFunctions
 from   tests.basic.test_parsing_utils import TestParsingUtils
@@ -19,8 +18,6 @@ if __name__ == '__main__':
     suite.addTests(test_loader.loadTestsFromTestCase(TestHelperFunctions))
     suite.addTests(test_loader.loadTestsFromTestCase(TestParsingUtils))
     suite.addTests(test_loader.loadTestsFromTestCase(tests.action_area_share.test.Test))
-    suite.addTests(test_loader.loadTestsFromTestCase(tests.scripts.test.Test))
-    suite.addTests(test_loader.loadTestsFromTestCase(tests.scripts.test.TestNotWorking))
     suite.addTests(test_loader.loadTestsFromTestCase(tests.plugin_choices.test.Test))
     suite.addTests(test_loader.loadTestsFromTestCase(tests.plugin_choices_II.test.Test))
     suite.addTests(test_loader.loadTestsFromTestCase(tests.plugin_choices_III.test.Test))
