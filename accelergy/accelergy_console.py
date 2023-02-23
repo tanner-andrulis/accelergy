@@ -45,7 +45,7 @@ def run():
     path_arglist = args.files
     precision = args.precision
     desired_output_files = args.output_files
-    scripts = args.scripts
+    scripts = [] # args.scripts Script support disabled. PyTimeloop preprocessing should be used instead.
     extra_plugins = args.extra_plugins
     version.SUPPRESS_VERSION_ERRORS = args.suppress_version_errors
     logging.getLogger().setLevel(logging.INFO if not args.verbose else logging.DEBUG)
