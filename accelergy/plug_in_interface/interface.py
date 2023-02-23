@@ -219,7 +219,7 @@ class AccelergyPlugIn(ListLoggable, ABC):
     def __AccelergyPlugIn__init__(self): # Do not override this method
         """ For internal use so users don't have to call super().__init__() """
         super().__init__(name=self.get_name())
-        self._accelergy_plug_in_initialized = False
+        self._accelergy_plug_in_initialized = True
 
     def __init__(self):
         self.__AccelergyPlugIn__init__()
