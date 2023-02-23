@@ -69,8 +69,11 @@ def parse_commandline_args():
                                                                           'compound component class descriptions, etc. '
                         )
     parser.add_argument('--suppress_version_errors', action='store_true', default=False,
-                        help='If set to 1, Accelergy will not raise errors if the input files are '
+                        help='If set, Accelergy will not raise errors if the input files are '
                         'of incompatible versions. This may result in unexpected behavior. ')
+    parser.add_argument('--update_config_version', action='store_true', default=False,
+                        help='Update the Accelergy config file ' \
+                             '(usually ~/.config/accelergy/accelergy_config.yaml) to the latest version.')
     return parser.parse_args()
 
 
