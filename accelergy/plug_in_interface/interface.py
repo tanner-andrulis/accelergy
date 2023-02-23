@@ -216,9 +216,13 @@ class AccelergyQuery():
             
 
 class AccelergyPlugIn(ListLoggable, ABC):
-    def __init__(self):
+    def __AccelergyPlugIn__init__(self): # Do not override this method
+        """ For internal use so users don't have to call super().__init__() """
         super().__init__(name=self.get_name())
-        self._accelergy_plug_in_initialized = True
+        self._accelergy_plug_in_initialized = False
+
+    def __init__(self):
+        self.__AccelergyPlugIn__init__(self)
 
     @abstractmethod
     def primitive_action_supported(self, query: AccelergyQuery) -> AccuracyEstimation:
