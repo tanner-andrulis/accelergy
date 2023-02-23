@@ -12,7 +12,7 @@ class DummyTable(AccelergyPlugIn):
     # Interface functions, function name, input arguments, and output have to adhere
     # -------------------------------------------------------------------------------------
     def __init__(self):
-        self.estimator_name =  "dummy_table"
+        pass
 
     def primitive_action_supported(self, query: AccelergyQuery) -> AccuracyEstimation:
         class_name = query.class_name
@@ -33,7 +33,7 @@ class DummyTable(AccelergyPlugIn):
         energy_pj = 0 if action_name == 'idle' else 1
         return Estimation(energy_pj, 'p') # Dummy returns 1 for all non-idle actions
 
-    def primitive_action_supported(self, query: AccelergyQuery) -> AccuracyEstimation:
+    def primitive_area_supported(self, query: AccelergyQuery) -> AccuracyEstimation:
         class_name = query.class_name
         attributes = query.class_attrs
         action_name = query.action_name
@@ -49,3 +49,6 @@ class DummyTable(AccelergyPlugIn):
         action_name = query.action_name
         arguments = query.action_args
         return Estimation(1, 'u^2') # Dummy returns 1 for all non-idle actions
+
+    def get_name(self) -> str:
+        return 'dummy_table'
