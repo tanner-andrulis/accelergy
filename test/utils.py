@@ -18,10 +18,8 @@ def grab_content_if_file_exists(file_path: str) -> str:
 def listdir_fullpath(d):
     return [os.path.join(d, f) for f in os.listdir(d)] if os.path.exists(d) else []
 
-def run_accelergy(
-    inputs: List[str], plug_ins: List[str], scripts: List[str], run_dir: str, 
-    extra_accelergy_args: str = '') \
-    -> Tuple[str, str, str, str, str]:
+def run_accelergy(inputs: List[str], plug_ins: List[str], run_dir: str, 
+                  extra_accelergy_args: str = '') -> Tuple[str, str, str, str, str]:
     """ Run Accelergy and return the output, ERT, ART, ERT verbose, and ART verbose. 
     Empty strings are returned if a file does not exist."""
     output_dir = os.path.abspath(run_dir)
@@ -34,8 +32,7 @@ def run_accelergy(
 
     inputs_str = ' '.join(inputs) if inputs else ''
     plug_in_str = f'-e {" ".join(plug_ins)}' if plug_ins else ''
-    script_str = f'-s {" ".join(scripts)}' if scripts else ''
-    all_in = f'{inputs_str} {plug_in_str} {script_str}'
+    all_in = f'{inputs_str} {plug_in_str}'
     output_file = os.path.abspath(os.path.join(output_dir, 'output.txt'))
 
     accelergy_cmd = f'accelergy {all_in} -v 1 {extra_accelergy_args} > {output_file} 2>&1'
@@ -78,10 +75,8 @@ def run_accelergy_from_test_dir(
         inputs = [os.path.join(test_dir_path, f) for f in force_input_files]
     plug_ins = listdir_fullpath(os.path.join(test_dir_path, 'plugins'))
     plug_ins += listdir_fullpath(os.path.join(test_dir_path, 'plugin'))
-    scripts = listdir_fullpath(os.path.join(test_dir_path, 'scripts'))
-    scripts += listdir_fullpath(os.path.join(test_dir_path, 'script'))
     return run_accelergy(
-        inputs, plug_ins, scripts, os.path.join(test_dir_path, RUNDIR), extra_accelergy_args)
+        inputs, plug_ins, os.path.join(test_dir_path, RUNDIR), extra_accelergy_args)
 
 class AccelergyUnitTest(unittest.TestCase):
     def setUp(self, test_dir_path: str, extra_accelergy_args='', force_input_files=()):
