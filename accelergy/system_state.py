@@ -55,10 +55,12 @@ class SystemState():
         ASSERT_MSG(isinstance(plug_ins, list), 'plug in objects need to be passed in as a list')
         self.plug_ins = plug_ins
         for plug_in in self.plug_ins:
-            if isinstance(plug_in, AccelergyPlugIn) and not \
-                    getattr(plug_in, '_accelergy_plug_in_initialized', False):
-                ERROR_CLEAN_EXIT(f'Plug-in {plug_in.get_name()} is not initialized. Please call ' \
-                                 f'super().__init__() in the plug-in\'s __init__ method.')
+            if isinstance(plug_in, AccelergyPlugIn):
+                if not getattr(plug_in, '_accelergy_plug_in_initialized', False):
+                    plug_in.__AccelergyPlugIn__init__()
+                if not getattr(plug_in, '_accelergy_plug_in_initialized', False):
+                    ERROR_CLEAN_EXIT(f'Plug-in {plug_in.get_name()} is not initialized. Please ' \
+                                     f'call super().__init__() in the plug-in\'s __init__ method.')
 
     def set_ERT(self, ERT):
         self.ERT = ERT
