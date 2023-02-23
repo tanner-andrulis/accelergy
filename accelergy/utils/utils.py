@@ -183,15 +183,18 @@ def ERROR_CLEAN_EXIT(*argv):
 
 def ERROR(*argv):
     for v in argv:
-        logging.getLogger('').error(v)
+        for l in v.splitlines():
+            logging.getLogger('').error(l)
 
 def WARN(*argv):
     for v in argv:
-        logging.getLogger('').warn(v)
+        for l in v.splitlines():
+            logging.getLogger('').warn(l)
 
 def INFO(*argv):
     for v in argv:
-        logging.getLogger('').info(v)
+        for l in v.splitlines():
+            logging.getLogger('').info(l)
     
 
 def ASSERT_MSG(expression, msg):
