@@ -76,7 +76,7 @@ def run():
 
     # ----- Load Raw Inputs to Parse into Dicts
     raw_input_info = {'path_arglist': path_arglist, 'parser_version': accelergy_version}
-    raw_dicts = RawInputs2Dicts(raw_input_info)
+    raw_dicts = RawInputs2Dicts(raw_input_info, args.update_config_version)
 
     # ----- Determine what operations should be performed
     available_inputs = raw_dicts.get_available_inputs()

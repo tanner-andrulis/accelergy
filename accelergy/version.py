@@ -18,8 +18,9 @@ SUPPRESS_VERSION_ERRORS = True
 VERSION_OUTDATED_MSG = \
 f"""
 Config file version outdated. Latest version is v{MAX_VERSION}. Config file can be updated by:
-  1. Updating the version number in ~/.config/accelergy/accelergy_config.yaml
-  OR 2. Deleting ~/.config/accelergy/accelergy_config.yaml, and running accelergy
+  1. Running accelergy --update_config_version
+  OR 2. Updating the version number in ~/.config/accelergy/accelergy_config.yaml
+  OR 3. Deleting ~/.config/accelergy/accelergy_config.yaml, and running accelergy
         to create a new default config file. Ensure you save your user-defined
         file paths and add them to the new config file.
 """

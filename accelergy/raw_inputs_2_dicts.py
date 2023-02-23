@@ -4,7 +4,7 @@ from collections import OrderedDict
 import accelergy.version as version
 
 class RawInputs2Dicts():
-    def __init__(self, input_info):
+    def __init__(self, input_info, update_config_version=False):
         self.parser_version = input_info['parser_version']
         self.possible_top_keys = {'architecture', 'compound_components', 'action_counts', 'ERT',
                                   'flattened_architecture', 'variables'}
@@ -17,12 +17,12 @@ class RawInputs2Dicts():
         self.action_counts_dict = {}
         self.config = None
         self.arch_variables = {}
-        self.load_and_construct_dicts()
+        self.load_and_construct_dicts(update_config_version)
 
-    def load_and_construct_dicts(self):
+    def load_and_construct_dicts(self, update_config_version):
         # load and classify input files
         # construct new or parse existing config file
-        self.construct_parse_config_file()
+        self.construct_parse_config_file(update_config_version)
         
         # merge all paths (input + compound compondnt lib)
         all_paths = self.path_arglist
@@ -268,7 +268,7 @@ class RawInputs2Dicts():
                                 subcomponent_action['action_share'] = 1  # default action share is 1
             self.cc_classes_dict[cc_class['name']] = deepcopy(cc_class)
 
-    def construct_parse_config_file(self):
+    def construct_parse_config_file(self, update_config_version):
         """load exisiting config file content (if any)/ create a default config file"""
 
         possible_config_dirs = ['.' + os.sep, os.path.expanduser('~') + '/.config/accelergy/']
@@ -279,6 +279,10 @@ class RawInputs2Dicts():
             if 'version' not in original_content:
                 ERROR_CLEAN_EXIT('config file has no version number, cannot proceed')
             file_version = original_content['version']
+            if update_config_version and file_version != self.parser_version:
+                INFO(f'Updating config file version from {file_version} to {version.__version__}')
+                original_content['version'] = version.__version__
+                write_yaml_file(original_config_file_path, original_content)
             version.check_input_parser_version(file_version, 'config', original_config_file_path)
             self.config = original_content
             return
