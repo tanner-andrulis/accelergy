@@ -1,8 +1,7 @@
-# -*- coding: utf-8 -*-
-import csv, os, sys
-from accelergy.helper_functions import oneD_linear_interpolation
+from accelergy.plug_in_interface.interface import *
 
-class DummyTable(object):
+
+class DummyTable(AccelergyPlugIn):
     """
     A dummy estimation plug-in
     Note that this plug-in is just a placeholder to illustrate the estimation plug-in interface
@@ -15,75 +14,38 @@ class DummyTable(object):
     def __init__(self):
         self.estimator_name =  "dummy_table"
 
-    def primitive_action_supported(self, interface):
-        """
-        :param interface:
-        - contains four keys:
-        1. class_name : string
-        2. attributes: dictionary of name: value
-        3. action_name: string
-        4. arguments: dictionary of name: value
+    def primitive_action_supported(self, query: AccelergyQuery) -> AccuracyEstimation:
+        class_name = query.class_name
+        attributes = query.class_attrs
+        action_name = query.action_name
+        arguments = query.action_args
+        if attributes.get('technology', None) == -1:
+            return AccuracyEstimation(100)
+        self.logger.info('Dummy Table only supports technology -1')
+        return AccuracyEstimation(0)
 
-        :type interface: dict
+    def estimate_energy(self, query: AccelergyQuery) -> Estimation:
+        class_name = query.class_name
+        attributes = query.class_attrs
+        action_name = query.action_name
+        arguments = query.action_args
+        
+        energy_pj = 0 if action_name == 'idle' else 1
+        return Estimation(energy_pj, 'p') # Dummy returns 1 for all non-idle actions
 
-        :return return the accuracy if supported, return 0 if not
-        :rtype: int
+    def primitive_action_supported(self, query: AccelergyQuery) -> AccuracyEstimation:
+        class_name = query.class_name
+        attributes = query.class_attrs
+        action_name = query.action_name
+        arguments = query.action_args
+        if attributes.get('technology', None) == -1:
+            return AccuracyEstimation(100)
+        self.logger.info('Dummy Table only supports technology -1')
+        return AccuracyEstimation(0)
 
-        """
-        supported = 1 # dummy support everything
-        return 0.1  if supported \
-                    else 0  # if not supported, accuracy is 0
-
-    def estimate_energy(self, interface):
-        """
-        :param interface:
-        - contains four keys:
-        1. class_name : string
-        2. attributes: dictionary of name: value
-        3. action_name: string
-        4. arguments: dictionary of name: value
-
-       :return the estimated energy
-       :rtype float
-
-        """
-        if interface['action_name'] == 'idle':
-            return 0 # dummy returns 0 for all idle actions
-        if interface["class_name"] == "SRAM" and interface["attributes"]["depth"] == 0:
-            return 0 # zero depth SRAM has zero energy
-
-        return 1 # dummy returns 1 for all non-idle actions
-
-    def primitive_area_supported(self, interface):
-        """
-        :param interface:
-        - contains two keys:
-        1. class_name : string
-        2. attributes: dictionary of name: value
-
-        :type interface: dict
-
-        :return return the accuracy if supported, return 0 if not
-        :rtype: int
-
-        """
-        supported = 1 # dummy support everything
-        return 0.1  if supported \
-                    else 0  # if not supported, accuracy is 0
-
-    def estimate_area(self, interface):
-        """
-        :param interface:
-        - contains two keys:
-        1. class_name : string
-        2. attributes: dictionary of name: value
-
-        :type interface: dict
-
-        :return the estimated area
-        :rtype: float
-
-        """
-        if interface["class_name"] == "SRAM" and interface["attributes"]["depth"] == 0:
-            return 0 # zero depth SRAM has zero area
-        return 1 # dummy returns 1 for all areas
+    def estimate_area(self, query: AccelergyQuery) -> Estimation:
+        class_name = query.class_name
+        attributes = query.class_attrs
+        action_name = query.action_name
+        arguments = query.action_args
+        return Estimation(1, 'u^2') # Dummy returns 1 for all non-idle actions

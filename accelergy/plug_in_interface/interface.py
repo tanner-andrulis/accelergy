@@ -221,7 +221,7 @@ class AccelergyPlugIn(ListLoggable, ABC):
         self._accelergy_plug_in_initialized = True
 
     @abstractmethod
-    def primitive_action_supported(query: AccelergyQuery) -> AccuracyEstimation:
+    def primitive_action_supported(self, query: AccelergyQuery) -> AccuracyEstimation:
         """ 
         Returns an AccuracyEstimation with the percent accuracy of the plug-in's ability to
         estimate the action represented by the query. Returns AccuracyEstimation(0) or raises an
@@ -229,14 +229,14 @@ class AccelergyPlugIn(ListLoggable, ABC):
         """
     
     @abstractmethod
-    def estimate_energy(query: AccelergyQuery) -> Estimation:
+    def estimate_energy(self, query: AccelergyQuery) -> Estimation:
         """
         Returns an Estimation with the energy of the action represented by the query. Raises an
         exception if the plug-in cannot estimate the action.
         """
 
     @abstractmethod
-    def primitive_area_supported(query: AccelergyQuery) -> AccuracyEstimation:
+    def primitive_area_supported(self, query: AccelergyQuery) -> AccuracyEstimation:
         """
         Returns an AccuracyEstimation with the percent accuracy of the plug-in's ability to
         estimate the area of the primitive represented by the query. Returns AccuracyEstimation(0)
@@ -244,7 +244,7 @@ class AccelergyPlugIn(ListLoggable, ABC):
         """
     
     @abstractmethod
-    def estimate_area(query: AccelergyQuery) -> Estimation:
+    def estimate_area(self, query: AccelergyQuery) -> Estimation:
         """
         Returns an Estimation with the area of the primitive represented by the query. Raises an
         exception if the plug-in cannot estimate the area.
