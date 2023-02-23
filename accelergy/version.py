@@ -15,6 +15,14 @@ INPUT_FILE_VERSIONS = set()
 PATH_TO_VERSION = {}
 SUPPRESS_VERSION_ERRORS = True
 
+VERSION_OUTDATED_MSG = \
+f"""
+Config file version outdated. Latest version is v{MAX_VERSION}. Config file can be updated by:
+  1. Updating the version number in ~/.config/accelergy/accelergy_config.yaml
+  OR 2. Deleting ~/.config/accelergy/accelergy_config.yaml, and running accelergy
+        to create a new default config file. Ensure you save your user-defined
+        file paths and add them to the new config file.
+"""
 
 def versions_compatible(parser_version, file_version):
     if parser_version is None or file_version is None:
@@ -30,23 +38,14 @@ def check_input_parser_version(input_parser_version, input_file_type, input_file
     if input_file_type is not 'ERT':
         if input_file_type == 'config':
             PARSER_VERSION = input_parser_version
-            ASSERT_MSG(versions_compatible(PARSER_VERSION, None),
-                        f'Config file version outdated. Latest version is v{MAX_VERSION}. '
-                        f'Config file can be updated by: \n'
-                        f' 1. Updating the version number in ~/.config/accelergy/accelergy_config.yaml'
-                        f' OR 2. Deleting ~/.config/accelergy/accelergy_config.yaml, and running accelergy\n'
-                        f'        to create a new default config file. Ensure you save your user-defined\n'
-                        f'        file paths and add them to the new config file.')
+            ASSERT_MSG(versions_compatible(PARSER_VERSION, None), VERSION_OUTDATED_MSG)
         else:
             INPUT_VERSION = input_parser_version
             INPUT_FILE_VERSIONS.add(input_parser_version)
     
     # Warn for outdated parser version
     if input_file_type == 'config' and PARSER_VERSION < max(list(VERSION_COMPATIBILITIES.keys())):
-        WARN(f'Config file version outdated. Latest version is v{MAX_VERSION}. '
-                f'\n Please delete the original file, and run accelergy to create a new default config file. '
-                f'\n Please ADD YOUR USER_DEFINED file paths BACK to the updated config file at '
-                f'~/.config/accelergy/accelergy_config.yaml')
+        WARN(VERSION_OUTDATED_MSG)
 
     # Error for incompatible parser + input versions
     if not versions_compatible(PARSER_VERSION, INPUT_VERSION):
