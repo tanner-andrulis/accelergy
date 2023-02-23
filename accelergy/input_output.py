@@ -43,10 +43,10 @@ def parse_commandline_args():
                         help = 'Path to output directory that stores '
                                'the ERT and/or flattened_architecture and/or energy estimation. '
                                'Default is current directory.')
-    parser.add_argument('-s', '--scripts', type=str, default=[], nargs="+",
-                        help = 'Path(s) to Python scripts to be used for arithmetic calculation when '
-                               'parsing input files. Top-level functions defined in these scripts may '
-                               'be called from the input files.')
+    # parser.add_argument('-s', '--scripts', type=str, default=[], nargs="+",
+    #                     help = 'Path(s) to Python scripts to be used for arithmetic calculation when '
+    #                            'parsing input files. Top-level functions defined in these scripts may '
+    #                            'be called from the input files.')
     parser.add_argument('-e', '--extra_plugins', type=str, default=[], nargs="+",
                         help = 'Paths to additional Accelergy plug-ins to be used for energy/area '
                                'estimation. Plug-ins must be defined using the Python plug-in format.')
