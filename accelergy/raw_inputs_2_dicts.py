@@ -283,6 +283,7 @@ class RawInputs2Dicts():
                 INFO(f'Updating config file version from {file_version} to {version.__version__}')
                 original_content['version'] = version.__version__
                 write_yaml_file(original_config_file_path, original_content)
+                file_version = version.__version__
             version.check_input_parser_version(file_version, 'config', original_config_file_path)
             self.config = original_content
             return
