@@ -183,17 +183,17 @@ def ERROR_CLEAN_EXIT(*argv):
 
 def ERROR(*argv):
     for v in argv:
-        for l in v.splitlines():
+        for l in str(v).splitlines():
             logging.getLogger('').error(l)
 
 def WARN(*argv):
     for v in argv:
-        for l in v.splitlines():
+        for l in str(v).splitlines():
             logging.getLogger('').warn(l)
 
 def INFO(*argv):
     for v in argv:
-        for l in v.splitlines():
+        for l in str(v).splitlines():
             logging.getLogger('').info(l)
     
 
