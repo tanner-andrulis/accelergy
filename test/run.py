@@ -8,8 +8,17 @@ import tests.exercises.test
 from   tests.basic.test_energy_calculation import TestEnergyCalculation
 from   tests.basic.test_helper_functions import TestHelperFunctions
 from   tests.basic.test_parsing_utils import TestParsingUtils
+import argparse
+import utils
 
 if __name__ == '__main__':
+    arg_parser = argparse.ArgumentParser()
+    arg_parser.add_argument('-p', '--preserve_output', 
+                            action='store_true', help='Preserve output files from passed tests.')
+    args = arg_parser.parse_args()
+    
+    utils.PRESERVE_OUTPUT_FILES = args.preserve_output
+    
     test_loader = unittest.TestLoader()
     
     suite = unittest.TestSuite()

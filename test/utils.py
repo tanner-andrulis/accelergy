@@ -6,6 +6,7 @@ import yaml
 from deepdiff import DeepDiff
 
 RUNDIR = 'run'
+PRESERVE_OUTPUT_FILES = False
 
 def grab_content_if_file_exists(file_path: str) -> str:
     if os.path.exists(file_path):
@@ -117,8 +118,11 @@ class AccelergyUnitTest(unittest.TestCase):
             print(f'Test {self._testMethodName} has errors. NOT clearing run directory {run_dir}')
             print(f'Errors: {self._outcome.errors}')
         else:
-            print(f'Test {self._testMethodName} passed. Clearing run directory {run_dir}')
-            clear_run_dir(run_dir)
+            if PRESERVE_OUTPUT_FILES:
+                print(f'Test {self._testMethodName} passed. Preserving run directory {run_dir}')
+            else:
+                print(f'Test {self._testMethodName} passed. Clearing run directory {run_dir}')
+                clear_run_dir(run_dir)
 
     def get_accelergy_success(self):
         return self.accelergy_ert_yaml is not None
