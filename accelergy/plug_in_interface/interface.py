@@ -222,7 +222,7 @@ class AccelergyPlugIn(ListLoggable, ABC):
         self._accelergy_plug_in_initialized = False
 
     def __init__(self):
-        self.__AccelergyPlugIn__init__(self)
+        self.__AccelergyPlugIn__init__()
 
     @abstractmethod
     def primitive_action_supported(self, query: AccelergyQuery) -> AccuracyEstimation:
