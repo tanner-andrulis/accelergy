@@ -5,7 +5,7 @@ classes:
     attributes:
       technology: 65nm
       datawidth: 16
-      latency: 5ns
+      latency: "5ns"
       num: 1
     actions:
       - name: process
@@ -15,7 +15,7 @@ classes:
       technology: 65nm
       datawidth: 16
       num_pipeline_stages: 1
-      latency: 5ns
+      latency: "5ns"
     actions:
       - name: add
       - name: idle
@@ -27,7 +27,7 @@ classes:
       mantissa: 24
       sign: 0
       num_pipeline_stages: 1
-      latency: 5ns
+      latency: "5ns"
     actions:
       - name: add
       - name: idle
@@ -37,7 +37,7 @@ classes:
       technology: 65nm
       datawidth: 16
       num_pipeline_stages: 1
-      latency: 5ns
+      latency: "5ns"
     actions:
       - name: mult_random
       - name: mult_reused
@@ -51,7 +51,7 @@ classes:
       mantissa: 24
       sign: 0
       num_pipeline_stages: 1
-      latency: 5ns
+      latency: "5ns"
     actions:
       - name: mult_random
       - name: mult_reused
@@ -65,7 +65,7 @@ classes:
       width: 16
       depth: 1
       n_ports: 2
-      latency: 5ns
+      latency: "5ns"
     actions:
       - name: read
         arguments:
@@ -81,7 +81,7 @@ classes:
     attributes:
       technology: 65nm
       datawidth: 16
-      latency: 5ns
+      latency: "5ns"
     actions:
       - name: access
 
@@ -94,7 +94,7 @@ classes:
       n_wr_ports: 0
       n_rdwr_ports: 1
       n_banks: 1
-      latency: 5ns
+      latency: "5ns"
     actions:
       - name: read
         arguments:
@@ -120,7 +120,7 @@ classes:
     attributes:
       technology: 65nm
       width: 16
-      latency: 5ns
+      latency: "5ns"
     actions:
       - name: count
       - name: idle
@@ -130,7 +130,7 @@ classes:
       technology: 65nm
       datawidth: 16
       depth: 2
-      latency: 5ns
+      latency: "5ns"
     actions:
       - name: push
       - name: pop
@@ -141,7 +141,7 @@ classes:
       technology: 65nm
       datawidth: 16
       num_pipeline_stages: 2
-      latency: 5ns
+      latency: "5ns"
     actions:
       - name: mac_random
       - name: mac_reused
@@ -155,7 +155,7 @@ classes:
       mantissa: 24
       sign: 0
       num_pipeline_stages: 3
-      latency: 5ns
+      latency: "5ns"
     actions:
       - name: mac_random
       - name: mac_reused
@@ -168,7 +168,7 @@ classes:
       n_inputs: 1
       n_outputs: 1
       datawidth: 16
-      latency: 5ns
+      latency: "5ns"
     actions:
       - name: transfer_random
       - name: transfer_repeated
@@ -178,7 +178,7 @@ classes:
     attributes:
       technology: 65nm
       length: 1um
-      latency: 5ns
+      latency: "5ns"
     actions:
       - name: transfer_random
       - name: transfer_repeated
