@@ -2,6 +2,7 @@ from importlib.machinery import SourceFileLoader
 from typing import Union
 from accelergy.utils.utils import *
 from accelergy.plug_in_interface.estimator_wrapper import *
+from accelergy.plug_in_interface.query_plug_ins import plugin2name
 
 def iter_files_recursive(path: Union[str, list]) -> iter:
     if isinstance(path, str):
@@ -50,11 +51,16 @@ def plug_in_path_to_obj(estimator_path_list: list, python_path_list: list, outpu
         estimator_plug_ins.append(estimator_obj)
 
     # Load Python plug-ins
+    plug_in_ids = set()
     for root, python_path in iter_files_recursive(python_path_list):
         if not python_path.endswith('.py'):
             continue
+        print(f'Checking {python_path} for estimator plug-ins.')
+        prev_sys_path = copy.deepcopy(sys.path)
+        sys.path.append(os.path.dirname(os.path.abspath(python_path)))
         python_module = SourceFileLoader('python_plug_in', python_path).load_module()
-        estimator_plug_ins += get_all_estimators_in_module(python_module)
+        estimator_plug_ins += get_all_estimators_in_module(python_module, plug_in_ids)
+        sys.path = prev_sys_path
             
         for estimator_plug_in in estimator_plug_ins:
             INFO(f'Found estimator plug-in: {estimator_plug_in}')
