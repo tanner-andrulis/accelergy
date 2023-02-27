@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from logging import INFO
+from logging import info
 from numbers import Number
 import os
 from typing import Callable, List, Union
@@ -47,10 +47,10 @@ def add_estimator_path(path: str, add_full_dir: bool = False):
         
     # Update the list of paths
     if path in python_paths:
-        INFO(f'Path {path} already in the list of python paths.')
+        info(f'Path {path} already in the list of python paths.')
     else:
         cfg.update({'python_plug_ins': python_paths + [path]})
-        INFO(f'Added path {path} to the list of python paths.')
+        info(f'Added path {path} to the list of python paths.')
         write_yaml_file(cfg_yaml, cfg)
 
 
