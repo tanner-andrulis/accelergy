@@ -46,6 +46,7 @@ MATH_FUNCS = {
     'inf': math.inf, 'nan': math.nan, 'abs': abs, 'round': round, 'pow': pow, 'sum': sum, 
     'range': range, 'len': len, 'min': min, 'max': max,
     'float': float, 'int': int, 'str': str, 'bool': bool, 'list': list, 'tuple': tuple,
+    'enumerate': enumerate
 }
 SCRIPT_FUNCS = {}
 EXPR_CACHE = {}
