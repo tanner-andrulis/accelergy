@@ -67,8 +67,8 @@ def remove_estimator_path(path: str, remove_full_dir: bool = False):
         
     # Update the list of paths
     if path not in python_paths:
-        INFO(f'Path {path} not in the list of python paths.')
+        info(f'Path {path} not in the list of python paths.')
     else:
         cfg.update({'python_plug_ins': [p for p in python_paths if p != path]})
-        INFO(f'Removed path {path} from the list of python paths.')
+        info(f'Removed path {path} from the list of python paths.')
         write_yaml_file(cfg_yaml, cfg)
