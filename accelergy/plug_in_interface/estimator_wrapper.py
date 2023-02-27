@@ -3,7 +3,7 @@ import inspect
 import logging
 from numbers import Number
 from types import ModuleType
-from typing import Any, Callable, Dict, List, Optional
+from typing import Any, Callable, Dict, List, Optional, Set
 from accelergy.utils.utils import INFO, WARN
 from accelergy.plug_in_interface.interface import AccelergyPlugIn, AccelergyQuery, Estimation, AccuracyEstimation
 from accelergy.plug_in_interface.estimator import Estimator
@@ -177,11 +177,15 @@ class EstimatorWrapper(AccelergyPlugIn):
         return self.estimator_name
 
 
-def get_all_estimators_in_module(module: ModuleType) -> List[Estimator]:
+def get_all_estimators_in_module(module: ModuleType, plug_in_ids: Set) -> List[Estimator]:
     INFO(f'Getting all estimators in module {module}')
     classes = [(x, name) for name in dir(module) if inspect.isclass(x := getattr(module, name))]
-    return [EstimatorWrapper(x, name) for x, name in classes if 
-            issubclass(x, Estimator) and not x is Estimator]
+    found = []
+    for x, name in classes:
+        if issubclass(x, Estimator) and not x is Estimator and id(x) not in plug_in_ids:
+            plug_in_ids.add(id(x))
+            found.append(x)
+    return found
 
 def check_for_valid_estimator_attrs(estimator: Estimator):
     # Check for valid class_name. Must be a string or list of strings
