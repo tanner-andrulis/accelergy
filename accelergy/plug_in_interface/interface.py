@@ -6,7 +6,7 @@ from numbers import Number
 from typing import Any, Dict, List, Union
 
 from accelergy.utils.logging import ListLoggable
-
+import accelergy.version as version
 
 class UnitOption(Enum):
     """ Unit options for Estimation objects. """
@@ -175,6 +175,10 @@ class AccelergyQuery():
     class_attrs: Dict[str, Any]
     action_name: str = None
     action_args: Dict[str, Any] = None
+    input_file_version: float = None
+
+    def __init__(self) -> None:
+        self.input_file_version = version.INPUT_VERSION
 
     def __str__(self):
         attrs_stringified = ', '.join([f'{k}={v}' for k, v in self.class_attrs.items()])
