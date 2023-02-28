@@ -216,24 +216,23 @@ class CompoundComponent:
             return parse_expression_for_arithmetic(area_share, combined_attributes, name, strings_allowed=False)
 
     def define_attrs_area_share_for_subcomponent(self, subcomponent, compound_attributes, subclass):
-        for attr_name, attr_val in subcomponent.get_attributes().items():
-            v = parse_expression_for_arithmetic(attr_val, compound_attributes, f'{subcomponent.get_name()}.{attr_name}', use_bindings_after=attr_name)
-            subcomponent.add_new_attr({attr_name: v})
-                        
+        attrs = parse_expressions_sequentially_replacing_bindings(
+            subcomponent.get_attributes(), compound_attributes, f'{subcomponent.get_name()}.')
+        subcomponent.add_new_attr(attrs)
         attrs_to_be_applied = subclass.get_default_attr_to_apply(subcomponent.get_attributes())
         subcomponent.add_new_attr(attrs_to_be_applied)
-        CompoundComponent.apply_internal_bindings(subcomponent)
+        CompoundComponent.apply_internal_bindings(subcomponent, compound_attributes)
         combined_attributes = merge_dicts(compound_attributes, subcomponent.get_attributes())
         subcomponent.set_area_share(self.process_area_share(subcomponent.get_area_share(), combined_attributes, f'{subcomponent.get_name()}.area_share'))
         return subcomponent
 
     @staticmethod
-    def apply_internal_bindings(component):
+    def apply_internal_bindings(component, compound_attributes):
         """ Locate and process any mappings or arithmetic operations between the component attributes"""
-
-        for attr_name, attr_val in component.get_attributes().items():
-            v = parse_expression_for_arithmetic(attr_val, component.get_attributes(), f'{component.get_name()}.{attr_name}', strings_allowed=True, use_bindings_after=attr_name)
-            component.add_new_attr({attr_name:v})
+        attrs = parse_expressions_sequentially_replacing_bindings(
+            component.get_attributes(), compound_attributes, f'{component.get_name()}.',
+            strings_allowed=True)
+        component.add_new_attr(attrs)
 
     def construct_name_base_name_map(self):
         self.subcomponent_base_name_map = {}

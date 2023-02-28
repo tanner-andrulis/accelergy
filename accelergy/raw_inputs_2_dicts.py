@@ -56,10 +56,9 @@ class RawInputs2Dicts():
 
         if 'variables' in input_file_info:
             for variable_spec in input_file_info['variables']:
-                for var_name, var_var in variable_spec['content']['variables'].items():
-                    v = parse_expression_for_arithmetic(var_var, variable_spec['content']['variables'], f'attribute {var_name}', strings_allowed=True, use_bindings_after=var_name)
-                    variable_spec['content']['variables'][var_name] = v
-
+                variable_spec['content']['variables'] = parse_expressions_sequentially_replacing_bindings(
+                    variable_spec['content']['variables'], {}, 'variables.', strings_allowed=True
+                )
                 self.arch_variables.update(variable_spec['content']['variables'])
 
         for top_key, top_key_file_list in input_file_info.items():
@@ -137,12 +136,11 @@ class RawInputs2Dicts():
         :return: None
         """
         # interpret the mapping and arithmetic operations in the raw description
-        all_attrs = deepcopy(node_attrs)
-        all_attrs.update(self.arch_variables)
-        for attr_name, attr_val in node_attrs.items():
-            v = parse_expression_for_arithmetic(attr_val, all_attrs, f'arch attribute {attr_name}', strings_allowed=True, use_bindings_after=attr_name)
-            node_attrs[attr_name] = v
-            all_attrs[attr_name] = node_attrs[attr_name]
+        node_attrs = parse_expressions_sequentially_replacing_bindings(
+            node_attrs, self.arch_variables, f'arch attribute ', strings_allowed=True
+        )
+
+
 
         if 'subtree' in node_description:
             ASSERT_MSG(isinstance(node_description['subtree'], list), " %s.subtree has to be a list"%(prefix))
@@ -163,14 +161,11 @@ class RawInputs2Dicts():
                     if attr_name not in node_info['attributes']:
                         node_info['attributes'][attr_name] = attr_val
 
-                all_attrs = deepcopy(node_info['attributes'])
-                all_attrs.update(self.arch_variables)
-                for attr_name, attr_val in node_info['attributes'].items():
-                    v = parse_expression_for_arithmetic(attr_val, all_attrs, f'arch attribute {attr_name}', strings_allowed=True, use_bindings_after=attr_name)
-                    node_info['attributes'][attr_name] = v
-                    all_attrs[attr_name] = node_info['attributes'][attr_name]
-
-
+                node_info['attributes'] = parse_expressions_sequentially_replacing_bindings(
+                    node_info['attributes'], self.arch_variables, f'arch attribute ', strings_allowed=True
+                )
+                all_attrs = copy.deepcopy(self.arch_variables)
+                all_attrs.update(node_info['attributes'])
                 name_base, list_suffix, list_length = interpret_component_list(node_info['name'], all_attrs)
                 if list_suffix is not None:
                     node_info['name'] = name_base + list_suffix

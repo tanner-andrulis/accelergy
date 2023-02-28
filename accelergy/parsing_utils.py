@@ -119,9 +119,11 @@ def parse_expression_for_arithmetic(expression, binding_dictionary, location: st
     if use_bindings_after is not None:
         keys = list(binding_dictionary.keys())
         index = keys.index(use_bindings_after)
+        # INFO(f'Previous bindings: ' + '\n'.join(f'  {k} = {binding_dictionary[k]}' for k in keys))
         if index != -1:
             keys = keys[:index]
             binding_dictionary = {k: binding_dictionary[k] for k in keys}
+        # INFO(f'Using bindings: ' + '\n'.join(f'  {k} = {binding_dictionary[k]}' for k in keys))
 
     FUNCTION_BINDINGS = {}
     FUNCTION_BINDINGS['__builtins__'] = None # Safety
@@ -157,6 +159,7 @@ def parse_expression_for_arithmetic(expression, binding_dictionary, location: st
             for l in errstr.splitlines():
                 WARN(l)
             return expression
+        assert False, errstr
         ERROR_CLEAN_EXIT(f'{errstr}\n')
 
     if expression not in EXPR_CACHE or EXPR_CACHE[expression] != v:
@@ -164,6 +167,18 @@ def parse_expression_for_arithmetic(expression, binding_dictionary, location: st
 
     EXPR_CACHE[expression] = v
     return v
+
+def parse_expressions_sequentially_replacing_bindings(
+        expression_dictionary: dict, 
+        binding_dictionary: dict, 
+        location: str, 
+        strings_allowed: bool = True):
+    parsed = {}
+    for k, v in expression_dictionary.items():
+        attrs = {k: v for k, v in binding_dictionary.items()}
+        attrs.update(parsed)
+        parsed[k] = parse_expression_for_arithmetic(v, attrs, f'{location}{k}', strings_allowed)
+    return parsed
 
 def count_num_identical_comps(name):
     total_num_identical_comps = 1
