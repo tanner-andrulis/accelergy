@@ -108,7 +108,7 @@ def parse_expression_for_arithmetic(expression, binding_dictionary, location: st
         QUOTED_STRINGS.add(id(expression))
         expression = str(expression)
         QUOTED_STRINGS.add(id(expression))
-        return expression
+        return str(expression)
 
     try:
         return cast_to_numeric(expression)
