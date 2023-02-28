@@ -104,7 +104,9 @@ QUOTED_STRINGS = set()
 
 def parse_expression_for_arithmetic(expression, binding_dictionary, location: str, 
                                     strings_allowed: bool = True, use_bindings_after: str = None):
-    if strings_allowed and is_quoted_string(expression) or id(expression) in QUOTED_STRINGS:
+    if strings_allowed and (is_quoted_string(expression) or id(expression) in QUOTED_STRINGS):
+        QUOTED_STRINGS.add(id(expression))
+        expression = str(expression)
         QUOTED_STRINGS.add(id(expression))
         return expression
 
