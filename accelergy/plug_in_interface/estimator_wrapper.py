@@ -184,7 +184,7 @@ def get_all_estimators_in_module(module: ModuleType, plug_in_ids: Set) -> List[E
     for x, name in classes:
         if issubclass(x, Estimator) and not x is Estimator and id(x) not in plug_in_ids:
             plug_in_ids.add(id(x))
-            found.append(x)
+            found.append(EstimatorWrapper(x, name))
     return found
 
 def check_for_valid_estimator_attrs(estimator: Estimator):
