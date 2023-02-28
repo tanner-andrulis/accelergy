@@ -103,6 +103,7 @@ class IspassTestTimeloop01(ExampleTester):
 class IspassTestTimeloop02(ExampleTester):
     def setUp(self):
         super().setUp(
+            'exercises/2020.ispass/timeloop/02-model-conv1d+oc-2level',
         )
 
 class IspassTestTimeloop03(ExampleTester):
@@ -136,7 +137,7 @@ class IspassTestTimeloop06(ExampleTester):
 class IspassTestTimeloopAccelergy00(ExampleTester):
     def setUp(self):
         super().setUp(
-            'exercises/2020.ispass/timeloop+accelergy/timeloop+accelergy',
+            'exercises/2020.ispass/timeloop+accelergy/',
             force_input_files=['arch/eyeriss_like-int16.yaml', 'arch/components/*.yaml'],
             ref_dir='ref-output/int16',
         )
