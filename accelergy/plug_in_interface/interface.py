@@ -177,7 +177,15 @@ class AccelergyQuery():
     action_args: Dict[str, Any] = None
     input_file_version: float = None
 
-    def __init__(self) -> None:
+    def __init__(self, 
+                 class_name: str, 
+                 class_attrs: Dict[str, Any], 
+                 action_name: str = None, 
+                 action_args: Dict[str, Any] = None):
+        self.class_name = class_name
+        self.class_attrs = class_attrs
+        self.action_name = action_name
+        self.action_args = action_args
         self.input_file_version = version.INPUT_VERSION
 
     def __str__(self):
