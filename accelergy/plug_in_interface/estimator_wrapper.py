@@ -186,7 +186,6 @@ class EstimatorWrapper(AccelergyPlugIn):
 
 def get_all_estimators_in_module(module: ModuleType, plug_in_ids: Set) -> List[Estimator]:
     INFO(f'Getting all estimators in module {module}')
-    # INFO(f'Names in dir: {", ".join(dir(module))}')
     classes = [(x, name) for name in dir(module) if inspect.isclass(x := getattr(module, name))]
     classes = [(x, name) for x, name in classes if x.__module__ == module.__name__]
     found = []
