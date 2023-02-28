@@ -53,6 +53,9 @@ def print_messages(logger: Union[logging.Logger, str]):
         
 class ListLoggable():
     def __init__(self, name: str=None):
+        self.__ListLoggable__init__(name)
+    
+    def __ListLoggable__init__(self, name: str=None):
         if name is None:
             name = self.__class__.__name__
         self.logger = get_logger(name)

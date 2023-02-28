@@ -55,7 +55,6 @@ def plug_in_path_to_obj(estimator_path_list: list, python_path_list: list, outpu
     for root, python_path in iter_files_recursive(python_path_list):
         if not python_path.endswith('.py'):
             continue
-        print(f'Checking {python_path} for estimator plug-ins.')
         prev_sys_path = copy.deepcopy(sys.path)
         sys.path.append(os.path.dirname(os.path.abspath(python_path)))
         python_module = SourceFileLoader('python_plug_in', python_path).load_module()

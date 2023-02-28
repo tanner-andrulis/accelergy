@@ -112,6 +112,7 @@ class EstimatorWrapper(AccelergyPlugIn):
 
     def get_initialized_subclass(self, query: AccelergyQuery) -> Estimator:
         subclass = self.init_function.call(query.class_attrs, self.class_name)
+        subclass.__ListLoggable__init__()
         return subclass
 
 
@@ -129,12 +130,18 @@ class EstimatorWrapper(AccelergyPlugIn):
                 a.get_call_error_message(query.action_name, query.action_args) is None
         ]
         if len(matching_name_and_arg_actions) == 0:
+            matching_func_strings = [
+                (f'{a.function_name}(' +
+                ', '.join(list(a.non_default_args) + ['OPTIONAL ' + b for b in a.default_args])) +
+                ')'
+                for a in name_matches
+            ]
+            args_provided = query.action_args.keys() if query.action_args else ['<none>']
             raise AttributeError(
                 f'Action with name {query.action_name} found in {self.class_name}, but provided '
-                f'arguments do not match. '
-                f'Arguments provided:\n\t{", ".join(query.action_args.keys())}. ' \
-                f'\n\tArguments required: ' + '\n\tOR '.join(
-                    [', '.join(a.non_default_args) for a in name_matches]))
+                f'arguments do not match.\n\t'
+                f'Arguments provided: {", ".join(args_provided)}\n\t' \
+                f'Possible actions:\n\t\t' + "\n\t\t".join(matching_func_strings))
         return matching_name_and_arg_actions
 
 
@@ -179,7 +186,9 @@ class EstimatorWrapper(AccelergyPlugIn):
 
 def get_all_estimators_in_module(module: ModuleType, plug_in_ids: Set) -> List[Estimator]:
     INFO(f'Getting all estimators in module {module}')
+    # INFO(f'Names in dir: {", ".join(dir(module))}')
     classes = [(x, name) for name in dir(module) if inspect.isclass(x := getattr(module, name))]
+    classes = [(x, name) for x, name in classes if x.__module__ == module.__name__]
     found = []
     for x, name in classes:
         if issubclass(x, Estimator) and not x is Estimator and id(x) not in plug_in_ids:
