@@ -102,7 +102,8 @@ def is_quoted_string(expression):
 
 QUOTED_STRINGS = set()
 
-def parse_expression_for_arithmetic(expression, binding_dictionary, location: str, strings_allowed: bool = True):
+def parse_expression_for_arithmetic(expression, binding_dictionary, location: str, 
+                                    strings_allowed: bool = True, use_bindings_after: str = None):
     if strings_allowed and is_quoted_string(expression) or id(expression) in QUOTED_STRINGS:
         QUOTED_STRINGS.add(id(expression))
         return expression
@@ -114,6 +115,13 @@ def parse_expression_for_arithmetic(expression, binding_dictionary, location: st
 
     if not isinstance(expression, str):
         return expression
+
+    if use_bindings_after is not None:
+        keys = list(binding_dictionary.keys())
+        index = keys.index(use_bindings_after)
+        if index != -1:
+            keys = keys[:index]
+            binding_dictionary = {k: binding_dictionary[k] for k in keys}
 
     FUNCTION_BINDINGS = {}
     FUNCTION_BINDINGS['__builtins__'] = None # Safety
@@ -142,7 +150,7 @@ def parse_expression_for_arithmetic(expression, binding_dictionary, location: st
         success = False
         
     if not success:
-        WARN('')
+        WARN(f'Evaluation of "{expression}" failed.')
         if strings_allowed and version.INPUT_VERSION <= 0.3:
             errstr += f'Expression will be treated as a string. This will be deprecated in the\n' \
                       f'future. Please wrap quotes around the expression to specify a string.'

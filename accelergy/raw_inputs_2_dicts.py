@@ -57,7 +57,7 @@ class RawInputs2Dicts():
         if 'variables' in input_file_info:
             for variable_spec in input_file_info['variables']:
                 for var_name, var_var in variable_spec['content']['variables'].items():
-                    v = parse_expression_for_arithmetic(var_var, variable_spec['content']['variables'], f'attribute {var_name}', strings_allowed=True)
+                    v = parse_expression_for_arithmetic(var_var, variable_spec['content']['variables'], f'attribute {var_name}', strings_allowed=True, use_bindings_after=var_name)
                     variable_spec['content']['variables'][var_name] = v
 
                 self.arch_variables.update(variable_spec['content']['variables'])
@@ -140,7 +140,7 @@ class RawInputs2Dicts():
         all_attrs = deepcopy(node_attrs)
         all_attrs.update(self.arch_variables)
         for attr_name, attr_val in node_attrs.items():
-            v = parse_expression_for_arithmetic(attr_val, all_attrs, f'arch attribute {attr_name}', strings_allowed=True)
+            v = parse_expression_for_arithmetic(attr_val, all_attrs, f'arch attribute {attr_name}', strings_allowed=True, use_bindings_after=attr_name)
             node_attrs[attr_name] = v
             all_attrs[attr_name] = node_attrs[attr_name]
 
@@ -166,7 +166,7 @@ class RawInputs2Dicts():
                 all_attrs = deepcopy(node_info['attributes'])
                 all_attrs.update(self.arch_variables)
                 for attr_name, attr_val in node_info['attributes'].items():
-                    v = parse_expression_for_arithmetic(attr_val, all_attrs, f'arch attribute {attr_name}', strings_allowed=True)
+                    v = parse_expression_for_arithmetic(attr_val, all_attrs, f'arch attribute {attr_name}', strings_allowed=True, use_bindings_after=attr_name)
                     node_info['attributes'][attr_name] = v
                     all_attrs[attr_name] = node_info['attributes'][attr_name]
 

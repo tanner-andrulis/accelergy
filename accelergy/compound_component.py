@@ -217,7 +217,7 @@ class CompoundComponent:
 
     def define_attrs_area_share_for_subcomponent(self, subcomponent, compound_attributes, subclass):
         for attr_name, attr_val in subcomponent.get_attributes().items():
-            v = parse_expression_for_arithmetic(attr_val, compound_attributes, f'{subcomponent.get_name()}.{attr_name}')
+            v = parse_expression_for_arithmetic(attr_val, compound_attributes, f'{subcomponent.get_name()}.{attr_name}', use_bindings_after=attr_name)
             subcomponent.add_new_attr({attr_name: v})
                         
         attrs_to_be_applied = subclass.get_default_attr_to_apply(subcomponent.get_attributes())
@@ -232,7 +232,7 @@ class CompoundComponent:
         """ Locate and process any mappings or arithmetic operations between the component attributes"""
 
         for attr_name, attr_val in component.get_attributes().items():
-            v = parse_expression_for_arithmetic(attr_val, component.get_attributes(), f'{component.get_name()}.{attr_name}', strings_allowed=True)
+            v = parse_expression_for_arithmetic(attr_val, component.get_attributes(), f'{component.get_name()}.{attr_name}', strings_allowed=True, use_bindings_after=attr_name)
             component.add_new_attr({attr_name:v})
 
     def construct_name_base_name_map(self):

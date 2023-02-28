@@ -25,7 +25,7 @@ def fully_define_arch_dict(arch_dict, cc_classes, pc_classes):
             if isinstance(attr_val, str):
                 if attr_val in cinfo['attributes']:
                     cinfo['attributes'][attr_name] = cinfo['attributes'][attr_val]
-                v = parse_expression_for_arithmetic(attr_val, cinfo['attributes'], class_name)
+                v = parse_expression_for_arithmetic(attr_val, cinfo['attributes'], class_name, use_bindings_after=attr_name)
                 cinfo['attributes'][attr_name] = v
 
     return arch_dict
