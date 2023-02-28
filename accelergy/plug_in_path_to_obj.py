@@ -62,7 +62,7 @@ def plug_in_path_to_obj(estimator_path_list: list, python_path_list: list, outpu
         estimator_plug_ins += get_all_estimators_in_module(python_module, plug_in_ids)
         sys.path = prev_sys_path
             
-        for estimator_plug_in in estimator_plug_ins:
-            INFO(f'Found estimator plug-in: {estimator_plug_in}')
+    for estimator_plug_in in estimator_plug_ins:
+        INFO(f'Found estimator plug-in: {plugin2name(estimator_plug_in)} ({estimator_plug_in})')
             
     return estimator_plug_ins
