@@ -14,7 +14,7 @@ class CallableFunction:
     def __init__(self, function: Callable, logger: logging.Logger, force_name_override: str = None, 
                  is_init: bool = False):
         if not isinstance(function, Callable):
-            raise TypeError(f'Function {function} must be a callable, not {type(function)}')
+            raise TypeError(f'Function {function} must be an instance of Callable, not {type(function)}')
 
         self.function = function
         if is_init:
