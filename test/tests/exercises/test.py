@@ -145,7 +145,7 @@ class IspassTestTimeloopAccelergy00(ExampleTester):
 class IspassTestTimeloopAccelergy01(ExampleTester):
     def setUp(self):
         super().setUp(
-            'exercises/2020.ispass/timeloop+accelergy/timeloop+accelergy',
+            'exercises/2020.ispass/timeloop+accelergy/',
             force_input_files=['arch/eyeriss_like-float32.yaml', 'arch/components/*.yaml'],
             ref_dir='ref-output/float32',
         )
