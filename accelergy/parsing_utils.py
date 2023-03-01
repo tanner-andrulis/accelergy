@@ -139,6 +139,9 @@ def parse_expression_for_arithmetic(expression, binding_dictionary, location: st
     except Exception as e:
         errstr =  f'Failed to evaluate: {expression}\n'
         errstr += f'Location: {location}\n'
+        if isinstance(expression, str) and expression.isidentifier() \
+                and expression not in binding_dictionary and expression not in FUNCTION_BINDINGS:
+            e = NameError(f'Name \'{expression}\' is not defined.')
         errstr += f'Problem encountered: {e.__class__.__name__}: {e}\n'
         errstr += f'Available bindings: '
         available_bindings = {}
