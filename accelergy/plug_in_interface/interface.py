@@ -8,6 +8,8 @@ from typing import Any, Dict, List, Union
 from accelergy.utils.logging import ListLoggable
 import accelergy.version as version
 
+from accelergy.parsing_utils import ruamel_str_to_normal_str
+
 class UnitOption(Enum):
     """ Unit options for Estimation objects. """
     femto =      (1e-15, 'f')
@@ -202,7 +204,9 @@ class AccelergyQuery():
         internal representation in Accelergy, with "class_name", "attributes", "action_name", and
         "arguments" keys.
         """
-        a = AccelergyQuery(class_name=d['class_name'], class_attrs=d['attributes'])
+        # In case plug-ins don't like that the provided strings are subclasses of str, we convert
+        attributes = {k: ruamel_str_to_normal_str(v) for k, v in d['attributes'].items()}
+        a = AccelergyQuery(class_name=d['class_name'], class_attrs=attributes)
         if ('action_name' in d) != ('arguments' in d):
             raise ValueError(
                 f'Either both or neither of "action_name" and "action_args" must be '
