@@ -165,7 +165,6 @@ def parse_expression_for_arithmetic(expression, binding_dictionary, location: st
             for l in errstr.splitlines():
                 WARN(l)
             return expression
-        assert False, errstr
         ERROR_CLEAN_EXIT(f'{errstr}\n')
 
     if expression not in EXPR_CACHE or EXPR_CACHE[expression] != v:
