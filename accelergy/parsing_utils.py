@@ -100,15 +100,16 @@ def is_quoted_string(expression):
     return isinstance(expression, ruamel.yaml.scalarstring.DoubleQuotedScalarString) or \
               isinstance(expression, ruamel.yaml.scalarstring.SingleQuotedScalarString)
 
+def undo_ruamel_string(expression):
+    return str(expression) if is_quoted_string(expression) else expression
+
 QUOTED_STRINGS = set()
 
 def parse_expression_for_arithmetic(expression, binding_dictionary, location: str, 
                                     strings_allowed: bool = True, use_bindings_after: str = None):
-    if strings_allowed and (is_quoted_string(expression) or id(expression) in QUOTED_STRINGS):
+    if strings_allowed and is_quoted_string(expression) or id(expression) in QUOTED_STRINGS:
         QUOTED_STRINGS.add(id(expression))
-        expression = str(expression)
-        QUOTED_STRINGS.add(id(expression))
-        return str(expression)
+        return expression
 
     try:
         return cast_to_numeric(expression)
