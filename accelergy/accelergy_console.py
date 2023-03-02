@@ -57,7 +57,7 @@ def run():
 
     INFO("generating outputs according to the following specified output flags... \n "
          "Please use the -f flag to update the preference (default to all output files)")
-    print(oflags)
+    INFO(oflags)
 
     oflags['output_prefix'] = output_prefix
     # interpret the types of processing that need to be performed
