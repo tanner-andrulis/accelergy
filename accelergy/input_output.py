@@ -27,7 +27,7 @@ import sys
 
 def parse_commandline_args():
     ascii_banner = pyfiglet.figlet_format("Accelergy")
-    print(ascii_banner)
+    INFO(ascii_banner)
     
     for i in range(len(sys.argv) - 1):
         if (sys.argv[i] == '-v' or sys.argv[i] == '--verbose') and sys.argv[i+1] == '1':
