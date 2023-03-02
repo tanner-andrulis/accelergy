@@ -100,7 +100,7 @@ def is_quoted_string(expression):
     return isinstance(expression, ruamel.yaml.scalarstring.DoubleQuotedScalarString) or \
               isinstance(expression, ruamel.yaml.scalarstring.SingleQuotedScalarString)
 
-def undo_ruamel_string(expression):
+def ruamel_str_to_normal_str(expression):
     return str(expression) if is_quoted_string(expression) else expression
 
 QUOTED_STRINGS = set()
