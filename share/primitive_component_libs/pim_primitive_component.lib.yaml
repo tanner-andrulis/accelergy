@@ -34,7 +34,7 @@ classes:
       technology: "32nm"
       datawidth: 1
       latency: "1ns"
-      type: R2R
+      type: "R2R"
     actions:
       - name: convert
       - name: idle
@@ -65,7 +65,7 @@ classes:
   - name: place_holder_storage
     attributes:
       technology: "65nm"
-      type: LPDDR4
+      type: "LPDDR4"
       width: 64
     actions:
       - name: read
