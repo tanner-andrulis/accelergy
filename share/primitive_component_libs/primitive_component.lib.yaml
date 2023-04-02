@@ -3,7 +3,7 @@ version: 0.3
 classes:
   - name: bitwise
     attributes:
-      technology: 65nm
+      technology: "65nm"
       datawidth: 16
       latency: "5ns"
       num: 1
@@ -12,7 +12,7 @@ classes:
       - name: idle
   - name: intadder
     attributes:
-      technology: 65nm
+      technology: "65nm"
       datawidth: 16
       num_pipeline_stages: 1
       latency: "5ns"
@@ -22,7 +22,7 @@ classes:
 
   - name: fpadder
     attributes:
-      technology: 65nm
+      technology: "65nm"
       exponent: 8
       mantissa: 24
       sign: 0
@@ -34,7 +34,7 @@ classes:
 
   - name: intmultiplier
     attributes:
-      technology: 65nm
+      technology: "65nm"
       datawidth: 16
       num_pipeline_stages: 1
       latency: "5ns"
@@ -46,7 +46,7 @@ classes:
 
   - name: fpmultiplier
     attributes:
-      technology: 65nm
+      technology: "65nm"
       exponent: 8
       mantissa: 24
       sign: 0
@@ -61,7 +61,7 @@ classes:
 
   - name: regfile
     attributes:
-      technology: 65nm
+      technology: "65nm"
       width: 16
       depth: 1
       n_ports: 2
@@ -79,7 +79,7 @@ classes:
 
   - name: reg
     attributes:
-      technology: 65nm
+      technology: "65nm"
       datawidth: 16
       latency: "5ns"
     actions:
@@ -87,7 +87,7 @@ classes:
 
   - name: SRAM
     attributes:
-      technology: 65nm
+      technology: "65nm"
       width: 64
       depth: 512
       n_rd_ports: 0
@@ -108,7 +108,7 @@ classes:
 
   - name: DRAM
     attributes:
-      technology: 65nm
+      technology: "65nm"
       type: LPDDR4
       width: 64
     actions:
@@ -118,7 +118,7 @@ classes:
 
   - name: counter
     attributes:
-      technology: 65nm
+      technology: "65nm"
       width: 16
       latency: "5ns"
     actions:
@@ -127,7 +127,7 @@ classes:
 
   - name: FIFO
     attributes:
-      technology: 65nm
+      technology: "65nm"
       datawidth: 16
       depth: 2
       latency: "5ns"
@@ -138,7 +138,7 @@ classes:
 
   - name: intmac
     attributes:
-      technology: 65nm
+      technology: "65nm"
       datawidth: 16
       num_pipeline_stages: 2
       latency: "5ns"
@@ -150,7 +150,7 @@ classes:
 
   - name: fpmac
     attributes:
-      technology: 65nm
+      technology: "65nm"
       exponent: 8
       mantissa: 24
       sign: 0
@@ -164,7 +164,7 @@ classes:
 
   - name: crossbar
     attributes:
-      technology: 65nm
+      technology: "65nm"
       n_inputs: 1
       n_outputs: 1
       datawidth: 16
@@ -176,8 +176,8 @@ classes:
 
   - name: wire
     attributes:
-      technology: 65nm
-      length: 1um
+      technology: "65nm"
+      length: "1um"
       latency: "5ns"
     actions:
       - name: transfer_random
@@ -186,7 +186,7 @@ classes:
 
   - name: serializer
     attributes:
-      technology: 65nm
+      technology: "65nm"
       ratio: 4
       datawidth: 64  #input data width
     actions:
@@ -195,7 +195,7 @@ classes:
 
   - name: deserializer
     attributes:
-      technology: 65nm
+      technology: "65nm"
       ratio: 4
       datawidth: 16  # input data width
     actions:
@@ -204,7 +204,7 @@ classes:
 
   - name: comparator
     attributes:
-      technology: 65nm
+      technology: "65nm"
       datawidth: 8
     actions:
       - name: compare
