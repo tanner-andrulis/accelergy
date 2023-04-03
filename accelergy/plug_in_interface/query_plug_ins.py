@@ -76,8 +76,6 @@ def get_best_estimate(plug_ins: List[Union[AccelergyPlugIn, Any]], query: Dict[s
     est_func = get_energy_estimation if is_energy_estimation else get_area_estimation
     query = AccelergyQuery.from_interface_dict(query)
     target = 'ENERGY' if is_energy_estimation else 'AREA'
-    if logging.getLogger('').isEnabledFor(logging.INFO):
-        logging.getLogger('').info('')
     logging.getLogger('').info(f'**{target} ESTIMATION** for {query}')
 
     accuracies = [(plug_in, acc_func(plug_in, query)) for plug_in in plug_ins]
@@ -125,9 +123,11 @@ def get_best_estimate(plug_ins: List[Union[AccelergyPlugIn, Any]], query: Dict[s
         log_all_lines('Accelergy', 'debug', indent_list_text_block(
             "Why plug-ins did not estimate:", fail_reasons))
     if fail_reasons_estimations:
-        log_all_lines('Accelergy', 'info', 
-                    indent_list_text_block('Plug-ins provided accuracy, but failed to estimate:', 
+        log_all_lines('Accelergy', 'info',
+                    indent_list_text_block('Plug-ins provided accuracy, but failed to estimate:',
                                             fail_reasons_estimations))
+    if logging.getLogger('').isEnabledFor(logging.INFO):
+        logging.getLogger('').info('')
 
     if estimation and estimation.success:
         return estimation
