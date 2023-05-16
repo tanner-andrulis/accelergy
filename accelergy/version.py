@@ -22,6 +22,12 @@ Config file version outdated. Latest version is v{MAX_VERSION}. Config file can 
   OR 2. Updating the version number in ~/.config/accelergy/accelergy_config.yaml
 """
 
+def input_version_greater_or_equal(version):
+    return INPUT_VERSION is None or INPUT_VERSION >= version
+
+def parser_version_greater_or_equal(version):
+    return PARSER_VERSION is None or PARSER_VERSION >= version
+
 def versions_compatible(parser_version, file_version):
     if parser_version is None or file_version is None:
         return True
