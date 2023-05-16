@@ -159,9 +159,9 @@ def parse_expression_for_arithmetic(expression, binding_dictionary, location: st
         
     if not success:
         WARN(f'Evaluation of "{expression}" failed.')
-        if strings_allowed and version.INPUT_VERSION <= 0.3:
-            errstr += f'Expression will be treated as a string. This will be deprecated in the\n' \
-                      f'future. Please wrap quotes around the expression to specify a string.'
+        if strings_allowed and not version.input_version_greater_or_equal(0.4):
+            errstr += f'Expression will be treated as a string. This will be deprecated in version\n' \
+                      f'0.4. Please wrap quotes around the expression to specify a string.'
             for l in errstr.splitlines():
                 WARN(l)
             return expression
