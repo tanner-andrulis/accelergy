@@ -66,7 +66,7 @@ if __name__ == '__main__':
     
     
     unittest.TextTestRunner(verbosity=2).run(suite)
-    print(f'Tests with problems skipped:')
+    print(f'Tests skipped:')
     print('\ttests.exercises.test.IspassTestAccelergy04')
     print('\ttests.exercises.test.IspassTestTimeloop02')
     print('\ttests.exercises.test.IspassTestTimeloop03')
