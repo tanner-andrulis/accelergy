@@ -3,10 +3,13 @@ from accelergy.utils.utils import *
 from accelergy.action import Action
 from accelergy.subcomponent import Subcomponent
 from collections import OrderedDict
+from accelergy.parsing_utils import *
 
 class ComponentClass:
     def __init__(self, class_dict):
         self._name = class_dict['name']
+        # resolve_optional_required_attributes(class_dict)
+
         self._default_attributes = deepcopy(class_dict['attributes'])
 
         self._actions = {}
@@ -40,11 +43,16 @@ class ComponentClass:
     def get_default_attr_to_apply(self, obj_attr_name_list):
         attr_to_be_applied = OrderedDict()
         for attr_name, attr_val in self._get_default_attrs().items():
-            if attr_val == "must_specify":
-                ASSERT_MSG(attr_name in obj_attr_name_list,
-                           "attributes %s for compound class %s must be specified in architecture description"
-                           %(attr_name, self.get_name()))
-            if attr_name not in obj_attr_name_list:
+            # print(f'Checking for {attr_name=} {attr_val=} in {obj_attr_name_list}')
+            found_val = obj_attr_name_list.get(attr_name, None)
+            if attr_val == "must_specify" and found_val is None:
+                ERROR_CLEAN_EXIT(
+                    f'Attribute {attr_name} for compound class '
+                    f'{self.get_name()} must be specified. Available '
+                    f'attributes are: {list(obj_attr_name_list.keys())}')
+            if found_val is not None:
+                attr_to_be_applied[attr_name] = found_val
+            else:
                 attr_to_be_applied[attr_name] = attr_val
         return attr_to_be_applied
 
