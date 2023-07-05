@@ -167,25 +167,33 @@ def str_to_int(str_to_be_parsed, binding_dictionary):
     return parsed_int
 
 
-def cast_to_numeric(x: Any) -> Union[int, float]:
+def cast_to_numeric(x: Any) -> Union[int, float, bool]:
+    if str(x).lower() == "true":
+        return True
+    if str(x).lower() == "false":
+        return False
     if float(x) == int(x):
         return int(x)
     return float(x)
 
 
+QUOTED_STRINGS = set()
+
+
 def is_quoted_string(expression):
-    return isinstance(
-        expression, ruamel.yaml.scalarstring.DoubleQuotedScalarString
-    ) or isinstance(
-        expression, ruamel.yaml.scalarstring.SingleQuotedScalarString
+    return (
+        isinstance(
+            expression, ruamel.yaml.scalarstring.DoubleQuotedScalarString
+        )
+        or isinstance(
+            expression, ruamel.yaml.scalarstring.SingleQuotedScalarString
+        )
+        or id(expression) in QUOTED_STRINGS
     )
 
 
 def ruamel_str_to_normal_str(expression):
     return str(expression) if is_quoted_string(expression) else expression
-
-
-QUOTED_STRINGS = set()
 
 
 def parse_expression_for_arithmetic(
@@ -225,7 +233,7 @@ def parse_expression_for_arithmetic(
 
     try:
         v = eval(expression, FUNCTION_BINDINGS, binding_dictionary)
-        infostr = f'Calculated "{expression}" = {v}'
+        infostr = f'Calculated {location} as "{expression}" = {v}'
         success = True
     except Exception as e:
         errstr = f"Failed to evaluate: {expression}\n"
@@ -284,7 +292,7 @@ def parse_expressions_sequentially_replacing_bindings(
         attrs = {k: v for k, v in binding_dictionary.items()}
         attrs.update(parsed)
         parsed[k] = parse_expression_for_arithmetic(
-            v, attrs, f"{location}{k}", strings_allowed
+            v, attrs, f'{location}"{k}"', strings_allowed
         )
     return parsed
 
