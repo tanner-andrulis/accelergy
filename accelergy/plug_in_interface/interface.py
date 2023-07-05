@@ -185,10 +185,16 @@ class AccelergyQuery():
                  action_name: str = None, 
                  action_args: Dict[str, Any] = None):
         self.class_name = class_name
-        self.class_attrs = class_attrs
         self.action_name = action_name
-        self.action_args = action_args
         self.input_file_version = version.INPUT_VERSION
+        # Attributes and arguments are only included if they are not None
+        if action_args is None:
+            action_args = {}
+        else:
+            self.action_args = {k: v for k, v in action_args.items()
+                                if v is not None}
+        self.class_attrs = {k: v for k, v in class_attrs.items() 
+                            if v is not None}
 
     def __str__(self):
         attrs_stringified = ', '.join([f'{k}={v}' for k, v in self.class_attrs.items()])
