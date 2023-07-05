@@ -1,4 +1,5 @@
 import logging
+import copy
 from typing import Any, Callable, Dict, List, Tuple, Union
 from accelergy.plug_in_interface.interface import *
 from accelergy.utils.utils import ERROR_CLEAN_EXIT, indent_list_text_block, WARN
@@ -33,6 +34,8 @@ def call_plug_in(plug_in: Any, query: AccelergyQuery, target_func: Callable,
             if estimation.success and not isinstance(estimation, AccuracyEstimation):
                 estimation.unit = UnitOption.from_str('p')
     except Exception as e:
+        if isinstance(e, KeyError):
+            raise e
         # Error
         if isinstance(e, TypeError):
             raise e
@@ -76,6 +79,8 @@ def get_best_estimate(plug_ins: List[Union[AccelergyPlugIn, Any]], query: Dict[s
     est_func = get_energy_estimation if is_energy_estimation else get_area_estimation
     query = AccelergyQuery.from_interface_dict(query)
     target = 'ENERGY' if is_energy_estimation else 'AREA'
+    if logging.getLogger('').isEnabledFor(logging.INFO):
+        logging.getLogger('').info('')
     logging.getLogger('').info(f'**{target} ESTIMATION** for {query}')
 
     accuracies = [(plug_in, acc_func(plug_in, query)) for plug_in in plug_ins]
@@ -85,7 +90,7 @@ def get_best_estimate(plug_ins: List[Union[AccelergyPlugIn, Any]], query: Dict[s
     for plug_in, accuracy in accuracies:
         if not accuracy.success or accuracy.value == 0:
             continue
-        estimation = est_func(plug_in, query)
+        estimation = est_func(plug_in, copy.deepcopy(query))
         logger = get_logger(plugin2name(plug_in))
         if not estimation.success:
             estimation.add_messages(pop_all_messages(logger))
@@ -123,11 +128,9 @@ def get_best_estimate(plug_ins: List[Union[AccelergyPlugIn, Any]], query: Dict[s
         log_all_lines('Accelergy', 'debug', indent_list_text_block(
             "Why plug-ins did not estimate:", fail_reasons))
     if fail_reasons_estimations:
-        log_all_lines('Accelergy', 'info',
-                    indent_list_text_block('Plug-ins provided accuracy, but failed to estimate:',
+        log_all_lines('Accelergy', 'info', 
+                    indent_list_text_block('Plug-ins provided accuracy, but failed to estimate:', 
                                             fail_reasons_estimations))
-    if logging.getLogger('').isEnabledFor(logging.INFO):
-        logging.getLogger('').info('')
 
     if estimation and estimation.success:
         return estimation
