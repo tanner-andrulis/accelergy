@@ -5,7 +5,8 @@ import os
 from typing import Callable, List, Union
 from accelergy.utils.logging import ListLoggable
 from accelergy.plug_in_interface.interface import Estimation
-from accelergy.utils.utils import get_config_file_path, load_yaml, write_yaml_file
+from accelergy.utils.utils import get_config_file_path
+from accelergy.utils.yaml import load_yaml, write_yaml_file
 
 class Estimator(ListLoggable, ABC):
     """ 

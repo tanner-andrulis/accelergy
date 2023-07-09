@@ -23,6 +23,7 @@ from accelergy.system_state import SystemState
 from accelergy.input_output import parse_commandline_args, generate_output_files
 from accelergy.utils.utils import *
 import accelergy.version as version
+from accelergy.utils.yaml import write_yaml_file
 
 def run():
     accelergy_version = version.__version__

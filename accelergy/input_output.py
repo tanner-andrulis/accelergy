@@ -24,6 +24,7 @@ from collections import OrderedDict
 from accelergy.utils.utils import *
 import pyfiglet
 import sys
+from accelergy.utils.yaml import write_yaml_file
 
 def parse_commandline_args():
     ascii_banner = pyfiglet.figlet_format("Accelergy")

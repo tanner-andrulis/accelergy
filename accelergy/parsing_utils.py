@@ -27,7 +27,7 @@ from typing import Any, Union
 from accelergy.utils.utils import *
 from numbers import Number
 import accelergy.version as version
-import ruamel.yaml as yaml
+import ruamel.yaml
 
 MATH_FUNCS = {
     "ceil": math.ceil,

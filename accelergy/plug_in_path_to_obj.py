@@ -3,6 +3,8 @@ from typing import Union
 from accelergy.utils.utils import *
 from accelergy.plug_in_interface.estimator_wrapper import *
 from accelergy.plug_in_interface.query_plug_ins import plugin2name
+from accelergy.utils.yaml import load_yaml
+
 
 def iter_files_recursive(path: Union[str, list]) -> iter:
     if isinstance(path, str):
