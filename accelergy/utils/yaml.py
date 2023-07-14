@@ -251,6 +251,7 @@ def write_yaml_file(filepath: str, content: Dict[str, Any]) -> None:
     """
     if os.path.exists(filepath):
         os.remove(filepath)
-    utils.create_folder(os.path.dirname(filepath))
+    if os.path.dirname(filepath):
+        utils.create_folder(os.path.dirname(filepath))
     out_file = open(filepath, "a")
     yaml.dump(recursive_unorder_dict(content), out_file)
