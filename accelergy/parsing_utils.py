@@ -103,6 +103,7 @@ MATH_FUNCS = {
 }
 SCRIPT_FUNCS = {}
 EXPR_CACHE = {}
+PARSED_EXPRESSIONS = set()
 
 
 def interpret_component_list(name, binding_dictionary=None):
@@ -128,10 +129,10 @@ def interpret_component_list(name, binding_dictionary=None):
             name_base = name[:left_bracket_idx]
             right_bracket_idx = name.find("]")
             list_start_idx = str_to_int(
-                name[left_bracket_idx + 1 : range_flag], binding_dictionary
+                name[left_bracket_idx + 1: range_flag], binding_dictionary
             )
             list_end_idx = str_to_int(
-                name[range_flag + 2 : right_bracket_idx], binding_dictionary
+                name[range_flag + 2: right_bracket_idx], binding_dictionary
             )
             list_suffix = (
                 "[" + str(list_start_idx) + ".." + str(list_end_idx) + "]"
@@ -211,6 +212,9 @@ def parse_expression_for_arithmetic(
         QUOTED_STRINGS.add(id(expression))
         return expression
 
+    if id(expression) in PARSED_EXPRESSIONS:
+        return expression
+
     try:
         return cast_to_numeric(expression)
     except:
@@ -278,6 +282,7 @@ def parse_expression_for_arithmetic(
         INFO(infostr)
 
     EXPR_CACHE[expression] = v
+    PARSED_EXPRESSIONS.add(id(v))
     return v
 
 
@@ -301,16 +306,16 @@ def count_num_identical_comps(name):
     total_num_identical_comps = 1
     start_idx = name.find("[")
     end_idx = name.find("]")
-    potential_range = name[start_idx + 1 : end_idx]
+    potential_range = name[start_idx + 1: end_idx]
     if ".." in potential_range:
         range_start = int(potential_range.split("..")[0])
         range_end = int(potential_range.split("..")[1])
         range = range_end - range_start + 1
         total_num_identical_comps = total_num_identical_comps * range
-    if "[" and "]" in name[end_idx + 1 :]:
+    if "[" and "]" in name[end_idx + 1:]:
         total_num_identical_comps = (
             total_num_identical_comps
-            * count_num_identical_comps(name[end_idx + 1 :])
+            * count_num_identical_comps(name[end_idx + 1:])
         )
     return total_num_identical_comps
 
@@ -351,7 +356,7 @@ def get_ranges_or_indices_in_name(name):
     exisiting_ranges = []
     start_idx = name.find("[")
     end_idx = name.find("]")
-    range = name[start_idx + 1 : end_idx]
+    range = name[start_idx + 1: end_idx]
     if ".." in range:
         range_start = int(range.split("..")[0])
         range_end = int(range.split("..")[1])
@@ -359,7 +364,7 @@ def get_ranges_or_indices_in_name(name):
     else:
         val = int(range)
     exisiting_ranges.append(val)
-    subname = name[end_idx + 1 :]
+    subname = name[end_idx + 1:]
     if "[" and "]" not in subname:
         return exisiting_ranges
     else:
