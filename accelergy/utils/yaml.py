@@ -43,6 +43,9 @@ def load_file_and_includes(path: str, string: Union[str, None] = None) -> str:
     :param string: string that contains the YAML content to be loaded
     :return: string that contains the loaded YAML content
     """
+    assert (string is None) != (
+        path is None
+    ), "Must specify either path or string, but not both."
     if string is None:
         with open(path, "r") as f:
             string = f.read()
@@ -77,18 +80,10 @@ def load_yaml(
     :param string: string that contains the YAML content to be loaded
     :return: parsed YAML content
     """
-    try:
-        if os.path.exists(path):
-            return yaml.load(load_file_and_includes(path, string))
-    except TypeError:
-        pass
-    try:
-        if string is None:
-            return yaml.load(open(path))
-        return yaml.load(string)
-    except:
-        pass
-    return yaml.load(path)
+    assert (string is None) != (
+        path is None
+    ), "Must specify either path or string, but not both."
+    return yaml.load(load_file_and_includes(path, string))
 
 
 def my_represent_none(self, data: None) -> str:
