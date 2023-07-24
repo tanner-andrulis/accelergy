@@ -46,7 +46,8 @@ def version_compare(version1, version2):
 
 
 def input_version_greater_or_equal(version):
-    return version_compare(INPUT_VERSION, version) >= 0
+    v = __version__ if INPUT_VERSION is None else INPUT_VERSION
+    return version_compare(v, version) >= 0
 
 
 def parser_version_greater_or_equal(version):
