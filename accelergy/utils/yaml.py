@@ -22,7 +22,7 @@ import os
 import copy
 import glob
 import re
-from typing import List, Dict, Any, Union, OrderedDict
+from typing import Callable, List, Dict, Any, Union, OrderedDict
 import ruamel.yaml
 import accelergy.utils.utils as utils
 import warnings
@@ -71,6 +71,19 @@ def load_file_and_includes(path: str, string: Union[str, None] = None) -> str:
     return "".join(lines)
 
 
+def recursive_merge_check(x: Union[Dict[str, Any], List[Any], Any]) -> None:
+    if isinstance(x, list):
+        for i, v in enumerate(x):
+            x[i] = recursive_merge_check(v)
+    elif isinstance(x, dict):
+        if "<<<" in x:
+            # print(f'Merging {x["<<<"]} into {x}')
+            x = recursive_merge(x.pop("<<<"), x)
+        for k, v in x.items():
+            x[k] = recursive_merge_check(v)
+    return x
+
+
 def load_yaml(
     path: str = None, string: str = None
 ) -> Union[Dict[str, Any], None]:
@@ -83,7 +96,28 @@ def load_yaml(
     assert (string is None) != (
         path is None
     ), "Must specify either path or string, but not both."
-    return yaml.load(load_file_and_includes(path, string))
+    # Recursively parse through x, replacing any <<< with a recursive merge
+    # print(f'Calling recursive merge check on {x}')
+    return recursive_merge_check(
+        yaml.load(load_file_and_includes(path, string)))
+
+
+def recursive_merge(merge: dict, merge_into: dict):
+    if not isinstance(merge, dict):
+        raise ValueError(f'Expected a dict under the "<<<" key, but got '
+                         f'{merge}')
+    if not isinstance(merge_into, dict):
+        raise ValueError(f'Expected to merge into a dict with the "<<<" key, '
+                         f'but got {merge_into}')
+
+    for k, v in merge.items():
+        if k not in merge_into:
+            # print(f'\tSetting {k} to {v}')
+            merge_into[k] = copy.deepcopy(v)
+        elif isinstance(merge_into[k], dict) and isinstance(v, dict):
+            # print(f'\tMerging {v} into {merge_into[k]}')
+            merge_into[k] = recursive_merge(v, merge_into[k])
+    return merge_into
 
 
 def my_represent_none(self, data: None) -> str:
@@ -159,82 +193,22 @@ def includedir_constructor(
 yaml.constructor.add_constructor("!includedir", includedir_constructor)
 
 
-# =============================================================================
-# Custom implementation of the <<: operator for YAML
-# =============================================================================
-def construct_yaml_map(
-    self, node: ruamel.yaml.nodes.MappingNode
-) -> Dict[str, Any]:
-    """
-    Override the default merge (<< key) operator to use copy.deepcopy rather
-    than to use a reference. This is necessary to avoid the same object being
-    edited in multiple places.
-    :param self: YAML constructor object
-    :param node: YAML node object
-    :return: dictionary object
-    """
-    data = OrderedDict()
-    yield data
-    order = ["all", "<<", "<<<"]  # Later keys override earlier ones
-    keys = []
-    for key_node, value_node in node.value:
-        key = self.construct_object(key_node, deep=True)
-        value = self.construct_object(value_node, deep=True)
-        keys.append((key, value))
-        if key in data:
-            raise yaml.constructor.ConstructorError(
-                "while constructing a mapping",
-                node.start_mark,
-                "found duplicate key %s" % key,
-                key_node.start_mark,
-            )
-
-    def recursive_merge(data, merge, maxdepth=-1, curdepth=0):
-        if curdepth == maxdepth:
-            return data
-
-        if isinstance(merge, List):
-            for element in merge:
-                data = recursive_merge(data, element, maxdepth, curdepth)
-
-        if not isinstance(merge, dict):
-            raise yaml.constructor.ConstructorError(
-                None,
-                None,
-                f"expected a mapping or list of mappings "
-                f"for merging, but found {node.id}",
-                node.start_mark,
-            )
-
-        for k, v in merge.items():
-            if k not in data:
-                data[k] = copy.deepcopy(v)
-            elif isinstance(data[k], dict) and isinstance(v, dict):
-                data[k] = recursive_merge(data[k], v, maxdepth, curdepth + 1)
-
-        return data
-
-    keys = sorted(
-        keys, key=lambda k: order.index(k[0]) if k[0] in order else 0
-    )
-    for key, value in keys:
-        if str(key) == "<<" or str(key) == "<<<":
-            recursive = str(key) == "<<<"
-            data = recursive_merge(data, value, -1 if recursive else 1)
-        else:
-            data[key] = value
-    return data
-
-
-yaml.constructor.add_constructor("tag:yaml.org,2002:map", construct_yaml_map)
-
-
 def recursive_unorder_dict(to_unorder: Dict[str, Any]) -> Dict[str, Any]:
     if isinstance(to_unorder, dict):
         return {k: recursive_unorder_dict(v) for k, v in to_unorder.items()}
     elif isinstance(to_unorder, list):
         return [recursive_unorder_dict(v) for v in to_unorder]
     return to_unorder
+
+
+def callables2strings(to_convert: Dict[str, Any]) -> Dict[str, Any]:
+    if isinstance(to_convert, dict):
+        to_convert = {k: callables2strings(v) for k, v in to_convert.items()}
+    elif isinstance(to_convert, list):
+        to_convert = [callables2strings(v) for v in to_convert]
+    elif isinstance(to_convert, Callable):
+        to_convert = str(to_convert)
+    return to_convert
 
 
 def write_yaml_file(filepath: str, content: Dict[str, Any]) -> None:
@@ -249,4 +223,4 @@ def write_yaml_file(filepath: str, content: Dict[str, Any]) -> None:
     if os.path.dirname(filepath):
         utils.create_folder(os.path.dirname(filepath))
     out_file = open(filepath, "a")
-    yaml.dump(recursive_unorder_dict(content), out_file)
+    yaml.dump(callables2strings(recursive_unorder_dict(content)), out_file)
