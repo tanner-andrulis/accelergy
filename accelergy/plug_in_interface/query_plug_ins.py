@@ -35,8 +35,8 @@ def call_plug_in(plug_in: Any, query: AccelergyQuery, target_func: Callable,
                 estimation.unit = UnitOption.from_str('p')
     except Exception as e:
         # Error
-        if isinstance(e, TypeError):
-            raise e
+        # if isinstance(e, TypeError):
+        #     raise e
         estimation = estimation_type(0, success=False)
         logger.error(f'{type(e).__name__}: {e}')
 
