@@ -238,6 +238,8 @@ def parse_expression_for_arithmetic(
     try:
         v = eval(expression, FUNCTION_BINDINGS, binding_dictionary)
         infostr = f'Calculated {location} as "{expression}" = {v}'
+        if isinstance(v, str):
+            v = ruamel.yaml.scalarstring.DoubleQuotedScalarString(v)
         success = True
     except Exception as e:
         errstr = f"Failed to evaluate: {expression}\n"
