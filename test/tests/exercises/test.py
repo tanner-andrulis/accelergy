@@ -22,7 +22,7 @@ class ExampleTester(AccelergyUnitTest):
         self.ref_dir = ref_dir
         print(f'Reference output directory: {self.ref_dir}')
         self.remove_regexes_before_compare = remove_regexes_before_compare
-        self.ignore_differences = ignore_differences
+        self.ignore_differences = list(ignore_differences) + ['version']
 
     def get_ref_content(self, filename):
         ref_output_dir = os.path.join(self.example_dir, self.ref_dir)
