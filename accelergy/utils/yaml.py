@@ -18,11 +18,12 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+import functools
 import os
 import copy
 import glob
 import re
-from typing import Callable, List, Dict, Any, Union, OrderedDict
+from typing import Callable, List, Dict, Any, Set, Union, OrderedDict
 import ruamel.yaml
 import accelergy.utils.utils as utils
 import warnings
@@ -34,6 +35,28 @@ yaml = ruamel.yaml.YAML(typ="rt")
 yaml.indent(mapping=4, sequence=4, offset=2)
 yaml.preserve_quotes = True
 warnings.simplefilter("ignore", ReusedAnchorWarning)
+
+
+def recursive_mutator_stop(func):
+    cache = set()
+
+    @functools.wraps(func)
+    def wrapper(*args, **kwargs):
+        assert not kwargs, (
+            f"Recursive mutator stop only works with non-keyword arguments. "
+            f"Args were {args} and kwargs were {kwargs}."
+        )
+        k = id(args[0])
+        if k in cache:
+            return args[0]
+        cache.add(k)
+        try:
+            result = func(*args, **kwargs)
+        finally:
+            cache.remove(k)
+        return result
+
+    return wrapper
 
 
 def load_file_and_includes(path: str, string: Union[str, None] = None) -> str:
@@ -71,16 +94,16 @@ def load_file_and_includes(path: str, string: Union[str, None] = None) -> str:
     return "".join(lines)
 
 
-def recursive_merge_check(x: Union[Dict[str, Any], List[Any], Any]) -> None:
+@recursive_mutator_stop
+def merge_check(x: Union[Dict[str, Any], List[Any], Any]) -> None:
     if isinstance(x, list):
         for i, v in enumerate(x):
-            x[i] = recursive_merge_check(v)
+            x[i] = merge_check(v)
     elif isinstance(x, dict):
-        if "<<<" in x:
-            # print(f'Merging {x["<<<"]} into {x}')
-            x = recursive_merge(x.pop("<<<"), x)
-        for k, v in x.items():
-            x[k] = recursive_merge_check(v)
+        for k, v in list(x.items()):
+            x[k] = merge_check(v)
+            if str(k) == "<<<" or str(k) == "<<":
+                x = merge(x, x.pop(k), str(k) == "<<<")
     return x
 
 
@@ -98,25 +121,39 @@ def load_yaml(
     ), "Must specify either path or string, but not both."
     # Recursively parse through x, replacing any <<< with a recursive merge
     # print(f'Calling recursive merge check on {x}')
-    return recursive_merge_check(
-        yaml.load(load_file_and_includes(path, string)))
+    return merge_check(yaml.load(load_file_and_includes(path, string)))
 
 
-def recursive_merge(merge: dict, merge_into: dict):
-    if not isinstance(merge, dict):
-        raise ValueError(f'Expected a dict under the "<<<" key, but got '
-                         f'{merge}')
+@recursive_mutator_stop
+def merge(
+    merge_into: dict, tomerge: Union[dict, list, tuple], recursive: bool = True
+) -> dict:
+    if not isinstance(tomerge, dict):
+        raise ValueError(
+            f'Expected a dict under the "<<<" or "<<" keys, but '
+            f"got {tomerge}"
+        )
+    if isinstance(tomerge, (list, tuple)):
+        for m in tomerge:
+            merge_into = merge(merge_into, m, recursive)
+        return merge_into
     if not isinstance(merge_into, dict):
-        raise ValueError(f'Expected to merge into a dict with the "<<<" key, '
-                         f'but got {merge_into}')
+        raise ValueError(
+            f'Expected to merge into a dict with the "<<<" key, '
+            f"but got {merge_into}"
+        )
 
-    for k, v in merge.items():
+    for k, v in tomerge.items():
         if k not in merge_into:
-            # print(f'\tSetting {k} to {v}')
-            merge_into[k] = copy.deepcopy(v)
-        elif isinstance(merge_into[k], dict) and isinstance(v, dict):
-            # print(f'\tMerging {v} into {merge_into[k]}')
-            merge_into[k] = recursive_merge(v, merge_into[k])
+            merge_into[k] = v
+        elif (
+            isinstance(merge_into[k], dict)
+            and isinstance(v, dict)
+            and recursive
+        ):
+            merge_into[k] = merge(merge_into[k], v, recursive)
+    if not recursive:
+        print(f"Non-recursive merge of {tomerge} into {merge_into}")
     return merge_into
 
 
@@ -193,6 +230,7 @@ def includedir_constructor(
 yaml.constructor.add_constructor("!includedir", includedir_constructor)
 
 
+@recursive_mutator_stop
 def recursive_unorder_dict(to_unorder: Dict[str, Any]) -> Dict[str, Any]:
     if isinstance(to_unorder, dict):
         return {k: recursive_unorder_dict(v) for k, v in to_unorder.items()}
@@ -201,6 +239,7 @@ def recursive_unorder_dict(to_unorder: Dict[str, Any]) -> Dict[str, Any]:
     return to_unorder
 
 
+@recursive_mutator_stop
 def callables2strings(to_convert: Dict[str, Any]) -> Dict[str, Any]:
     if isinstance(to_convert, dict):
         to_convert = {k: callables2strings(v) for k, v in to_convert.items()}
