@@ -20,15 +20,14 @@
 
 import functools
 import os
-import copy
 import glob
 import re
+import io
 from typing import Callable, List, Dict, Any, Set, Union, OrderedDict
 import ruamel.yaml
 import accelergy.utils.utils as utils
 import warnings
 from ruamel.yaml.error import ReusedAnchorWarning
-
 
 yaml = ruamel.yaml.YAML(typ="rt")
 # yaml.default_flow_style = None
@@ -270,4 +269,6 @@ def to_yaml_string(content: Dict[str, Any]) -> str:
     :param content: YAML content to be converted to a string
     :return: string representation of the YAML content
     """
-    return yaml.dump(callables2strings(recursive_unorder_dict(content)))
+    dumpstream = io.StringIO()
+    yaml.dump(callables2strings(recursive_unorder_dict(content)), stream=dumpstream)
+    return dumpstream.getvalue()
