@@ -262,4 +262,12 @@ def write_yaml_file(filepath: str, content: Dict[str, Any]) -> None:
     if os.path.dirname(filepath):
         utils.create_folder(os.path.dirname(filepath))
     out_file = open(filepath, "a")
-    yaml.dump(callables2strings(recursive_unorder_dict(content)), out_file)
+    out_file.write(to_yaml_string(content))
+
+def to_yaml_string(content: Dict[str, Any]) -> str:
+    """
+    Convert YAML content to a string
+    :param content: YAML content to be converted to a string
+    :return: string representation of the YAML content
+    """
+    return yaml.dump(callables2strings(recursive_unorder_dict(content)))
