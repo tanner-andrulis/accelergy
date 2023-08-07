@@ -127,15 +127,18 @@ def load_yaml(
 def merge(
     merge_into: dict, tomerge: Union[dict, list, tuple], recursive: bool = True
 ) -> dict:
+    if isinstance(tomerge, (list, tuple)):
+        print(tomerge)
+        combined = dict()
+        for m in tomerge:
+            print(f'{combined=} {m=}')
+            combined = merge(combined, m, recursive)
+        tomerge = combined
     if not isinstance(tomerge, dict):
         raise ValueError(
             f'Expected a dict under the "<<<" or "<<" keys, but '
             f"got {tomerge}"
         )
-    if isinstance(tomerge, (list, tuple)):
-        for m in tomerge:
-            merge_into = merge(merge_into, m, recursive)
-        return merge_into
     if not isinstance(merge_into, dict):
         raise ValueError(
             f'Expected to merge into a dict with the "<<<" key, '
