@@ -99,9 +99,14 @@ def merge_check(x: Union[Dict[str, Any], List[Any], Any]) -> None:
         for i, v in enumerate(x):
             x[i] = merge_check(v)
     elif isinstance(x, dict):
+        found_merge = False
         for k, v in list(x.items()):
             x[k] = merge_check(v)
             if str(k) == "<<<" or str(k) == "<<":
+                assert not found_merge, \
+                    f'Cannot have multiple "<<<" or "<<" keys in a dict. ' \
+                    f'Keys were {list(x.keys())}'
+                found_merge = True
                 x = merge(x, x.pop(k), str(k) == "<<<")
     return x
 
@@ -128,10 +133,11 @@ def merge(
     merge_into: dict, tomerge: Union[dict, list, tuple], recursive: bool = True
 ) -> dict:
     if isinstance(tomerge, (list, tuple)):
-        print(tomerge)
+        assert not recursive, \
+            f'Cannot recursively merge multiple dicts. Please only specify ' \
+            f'one dict under the "<<<" key.'
         combined = dict()
         for m in tomerge:
-            print(f'{combined=} {m=}')
             combined = merge(combined, m, recursive)
         tomerge = combined
     if not isinstance(tomerge, dict):
@@ -266,6 +272,7 @@ def write_yaml_file(filepath: str, content: Dict[str, Any]) -> None:
     out_file = open(filepath, "a")
     out_file.write(to_yaml_string(content))
 
+
 def to_yaml_string(content: Dict[str, Any]) -> str:
     """
     Convert YAML content to a string
@@ -273,5 +280,6 @@ def to_yaml_string(content: Dict[str, Any]) -> str:
     :return: string representation of the YAML content
     """
     dumpstream = io.StringIO()
-    yaml.dump(callables2strings(recursive_unorder_dict(content)), stream=dumpstream)
+    yaml.dump(callables2strings(
+        recursive_unorder_dict(content)), stream=dumpstream)
     return dumpstream.getvalue()
